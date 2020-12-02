@@ -6,4 +6,4 @@ A collection of handmade batch scripts that will automatically encode music and 
 
 - ~~Make this repo.~~
 - Clean up scripting code, and optimze it more.
-- Make script as cross-platform (or as much as I can).
+- Make scripts as cross-platform (or as much as I can).
