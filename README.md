@@ -1,4 +1,4 @@
-# ffmpeg-conversion-scripts
+# FFmpeg Conversion Scripts
 A collection of handmade batch scripts that will automatically encode music and videos, using FFmpeg (and others when needed).
 
 
