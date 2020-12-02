@@ -28,4 +28,6 @@ ffmpeg -y -i "25 Threatening Short.mp3" -i cover_tmp.png -map_metadata -1 -map 0
 ffmpeg -y -i "26 Dark Piano Short.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Dark Piano Short" -metadata album="Half-Life (Soundtrack)" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="26/27" -c:a libmp3lame -ar 44100 -b:a 192k -c:1 png -disposition:1 attached_pic "Dark Piano Short.mp3"
 ffmpeg -y -i "27 Sharp Fear Short.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Sharp Fear Short" -metadata album="Half-Life (Soundtrack)" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="27/27" -c:a libmp3lame -ar 44100 -b:a 192k -c:1 png -disposition:1 attached_pic "Sharp Fear Short.mp3"
 
+DEL cover_tmp.png
+
 pause
