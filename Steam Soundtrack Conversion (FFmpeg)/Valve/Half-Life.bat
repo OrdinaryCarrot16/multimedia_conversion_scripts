@@ -1,3 +1,8 @@
+mkdir "Valve [Converted]"
+cd "Valve [Converted]"
+mkdir "Half-Life [Soundtrack]"
+cd ..
+
 ffmpeg -y -i cover.png -vf scale=512:512 -sws_flags bicubic cover_tmp.png
 
 ffmpeg -y -i "01 Adrenaline Horror.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Adrenaline Horror" -metadata album="Half-Life (Soundtrack)" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="1/27" -c:a libmp3lame -ar 44100 -b:a 192k -c:1 png -disposition:1 attached_pic "Adrenaline Horror.mp3"
@@ -27,6 +32,34 @@ ffmpeg -y -i "24 Credits Closing Theme.mp3" -i cover_tmp.png -map_metadata -1 -m
 ffmpeg -y -i "25 Threatening Short.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Threatening Short" -metadata album="Half-Life (Soundtrack)" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="25/27" -c:a libmp3lame -ar 44100 -b:a 192k -c:1 png -disposition:1 attached_pic "Threatening Short.mp3"
 ffmpeg -y -i "26 Dark Piano Short.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Dark Piano Short" -metadata album="Half-Life (Soundtrack)" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="26/27" -c:a libmp3lame -ar 44100 -b:a 192k -c:1 png -disposition:1 attached_pic "Dark Piano Short.mp3"
 ffmpeg -y -i "27 Sharp Fear Short.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Sharp Fear Short" -metadata album="Half-Life (Soundtrack)" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="27/27" -c:a libmp3lame -ar 44100 -b:a 192k -c:1 png -disposition:1 attached_pic "Sharp Fear Short.mp3"
+
+move "Adrenaline Horror.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Vague Voices.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Klaxon Beat.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Space Ocean.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Cavern Ambience.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Apprehensive.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Bass Strings.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Hurricane Strings.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Diabolical Adrenaline Guitar.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Valve Theme [Extended].mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Nepal Monastery.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Alien Shock.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Sirents in the Distance.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Nuclear Mission Jam.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Scared Confused Short.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Drums & Riffs.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Hard Technology Rock.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Steam in the Pipes.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Electric Guitar Ambience.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Dimensionless Deepness.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Military Precision.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Jungle Drums.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Traveling Through Limbo.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Credits Closing Theme.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Threatening Short.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Dark Piano Short.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
+move "Sharp Fear Short.mp3" "%CD%\Valve [Converted]\Half-Life [Soundtrack]"
 
 DEL cover_tmp.png
 
