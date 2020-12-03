@@ -3,6 +3,8 @@ cd "Valve [Converted]"
 mkdir "Half-Life [Soundtrack]"
 cd ..
 
+ffmpeg -y -i cover.png -vf scale=512:512 -sws_flags bicubic cover_tmp.png
+
 ffmpeg -y -i "01 Adrenaline Horror.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Adrenaline Horror" -metadata album="Half-Life [Soundtrack]" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="1/27" -c:1 png -disposition:1 attached_pic -c:a libmp3lame -ar 44100 -b:a 192k "Adrenaline Horror.mp3"
 ffmpeg -y -i "02 Vague Voices.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Vague Voices" -metadata album="Half-Life [Soundtrack]" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="2/27" -c:1 png -disposition:1 attached_pic -c:a libmp3lame -ar 44100 -b:a 192k "Vague Voices.mp3"
 ffmpeg -y -i "03 Klaxon Beat.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata title="Klaxon Beat" -metadata album="Half-Life [Soundtrack]" -metadata artist="Valve" -metadata genre="Soundtrack" -metadata copyright="(C) 1998, Valve Corporation" -metadata track="3/27" -c:1 png -disposition:1 attached_pic -c:a libmp3lame -ar 44100 -b:a 192k "Klaxon Beat.mp3"
