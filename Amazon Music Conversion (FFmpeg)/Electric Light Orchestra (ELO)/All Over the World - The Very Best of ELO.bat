@@ -1,4 +1,4 @@
-:: Make new folder + subfolder.
+:: Make new folder.
 mkdir "All Over the World - The Very Best of ELO [Converted]"
 
 :: Copy cover art from first song, then resize it to 512x512 using a bicubic algorithim.
