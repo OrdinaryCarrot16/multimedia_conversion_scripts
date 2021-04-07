@@ -1,4 +1,4 @@
-:: Make new folder + subfolder.
+:: Make new folder.
 mkdir "[Singles]"
 
 :: Copy cover art from first song, then resize it to 512x512 using a bicubic algorithim.
