@@ -1,5 +1,5 @@
 :: Make new folder.
-mkdir "All Over the World - The Very Best of ELO [Converted]"
+mkdir "All Over the World - The Best of ELO [Converted]"
 
 :: Copy cover art from first song, then resize it to 512x512 using a bicubic algorithim.
 ffmpeg -y -i "01 - Mr. Blue Sky.mp3" -vf scale=512:512 -sws_flags bicubic cover_tmp.png
@@ -11,7 +11,7 @@ ffmpeg -y -i "01 - Mr. Blue Sky.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 
 DEL cover_tmp.png
 
 :: Move new files to said directory.
-move "Mr. Blue Sky.m4a" "%CD%\All Over the World - The Very Best of ELO [Converted]"
+move "Mr. Blue Sky.m4a" "%CD%\All Over the World - The Best of ELO [Converted]"
 
 :: Stop the script, giving the user a chance to make sure everything looks good before proceeding to quit.
 pause
