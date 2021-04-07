@@ -11,7 +11,7 @@ A collection of handmade batch scripts that will automatically encode music and 
 - Make a script that allows user to call FFmpeg from any directory (need to modify PATH).
 
 
-## **ADDING FFMPEG TO PATH**
+## **ADDING FFMPEG TO PATH (ALLOWING YOU TO ACCESS FFMPEG FROM ANYWHERE)**
 
 1. Open PowerShell as administrator (you can find it in the search bar).
 2. Paste this code into PowerShell (this assumes the FFmpeg directory is on the root of your C drive):
