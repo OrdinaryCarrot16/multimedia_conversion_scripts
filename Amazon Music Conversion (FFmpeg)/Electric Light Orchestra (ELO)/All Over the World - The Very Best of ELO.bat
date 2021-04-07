@@ -1,8 +1,5 @@
 :: Make new folder + subfolder.
 mkdir "All Over the World - The Very Best of ELO [Converted]"
-cd "All Over the World - The Very Best of ELO [Converted]"
-mkdir "[Singles]"
-cd ..
 
 :: Copy cover art from first song, then resize it to 512x512 using a bicubic algorithim.
 ffmpeg -y -i "01 - Mr. Blue Sky.mp3" -vf scale=512:512 -sws_flags bicubic cover_tmp.png
