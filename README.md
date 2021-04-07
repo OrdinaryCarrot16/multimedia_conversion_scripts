@@ -1,5 +1,5 @@
 # FFmpeg Conversion Scripts
-A collection of handmade batch scripts that will automatically encode music and videos, using FFmpeg (and others when needed).
+A collection of handmade batch scripts that will automatically encode music and videos, using FFmpeg (along with (depending on the circumstances) MakeMKV, MKVToolNix, and tsMuxeR).
 
 
 ## **TO DO:**
