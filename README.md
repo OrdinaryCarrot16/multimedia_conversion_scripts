@@ -17,6 +17,7 @@ A collection of handmade batch scripts that will automatically encode music and 
 2. Paste this code into PowerShell (this assumes the FFmpeg directory is on the root of your C drive):
 
 setx /m PATH "C:\FFmpeg\bin;%PATH%"
+
 pause
 
 3. Press Enter.
