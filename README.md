@@ -5,6 +5,7 @@ A collection of handmade batch scripts that will automatically encode music and 
 ## **TO DO:**
 
 - ~~Make this repo.~~
+- Make more scripts.
 - Clean up scripting code, and optimze it more.
 - Make scripts cross-platform (Windows, macOS, Linux).
 - Make a script that allows user to call FFmpeg from any directory (need to modify PATH).
