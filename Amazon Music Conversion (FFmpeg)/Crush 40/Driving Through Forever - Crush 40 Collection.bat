@@ -1,8 +1,5 @@
 :: Make new folder + subfolder.
 mkdir "Driving Through Forever - Crush 40 Collection [Converted]"
-cd "Driving Through Forever - Crush 40 Collection [Converted]"
-mkdir "[Singles]"
-cd ..
 
 :: Copy cover art from first song, then resize it to 512x512 using a bicubic algorithim.
 ffmpeg -y -i "10 - I Am... All Of Me.mp3" -vf scale=512:512 -sws_flags bicubic cover_tmp.png
