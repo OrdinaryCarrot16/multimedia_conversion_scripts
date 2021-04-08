@@ -1,3 +1,5 @@
+:: https://odysseymusic.bandcamp.com/album/super-ponybeat-vol-2
+
 :: Make new folder.
 mkdir "Super Pony Beat - Volume 2 [Converted]"
 
