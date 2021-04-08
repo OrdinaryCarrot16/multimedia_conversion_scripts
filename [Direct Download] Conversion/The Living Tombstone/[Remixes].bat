@@ -1,3 +1,6 @@
+:: https://www.youtube.com/watch?v=weQfKKcIXkA (Absolute Territory) (Check the description)
+:: https://www.youtube.com/watch?v=xPfMb50dsOk (Discord [Remix]) (Check the description)
+
 :: Make new folder.
 mkdir "[Remixes] [Converted]"
 
