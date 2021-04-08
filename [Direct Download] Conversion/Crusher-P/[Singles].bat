@@ -1,4 +1,4 @@
-:: https://www.youtube.com/watch?v=cQKGUgOfD8U (check the description)
+:: https://www.youtube.com/watch?v=cQKGUgOfD8U (ECHO) (check the description)
 
 :: Make new folder.
 mkdir "[Singles] [Converted]"
