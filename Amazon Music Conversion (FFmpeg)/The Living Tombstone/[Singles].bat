@@ -1,3 +1,5 @@
+:: https://www.amazon.com/Love-I-Need-Living-Tombstone/dp/B08DWG65QS (Love I Need)
+
 :: Make new folder.
 mkdir "[Singles]"
 
