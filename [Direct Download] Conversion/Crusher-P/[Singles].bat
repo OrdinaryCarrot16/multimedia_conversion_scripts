@@ -1,3 +1,5 @@
+:: https://www.youtube.com/watch?v=cQKGUgOfD8U (check the description)
+
 :: Make new folder.
 mkdir "[Singles] [Converted]"
 
