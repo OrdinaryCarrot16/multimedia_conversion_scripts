@@ -1,3 +1,5 @@
+:: https://www.amazon.com/zero_one-Explicit-Living-Tombstone/dp/B08CRZFJVK
+
 :: Make new folder.
 mkdir "zero_one [Converted]"
 
