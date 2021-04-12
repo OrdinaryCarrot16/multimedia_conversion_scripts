@@ -1,3 +1,5 @@
+REM Find a way to handle multiple songs, preferably without duplicating lines
+
 :: Scan current directory for audio files
 DIR *.mp3 AND *.m4a
 
