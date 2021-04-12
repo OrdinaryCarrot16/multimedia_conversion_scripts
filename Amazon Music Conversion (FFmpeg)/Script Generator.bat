@@ -1,7 +1,7 @@
 REM Find a way to handle multiple songs, preferably without duplicating lines
 
 :: Scan current directory for audio files
-DIR *.mp3 AND *.m4a
+DIR *.mp3 OR *.m4a
 
 set /P cover-art=Select the Audio/Image File with the Cover Art (ex. MP3/M4A or JPG/PNG): 
 set /P artist=Artist/Band Name: 
