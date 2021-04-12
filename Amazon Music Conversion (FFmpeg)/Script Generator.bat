@@ -5,6 +5,7 @@ set /P cover-art=Select the Audio/Image File with the Cover Art (ex. MP3/M4A or 
 set /P artist=Artist/Band Name: 
 set /P /A track_amount=How many tracks are in this album: 
 
+REM Find out why this 'if' statement isn't working
 if %song_amount% GTR 1 (
 set /P album=Album Name: 
 )
