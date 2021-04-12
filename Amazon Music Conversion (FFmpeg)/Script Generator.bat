@@ -1,9 +1,13 @@
-dir *.mp3 
+DIR *.mp3 AND *.m4a
 
 set /P cover-art=Select the Audio/Image File with the Cover Art (ex. MP3/M4A or JPG/PNG) (Press Enter if There is no Cover Art): 
 set /P artist=Band Name: 
-set /P /A song_amount=How many tracks are in this album: 
-if %song_amount% GTR 1 (set /P album=Album Name: )
+set /P /A song_amount=How many tracks are in this album:
+
+if %song_amount% GTR 1 (
+set /P album=Album Name: 
+)
+
 set /P title=Song Name: 
 set /P confirm_song=
 
