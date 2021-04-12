@@ -7,7 +7,7 @@ set /P track_amount=How many tracks are in this album:
 
 REM Find out why this 'if' statement isn't working
 if %track_amount% GTR 1 (
-	set /P album=Album Name: 
+    set /P album=Album Name: 
 )
 
 set /P title=Song Name: 
