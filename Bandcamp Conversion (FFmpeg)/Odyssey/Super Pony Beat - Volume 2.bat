@@ -1,3 +1,5 @@
+:: I ain't a brony, but this song has some sick beats!
+
 :: https://odysseymusic.bandcamp.com/album/super-ponybeat-vol-2
 
 :: Make new folder.
