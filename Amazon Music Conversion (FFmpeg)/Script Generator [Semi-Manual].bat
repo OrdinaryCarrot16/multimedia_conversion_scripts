@@ -1,5 +1,4 @@
 REM Find a way to generate a BAT file that contains a individual FFmpeg line for each track, based on what the user inputted in this script (letting you manually edit your script later if you messed up somewhere, then/or you can just run the generated BAT file, along with any modifications you make to the BAT)
-
 setlocal enableDelayedExpansion
 
 :: Scan current directory for audio files
