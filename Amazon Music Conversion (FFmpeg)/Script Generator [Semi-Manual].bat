@@ -15,7 +15,7 @@ if %track_amount% EQU 1 (
 	set /P filename=Song File Name: 
 	set /P title=Song Name: 
 	set /P genre=Genre: 
-	echo ffmpeg -i "%cover-art%" -vf scale=512:512 -sws_flags bicubic cover_tmp.png >>"!artist! [Singles] [Generated].bat"
+	echo ffmpeg -i "%cover-art%" -vf scale=480:480 -sws_flags bicubic cover_tmp.png >>"!artist! [Singles] [Generated].bat"
 	echo.>>"!artist! [Singles] [Generated].bat"
 	echo ffmpeg -i "!filename!" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="!artist!" -metadata title="!title!" -metadata track="1/1" -metadata genre="!genre!" -metadata language="%language%" -metadata encoder="FFmpeg (libmp3lame)" -c:1 png -disposition:1 attached_pic -c:a libmp3lame -ar 44100 -b:a 160k "!title! [Single].mp3" >>"!artist! [Singles] [Generated].bat"
 echo move "!title! [Single].mp3" "%CD%\!artist! [Singles] [Converted]" >>"!artist! [Singles] [Generated].bat"
@@ -32,7 +32,7 @@ if %track_amount% GTR 1 (
 )
 
 
-echo ffmpeg -i "%cover-art%" -vf scale=512:512 -sws_flags bicubic cover_tmp.png >>"!album! [Generated].bat"
+echo ffmpeg -i "%cover-art%" -vf scale=480:480 -sws_flags bicubic cover_tmp.png >>"!album! [Generated].bat"
 echo.>>"!album! [Generated].bat"
 
 if %track_amount% GTR 1 (
