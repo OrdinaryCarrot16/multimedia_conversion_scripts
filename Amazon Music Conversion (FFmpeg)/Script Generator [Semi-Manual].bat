@@ -25,6 +25,7 @@ pause
 goto:EOF
 )
 
+REM The script fails if using invalid characters in the album name, as it will be used as the folder name as well; find a way to convert invalid characters to something equiviant for the folder name (ex. colon (:) to dash (-)), but the metadata album name can remain the same
 if %track_amount% GTR 1 (
     set /P album=Album Name: 
 	echo mkdir "!album! [Converted]" >"!album! [Generated].bat"
