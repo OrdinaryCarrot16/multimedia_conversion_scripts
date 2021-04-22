@@ -1,8 +1,9 @@
 mkdir "Angry Video Game Nerd (AVGN) [Converted]" 
 
 ::Estimated File Size Before Conversion = 9.36GB
-REM Find out why the heck the file size is increasing that much
 ::Estimated File Size After Conversion = 16.8GB
+REM Find out why the heck the file size is increasing that much
+
 youtube-dl --embed-subs -f 242+251 https://www.youtube.com/watch?v=V4we8iFk-fY  
 ffmpeg -i "Castlevania II - Simon's Quest (NES) - Angry Video Game Nerd (AVGN)-V4we8iFk-fY.webm" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -id3v2_version 3 -metadata show="Angry Video Game Nerd" -metadata media_type="tv" -metadata season_number="1" -metadata episode_id="1" -metadata artist="Cinemassacre" -metadata title="Castlevania II: Simon's Quest" -metadata track="1/189" -metadata genre="Comedy/Documentary" -metadata language="English" -threads 2 -c:a aac -profile:a aac_main -ac 2 -c:v libx264 -ar 44100 -b:a 160k -preset medium -profile:v main -level 3.0 -crf 20 -maxrate 8000k -bufsize 8000k -movflags +faststart "Angry Video Game Nerd - Castlevania II - Simon's Quest.mp4"  
 move "Angry Video Game Nerd - Castlevania II - Simon's Quest.mp4" "Angry Video Game Nerd (AVGN) [Converted]" 
