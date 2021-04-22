@@ -1,6 +1,8 @@
 mkdir "You Know What's BS [Converted]" 
 
 REM Script failing due to special characters interferring with filename
+REM Solution found, the ’ symbol is being used instead of the ' symbol
+
 youtube-dl --embed-subs -f 243+251 https://www.youtube.com/watch?v=bN6fxqvGBSs  
 ffmpeg -i "You Know What's BS! DVD Packaging-bN6fxqvGBSs.webm" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -id3v2_version 3 -metadata show="You Know What's BS!?" -metadata media_type="tv" -metadata season_number="" -metadata episode_id="" -metadata artist="Cinemassacre" -metadata title="DVD Packaging" -metadata track="1/45" -metadata genre="Comedy" -metadata language="English" -threads 2 -c:a aac -profile:a aac_main -ac 2 -c:v libx264 -ar 44100 -b:a 160k -preset medium -profile:v main -level 3.0 -crf 20 -maxrate 8000k -bufsize 8000k -movflags +faststart "You Know What's BS - DVD Packaging.mp4"  
 move "You Know What's BS - DVD Packaging.mp4" "You Know What's BS [Converted]" 
