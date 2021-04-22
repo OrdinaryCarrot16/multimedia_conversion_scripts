@@ -1,3 +1,4 @@
+chcp 65001
 setlocal enableDelayedExpansion
 @echo off
 
