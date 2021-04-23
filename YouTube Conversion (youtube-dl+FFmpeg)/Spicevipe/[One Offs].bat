@@ -1,3 +1,4 @@
+chcp 65001
 mkdir "Spicevipe [One Offs] [Converted]" 
 
 youtube-dl --embed-subs -f 244+251 https://www.youtube.com/watch?v=tejoKyCgBsY  
