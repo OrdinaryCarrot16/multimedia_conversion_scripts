@@ -1,4 +1,3 @@
-chcp 65001
 setlocal enableDelayedExpansion
 @echo off
 
@@ -34,6 +33,7 @@ if %media_type%==series (
 	
 	
 	echo mkdir "!tv_show! [Converted]" >"!tv_show! [Generated].bat"
+	echo chcp 65001 >>"!tv_show! [Generated].bat"
 	echo.>>"!tv_show! [Generated].bat"
 	
 
