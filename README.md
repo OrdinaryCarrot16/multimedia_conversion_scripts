@@ -5,7 +5,7 @@ A collection of handmade batch scripts that will automatically encode music and 
 ## **TO DO:**
 
 - ~~Make this repo.~~
-- Find out a way to make templates for the scripts, for easier creation.
+- ~~Find out a way to make templates for the scripts, for easier creation.~~
 - Make more scripts.
 - Clean up scripting code, and optimze it more.
 - Make scripts cross-platform (Windows, macOS, Linux).
