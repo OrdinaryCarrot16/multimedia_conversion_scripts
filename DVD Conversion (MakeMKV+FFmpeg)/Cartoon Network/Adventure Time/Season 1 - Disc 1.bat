@@ -11,6 +11,6 @@ ffmpeg -y -avoid_negative_ts make_non_negative -ss 00:00:32.900 -to 00:11:16.950
 ffmpeg -y -avoid_negative_ts make_non_negative -ss 00:11:17.950 -to 00:11:50.900 -i "ADVENTURE TIME SEASON 1 DISC 1_t00.mkv" -c:v libx264 -crf 8 -preset veryfast -c:a aac -b:a 192k credits_tmp.mkv
 
 :: Merge all extracted components and encode into final video
-REM Add concat and conversion code
+ffmpeg -avoid_negative_ts make_non_negative -i spacer_1_tmp.mkv -i intro_tmp.mkv -i spacer_2_tmp.mkv -i title_card_tmp.mkv -i spacer_2_tmp.mkv -i episode_tmp.mkv -i spacer_2_tmp.mkv -i credits_tmp.mkv -i spacer_1_tmp.mkv -map_metadata -1 -map_chapters -1 -filter_complex "[0:0]setsar=sar=40/33[v1];[0:1]anull[a1];[1:0]setsar=sar=40/33[v2];[1:1]anull[a2];[2:0]setsar=sar=40/33[v3];[2:1]anull[a3];[3:0]setsar=sar=40/33[v4];[3:1]anull[a4];[4:0]setsar=sar=40/33[v5];[4:1]anull[a5];[5:0]setsar=sar=40/33[v6];[5:1]anull[a6];[6:0]setsar=sar=40/33[v7];[6:1]anull[a7];[7:0]setsar=sar=40/33[v8];[7:1]anull[a8];[8:0]setsar=sar=40/33[v9];[8:1]anull[a9];[v1][a1][v2][a2][v3][a3][v4][a4][v5][a5][v6][a6][v7][a7][v8][a8][v9][a9]concat=n=9:v=1:a=1[fv][fa]" -map "[fv]" -map "[fa]" -r 24000/1001 -c:v libx264 -crf 20 -c:a aac -b:a 160k "Slumber Party Panic (S01E02).mp4"
 
 pause
