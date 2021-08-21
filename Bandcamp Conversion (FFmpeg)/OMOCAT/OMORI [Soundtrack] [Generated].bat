@@ -147,11 +147,11 @@ move "Realistic Space Simulation.m4a" "OMORI [Soundtrack] [Converted]"
 ffmpeg -i "OMORI - OMORI OST - 48 Jash Bash.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Jash Bash" -metadata track="48/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Jash Bash.m4a"  
 move "Jash Bash.m4a" "OMORI [Soundtrack] [Converted]"  
 
-ffmpeg -i "OMORI - OMORI OST - 49 Jash Bash 2- New Age of Heroes.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Jash Bash 2: New Age of Heroes" -metadata track="49/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Jash Bash 2: New Age of Heroes.m4a"  
-move "Jash Bash 2: New Age of Heroes.m4a" "OMORI [Soundtrack] [Converted]"  
+ffmpeg -i "OMORI - OMORI OST - 49 Jash Bash 2- New Age of Heroes.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Jash Bash 2: New Age of Heroes" -metadata track="49/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Jash Bash 2 - New Age of Heroes.m4a"  
+move "Jash Bash 2 - New Age of Heroes.m4a" "OMORI [Soundtrack] [Converted]"  
 
-ffmpeg -i "OMORI - OMORI OST - 50 Jash Bash 3- Jashpocalypse Infinity.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Jash Bash 3: Jashpocalypse Infinty" -metadata track="50/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Jash Bash 3: Jashpocalypse Infinty.m4a"  
-move "Jash Bash 3: Jashpocalypse Infinty.m4a" "OMORI [Soundtrack] [Converted]"  
+ffmpeg -i "OMORI - OMORI OST - 50 Jash Bash 3- Jashpocalypse Infinity.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Jash Bash 3: Jashpocalypse Infinty" -metadata track="50/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Jash Bash 3 - Jashpocalypse Infinty.m4a"  
+move "Jash Bash 3 - Jashpocalypse Infinty.m4a" "OMORI [Soundtrack] [Converted]"  
 
 ffmpeg -i "OMORI - OMORI OST - 51 Clash of Jash.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Clash of Jash" -metadata track="51/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Clash of Jash.m4a"  
 move "Clash of Jash.m4a" "OMORI [Soundtrack] [Converted]"  
@@ -159,8 +159,8 @@ move "Clash of Jash.m4a" "OMORI [Soundtrack] [Converted]"
 ffmpeg -i "OMORI - OMORI OST - 52 Take A Load Off.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Take a Load Off" -metadata track="52/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Take a Load Off.m4a"  
 move "Take a Load Off.m4a" "OMORI [Soundtrack] [Converted]"  
 
-ffmpeg -i "OMORI - OMORI OST - 53 I Prefer My Pizza 90- Grease.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="I Prefer My Pizza 90% Grease" -metadata track="53/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "I Prefer My Pizza 90% Grease.m4a"  
-move "I Prefer My Pizza 90% Grease.m4a" "OMORI [Soundtrack] [Converted]"  
+ffmpeg -i "OMORI - OMORI OST - 53 I Prefer My Pizza 90- Grease.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="I Prefer My Pizza 90% Grease" -metadata track="53/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "I Prefer My Pizza 90 Grease.m4a"  
+move "I Prefer My Pizza 90 Grease.m4a" "OMORI [Soundtrack] [Converted]"  
 
 ffmpeg -i "OMORI - OMORI OST - 54 Fresh...ish....mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Fresh...ish..." -metadata track="54/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Fresh...ish....m4a"  
 move "Fresh...ish....m4a" "OMORI [Soundtrack] [Converted]"  
@@ -192,8 +192,8 @@ move "A Home for Flowers (Empty).m4a" "OMORI [Soundtrack] [Converted]"
 ffmpeg -i "OMORI - OMORI OST - 63 Help Me.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Help Me" -metadata track="63/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Help Me.m4a"  
 move "Help Me.m4a" "OMORI [Soundtrack] [Converted]"  
 
-ffmpeg -i "OMORI - OMORI OST - 64 Arachnophobia.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Arachnophobia" -metadata track="64/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Help Me.m4a"  
-move "Help Me.m4a" "OMORI [Soundtrack] [Converted]"  
+ffmpeg -i "OMORI - OMORI OST - 64 Arachnophobia.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Arachnophobia" -metadata track="64/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Arachnophobia.m4a"  
+move "Arachnophobia.m4a" "OMORI [Soundtrack] [Converted]"  
 
 ffmpeg -i "OMORI - OMORI OST - 65 Something, Alone.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Something, Alone" -metadata track="65/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Something, Alone.m4a"  
 move "Something, Alone.m4a" "OMORI [Soundtrack] [Converted]"  
@@ -459,8 +459,8 @@ move "Listening.m4a" "OMORI [Soundtrack] [Converted]"
 ffmpeg -i "OMORI - OMORI OST - 152 A Red Shape.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="A Red Shape" -metadata track="152/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "A Red Shape.m4a"  
 move "A Red Shape.m4a" "OMORI [Soundtrack] [Converted]"  
 
-ffmpeg -i "OMORI - OMORI OST - 153 Do You Remember-.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Do You Remember?" -metadata track="153/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Do You Remember?.m4a"  
-move "Do You Remember?.m4a" "OMORI [Soundtrack] [Converted]"  
+ffmpeg -i "OMORI - OMORI OST - 153 Do You Remember-.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Do You Remember?" -metadata track="153/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Do You Remember.m4a"  
+move "Do You Remember.m4a" "OMORI [Soundtrack] [Converted]"  
 
 ffmpeg -i "OMORI - OMORI OST - 154 Playing Forever.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Playing Forever" -metadata track="154/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Playing Forever.m4a"  
 move "Playing Forever.m4a" "OMORI [Soundtrack] [Converted]"  
@@ -484,7 +484,9 @@ ffmpeg -i "OMORI - OMORI OST - 160 Normal..mp3" -i cover_TMP.png -map_metadata -
 move "Normal.m4a" "OMORI [Soundtrack] [Converted]"  
 
 ffmpeg -i "OMORI - OMORI OST - 161 Your Catastrophes.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Your Catastrophes" -metadata track="161/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Your Catastrophes.m4a"  
-move "Your Catastrophes.m4a" "OMORI [Soundtrack] [Converted]"  ffmpeg -i "OMORI - OMORI OST - 162 Your Catastrophes - Procession.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Your Catastrophes - Procession" -metadata track="162/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Your Catastrophes - Procession.m4a"  
+move "Your Catastrophes.m4a" "OMORI [Soundtrack] [Converted]"  
+
+ffmpeg -i "OMORI - OMORI OST - 162 Your Catastrophes - Procession.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Your Catastrophes - Procession" -metadata track="162/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Your Catastrophes - Procession.m4a"  
 move "Your Catastrophes - Procession.m4a" "OMORI [Soundtrack] [Converted]"  
 
 ffmpeg -i "OMORI - OMORI OST - 163 Crossroads.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="Crossroads" -metadata track="163/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "Crossroads.m4a"  
@@ -537,5 +539,7 @@ move "My Time.m4a" "OMORI [Soundtrack] [Converted]"
 
 ffmpeg -i "OMORI - OMORI OST - 179 Fin.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="OMOCAT" -metadata album="OMORI [Soundtrack]" -metadata title="FIN" -metadata track="179/179" -metadata genre="" -metadata language="" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -b:a 160k -movflags +faststart "FIN.m4a"  
 move "FIN.m4a" "OMORI [Soundtrack] [Converted]"  
+
+pause
 
 DEL cover_TMP.png 
