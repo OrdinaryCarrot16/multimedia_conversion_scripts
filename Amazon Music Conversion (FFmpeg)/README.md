@@ -1,0 +1,1 @@
+The '[Filtered]' on the file name means I have added some filters to attempt to enhance the song (though its based on perspective it actually improves it). I have also made unfiltered versions for those who want, well, an unfiltered song.
