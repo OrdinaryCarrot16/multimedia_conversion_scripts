@@ -34,7 +34,7 @@ move "Animal.m4a" "zero_one [Converted]"
 ffmpeg -y -i "09 - Fly Home.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata album="zero_one" -metadata title="Fly Home" -metadata genre="Electronic/Pop" -metadata language="English" -metadata track="9/10" -metadata date="2020" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -af loudnorm=I=-12:TP=-2:LRA=8:linear=true:measured_I=-7.3:measured_LRA=3.1:measured_TP=2.3:measured_thresh=-17.4 -b:a 160k "Fly Home.m4a"
 move "Fly Home.m4a" "zero_one [Converted]"
 
-ffmpeg -y -i "10 - Chosen.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata album="zero_one" -metadata title="Chosen" -metadata genre="Electronic/Pop" -metadata language="English" -metadata track="10/10" -metadata date="2020" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -af loudnorm=I=-16:TP=-2:LRA=8:linear=true:measured_I=-6.6:measured_LRA=10.5:measured_TP=3.3:measured_thresh=-17.1 -b:a 160k "Chosen.m4a"
+ffmpeg -y -i "10 - Chosen.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata album="zero_one" -metadata title="Chosen" -metadata genre="Electronic/Pop" -metadata language="English" -metadata track="10/10" -metadata date="2020" -c:1 png -disposition:1 attached_pic -c:a aac -ar 44100 -af loudnorm=I=-12:TP=-2:LRA=8:linear=true:measured_I=-6.6:measured_LRA=10.5:measured_TP=3.3:measured_thresh=-17.1 -b:a 160k "Chosen.m4a"
 move "Chosen.m4a" "zero_one [Converted]"
 
 :: Stop the script, giving the user a chance to make sure everything looks good before proceeding to quit.
