@@ -41,10 +41,10 @@ ffmpeg -i "Game Over (Part 2) - Glitchtale S2 EP#6 _ ANIMATION [8hMgb4pGE9U].mp4
 move "Game-Over [Part 2].mp4" "Glitch-Tale [Converted]"  
 DEL "Game Over (Part 2) - Glitchtale S2 EP#6 _ ANIMATION [8hMgb4pGE9U].mp4"  
 
-yt-dlp --embed-subs -f 135+140 https://www.youtube.com/watch?v=yVZKjHh4Qj0  
-ffmpeg -i "H???a???t???e??? - Glitchtale S2 EP #7 _ ANIMATION [yVZKjHh4Qj0].mp4" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -id3v2_version 3 -metadata artist="Camila Cuevas" -metadata show="Glitch-Tale" -metadata title="HATE" -metadata track="7/9" -metadata genre="" -metadata language="English" -metadata encoder="FFmpeg (libx264 + aac)" -threads 2 -c:a copy -c:v copy -movflags +faststart "HATE.mp4"  
+yt-dlp --embed-subs --restrict-filenames -f 135+140 https://www.youtube.com/watch?v=yVZKjHh4Qj0  
+ffmpeg -i "H_a_t_e_-_Glitchtale_S2_EP_7_ANIMATION-[yVZKjHh4Qj0].mp4" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -id3v2_version 3 -metadata artist="Camila Cuevas" -metadata show="Glitch-Tale" -metadata title="HATE" -metadata track="7/9" -metadata genre="" -metadata language="English" -metadata encoder="FFmpeg (libx264 + aac)" -threads 2 -c:a copy -c:v copy -movflags +faststart "HATE.mp4"  
 move "HATE.mp4" "Glitch-Tale [Converted]"  
-DEL "H???a???t???e??? - Glitchtale S2 EP #7 _ ANIMATION [yVZKjHh4Qj0].mp4"  
+DEL "H_a_t_e_-_Glitchtale_S2_EP_7_ANIMATION-[yVZKjHh4Qj0].mp4"  
 
 yt-dlp --embed-subs -f 135+140 https://www.youtube.com/watch?v=nRZ4Qs_d11o  
 ffmpeg -i "Animosity - Glitchtale S2 EP #8 _ ANIMATION [nRZ4Qs_d11o].mp4" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -id3v2_version 3 -metadata artist="Camila Cuevas" -metadata show="Glitch-Tale" -metadata title="Animosity" -metadata track="8/9" -metadata genre="" -metadata language="English" -metadata encoder="FFmpeg (libx264 + aac)" -threads 2 -c:a copy -c:v copy -movflags +faststart "Animosity.mp4"  
