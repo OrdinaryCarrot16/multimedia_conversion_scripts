@@ -20,7 +20,7 @@ set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3 or JPG/
 echo mkdir "%album% [Converted]" >"%album% [Generated].bat"
 echo chcp 65001 >>"%album% [Generated].bat"
 echo.>>"%album% [Generated].bat"
-echo ffmpeg -i "%cover-art%" -an -vf scale=480:480 -sws_flags bicubic cover_TMP.png >>"%album% [Generated].bat"
+echo ffmpeg -i "%cover-art%" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png >>"%album% [Generated].bat"
 echo.>>"%album% [Generated].bat"
 
 DIR /on /b *.mp3
@@ -42,7 +42,7 @@ echo.>>"[Singles] [Generated].bat"
 
 DIR /on /b *.mp3
 
-for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3 or JPG/PNG): & echo ffmpeg -y -i "!cover-art!" -an -vf scale=480:480 -sws_flags bicubic cover_TMP.png >>"[Singles] [Generated].bat" & set /P title=Song Name: & set /P genre=Genre: & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata title="!title!" -metadata track="1/1" -metadata genre="!genre!" -metadata language="%language%" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"[Singles] [Generated].bat" & echo move "!title!.m4a" "[Singles] [Converted]" >>"[Singles] [Generated].bat" & echo.>>"[Singles] [Generated].bat"
+for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3 or JPG/PNG): & echo ffmpeg -y -i "!cover-art!" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png >>"[Singles] [Generated].bat" & set /P title=Song Name: & set /P genre=Genre: & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata title="!title!" -metadata track="1/1" -metadata genre="!genre!" -metadata language="%language%" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"[Singles] [Generated].bat" & echo move "!title!.m4a" "[Singles] [Converted]" >>"[Singles] [Generated].bat" & echo.>>"[Singles] [Generated].bat"
 
 echo pause >>"[Singles] [Generated].bat"
 echo.>>"[Singles] [Generated].bat"
