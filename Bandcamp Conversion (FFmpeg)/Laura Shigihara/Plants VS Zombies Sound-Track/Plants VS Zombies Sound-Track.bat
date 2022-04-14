@@ -1,7 +1,7 @@
 mkdir "Plants VS Zombies Sound-Track [Converted]" 
 chcp 65001 
 
-ffmpeg -i "cover.png" -an -vf scale=480:480 -sws_flags bicubic cover_TMP.png 
+ffmpeg -i "cover.png" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png 
 
 ffmpeg -i "Laura Shigihara - Plants vs. Zombies Soundtrack - 01 Crazy Dave's Greeting.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="Laura Shigihara" -metadata album="Plants vs. Zombies Sound-Track" -metadata title="Crazy Dave's Greeting" -metadata track="1/16" -metadata genre="Sound-Track" -metadata language="English" -metadata encoder="FFmpeg (aac)" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-16:measured_LRA=5.6:measured_TP=-1.2:measured_thresh=-26.6" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Crazy Dave's Greeting.m4a"  
 move "Crazy Dave's Greeting.m4a" "Plants VS Zombies Sound-Track [Converted]"  
