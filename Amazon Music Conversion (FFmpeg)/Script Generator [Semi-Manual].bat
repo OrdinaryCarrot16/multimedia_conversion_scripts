@@ -25,7 +25,7 @@ echo.>>"%album% [Generated].bat"
 
 DIR /on /b *.mp3
 
-for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P title=Song Name: & set /P genre=Genre: & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata album="%album%" -metadata title="!title!" -metadata track="!TRACK_COUNTER!/%track_amount%" -metadata genre="!genre!" -metadata language="%language%" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"%album% [Generated].bat" & echo move "!title!.m4a" "%album% [Converted]" >>"%album% [Generated].bat" & echo.>>"%album% [Generated].bat"
+for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P title=Song Name: & set /P genre=Genre: & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata album_artist="%artist%" -metadata album="%album%" -metadata title="!title!" -metadata track="!TRACK_COUNTER!/%track_amount%" -metadata genre="!genre!" -metadata language="%language%" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"%album% [Generated].bat" & echo move "!title!.m4a" "%album% [Converted]" >>"%album% [Generated].bat" & echo.>>"%album% [Generated].bat"
 
 echo pause >>"%album% [Generated].bat"
 echo.>>"%album% [Generated].bat"
