@@ -15,7 +15,9 @@ if %album-or-single% EQU 0 goto album (
 :album
 set /P album=Album Name: 
 set /P track_amount=How many Tracks are in this Album: 
-set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3 or JPG/PNG): 
+set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3/M4A or JPG/PNG): 
+set /P genre=Genre of Album (currently need to adjust generated script if multiple genres in album): 
+set /P date=Enter the release date of the album (in YYYY-MM-DD format, or type nothing if unknown): 
 	
 echo mkdir "%album% [Converted]" >"%album% [Generated].bat"
 echo chcp 65001 >>"%album% [Generated].bat"
@@ -25,7 +27,7 @@ echo.>>"%album% [Generated].bat"
 
 DIR /on /b *.mp3
 
-for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P title=Song Name: & set /P genre=Genre: & set /P date=Enter the release date of the single (in YYYY-MM-DD format, or type nothing if unknown): & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata album_artist="%artist%" -metadata album="%album%" -metadata title="!title!" -metadata track="!TRACK_COUNTER!/%track_amount%" -metadata genre="!genre!" -metadata language="%language%" -metadata date="!date!" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"%album% [Generated].bat" & echo move "!title!.m4a" "%album% [Converted]" >>"%album% [Generated].bat" & echo.>>"%album% [Generated].bat"
+for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P title=Song Name: & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata album_artist="%artist%" -metadata album="%album%" -metadata title="!title!" -metadata track="!TRACK_COUNTER!/%track_amount%" -metadata genre="!genre!" -metadata language="%language%" -metadata date="!date!" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"%album% [Generated].bat" & echo move "!title!.m4a" "%album% [Converted]" >>"%album% [Generated].bat" & echo.>>"%album% [Generated].bat"
 
 echo pause >>"%album% [Generated].bat"
 echo.>>"%album% [Generated].bat"
