@@ -4,8 +4,8 @@ setlocal enableDelayedExpansion
 :initialize
 set /A TRACK_COUNTER=0
 
-set /P artist=Artist/Band Name: 
-set /P language=Language: 
+set /P artist=Artist/Band Name (currently need to adjust generated script if multiple artists in album): 
+set /P language=Language (Use 'eng' instead of 'English' for example, and other ISO 639-2 codes): 
 set /P album-or-single=Is this an Album or Singles (0 for album, 1 for singles): 
 
 if %album-or-single% EQU 0 goto album (
