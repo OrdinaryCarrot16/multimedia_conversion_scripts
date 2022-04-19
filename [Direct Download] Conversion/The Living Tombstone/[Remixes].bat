@@ -1,22 +1,17 @@
-:: https://www.youtube.com/watch?v=weQfKKcIXkA (Absolute Territory) (check the description)
-:: https://www.youtube.com/watch?v=xPfMb50dsOk (Discord [Remix]) (check the description)
+:: https://www.mediafire.com/file/ggto9rcz8yew2mc/TombAbsoluteTerritoryRemix-Final.mp3/file (Absolute Territory)
+:: https://www.mediafire.com/file/a28veehw21gq6dc/TombstoneDiscordRemix-Final.mp3/file (Discord [Remix])
 
-:: Make new folder.
-mkdir "[Remixes] [Converted]"
+mkdir "[Remixes] [Converted]" 
+chcp 65001 
 
-:: Copy cover art from first song, then resize it to 512x512 using a bicubic algorithim.
-ffmpeg -y -i "TombAbsoluteTerritoryRemix-Final.mp3" -vf scale=512:512 -sws_flags bicubic cover_tmp.png
+ffmpeg -y -i "TombAbsoluteTerritoryRemix-Final.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
+ffmpeg -i "TombAbsoluteTerritoryRemix-Final.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Absolute Territory" -metadata genre="Dubstep/Pop" -metadata language="eng" -metadata date="2013-11-20" -metadata comment="Original song 'Absolute Territory' by 'Ken Ashcorp'." -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Absolute Territory [Remix].m4a"  
+move "Absolute Territory.m4a" "[Singles] [Remixes]"  
 
-:: Import song, add resized cover art, remove all current metadata, attach the song + cover art to the output file, register new metadata, initialize second part of adding cover art, encode audio into MP3, set sample rate to 44100 kHZ, set audio bitrate to 160kb, and output the new file.
-ffmpeg -y -i "TombAbsoluteTerritoryRemix-Final.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Absolute Territory [Remix]" -metadata genre="Electronic" -metadata language="English" -metadata copyright="© 2013, The Living Tombstone & Ken Ashcorp" -metadata track="1/1" -c:1 png -disposition:1 attached_pic -c:a libmp3lame -ar 44100 -b:a 160k "Absolute Territory [Remix].mp3"
-ffmpeg -y -i "TombstoneDiscordRemix-Final.mp3" -i cover_tmp.png -map_metadata -1 -map 0:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Discord [Remix]" -metadata genre="Electronic" -metadata language="English" -metadata copyright="© 2012, The Living Tombstone" -metadata track="1/1" -c:a libmp3lame -ar 44100 -b:a 160k "Discord [Remix].mp3"
+ffmpeg -y -i "TombstoneDiscordRemix-Final.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
+ffmpeg -i "TombstoneDiscordRemix-Final.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Discord" -metadata genre="Electronic/Pop" -metadata language="eng" -metadata date="2012-01-21" -metadata comment="Original song 'Discord' by 'Eurobeat Brony'." -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Discord [Remix].m4a"  
+move "Discord.m4a" "[Singles] [Remixes]"  
 
-:: Move new files to said directory.
-move "Absolute Territory [Remix].mp3" "%CD%\[Remixes] [Converted]"
-move "Discord [Remix].mp3" "%CD%\[Remixes] [Converted]"
+pause 
 
-:: Stop the script, giving the user a chance to make sure everything looks good before proceeding to quit.
-pause
-
-:: Delete the temporary cover art file.
-DEL cover_tmp.png
+DEL cover_TMP.png 
