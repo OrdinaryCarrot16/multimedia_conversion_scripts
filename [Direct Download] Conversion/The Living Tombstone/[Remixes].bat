@@ -6,11 +6,11 @@ chcp 65001
 
 ffmpeg -y -i "TombAbsoluteTerritoryRemix-Final.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
 ffmpeg -i "TombAbsoluteTerritoryRemix-Final.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Absolute Territory" -metadata genre="Dubstep/Pop" -metadata language="eng" -metadata date="2013-11-20" -metadata comment="Original song 'Absolute Territory' by 'Ken Ashcorp'." -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Absolute Territory [Remix].m4a"  
-move "Absolute Territory.m4a" "[Remixes] [Converted]"  
+move "Absolute Territory [Remix].m4a" "[Remixes] [Converted]"  
 
 ffmpeg -y -i "TombstoneDiscordRemix-Final.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
 ffmpeg -i "TombstoneDiscordRemix-Final.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Discord" -metadata genre="Electronic/Pop" -metadata language="eng" -metadata date="2012-01-21" -metadata comment="Original song 'Discord' by 'Eurobeat Brony'." -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Discord [Remix].m4a"  
-move "Discord.m4a" "[Remixes] [Converted]"  
+move "Discord [Remix].m4a" "[Remixes] [Converted]"  
 
 pause 
 
