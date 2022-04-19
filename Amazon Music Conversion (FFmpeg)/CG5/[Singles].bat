@@ -1,3 +1,9 @@
+:: https://www.amazon.com/dp/B08X1KQTZW (Every Door)
+:: https://www.amazon.com/dp/B08X1NVYLC (I See a Dreamer)
+:: https://www.amazon.com/dp/B08X1YXTV8 (Lyin' 2 Me)
+:: https://www.amazon.com/dp/B08X1FT5TP (Make Your Move)
+:: https://www.amazon.com/dp/B08X1X664N (Show Yourself)
+
 mkdir "[Singles] [Converted]" 
 chcp 65001 
 
