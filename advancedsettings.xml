@@ -1,0 +1,10 @@
+<!--Place in Kodi user directory (X:\Users\xxxx\AppData\Roaming\Kodi\userdata)-->
+
+<advancedsettings version="1.0">
+    <musiclibrary>
+    	<itemseparator> | </itemseparator>
+	<artistseparators>
+		<separator>; </separator>
+	</artistseparators>
+    </musiclibrary>
+</advancedsettings>
