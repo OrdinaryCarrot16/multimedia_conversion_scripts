@@ -10,7 +10,7 @@ mkdir "[Singles] [Converted]"
 chcp 65001 
 
 ffmpeg -y -i "01 - 1000 Doors (Spooky's Jumpscare Mansion Song) [feat. Bobby Yarsulik & Crusher-P].mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
-ffmpeg -i "01 - 1000 Doors (Spooky's Jumpscare Mansion Song) [feat. Bobby Yarsulik & Crusher-P].mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="1000 Doors" -metadata genre="Electronic | Pop" -metadata language="eng" -metadata date="2017-05-13" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-8.6:measured_LRA=2:measured_TP=0.7:measured_thresh=-18.7" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "1000 Doors.m4a"  
+ffmpeg -i "01 - 1000 Doors (Spooky's Jumpscare Mansion Song) [feat. Bobby Yarsulik & Crusher-P].mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone; Bobby Yarsulik; Crusher-P" -metadata title="1000 Doors" -metadata genre="Electronic | Pop" -metadata language="eng" -metadata date="2017-05-13" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-8.6:measured_LRA=2:measured_TP=0.7:measured_thresh=-18.7" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "1000 Doors.m4a"  
 move "1000 Doors.m4a" "[Singles] [Converted]" 
 
 ffmpeg -y -i "01 - Cut the Cord.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
