@@ -1,3 +1,5 @@
+:: https://www.amazon.com/dp/B071VPGFRZ (1000 Doors)
+:: https://www.amazon.com/dp/B01N17AY0V (Cut the Cord)
 :: https://www.amazon.com/dp/B09TY7NMVL (Hit The Snooze)
 :: https://www.amazon.com/dp/B086R97Y1Q (I Can't Fix You)
 :: https://www.amazon.com/dp/B08DWG65QS (Love I Need)
@@ -6,6 +8,14 @@
 
 mkdir "[Singles] [Converted]" 
 chcp 65001 
+
+ffmpeg -y -i "01 - 1000 Doors (Spooky's Jumpscare Mansion Song) [feat. Bobby Yarsulik & Crusher-P].mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
+ffmpeg -i "01 - 1000 Doors (Spooky's Jumpscare Mansion Song) [feat. Bobby Yarsulik & Crusher-P].mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="1000 Doors" -metadata genre="Electronic | Pop" -metadata language="eng" -metadata date="2017-05-13" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-8.6:measured_LRA=2:measured_TP=0.7:measured_thresh=-18.7" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "1000 Doors.m4a"  
+move "1000 Doors.m4a" "[Singles] [Converted]" 
+
+ffmpeg -y -i "01 - Cut the Cord.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
+ffmpeg -i "01 - Cut the Cord.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Cut the Cord" -metadata genre="Electronic | Pop" -metadata language="eng" -metadata date="2017-02-01" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-5.9:measured_LRA=10.3:measured_TP=0.9:measured_thresh=-16.5" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Cut the Cord.m4a"  
+move "Cut the Cord.m4a" "[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Hit The Snooze [Explicit].mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
 ffmpeg -i "01 - Hit The Snooze [Explicit].mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata title="Hit the Snooze" -metadata genre="Electronic | Pop" -metadata language="eng" -metadata date="2022-03-11" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-5.3:measured_LRA=3.2:measured_TP=1.2:measured_thresh=-15.3" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Hit the Snooze.m4a"  
