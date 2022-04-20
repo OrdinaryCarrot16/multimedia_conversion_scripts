@@ -1,6 +1,7 @@
 # FFmpeg Conversion Scripts
 A collection of handmade batch scripts that will automatically encode music and videos, using FFmpeg (along with (depending on the circumstances) MakeMKV, MKVToolNix, and tsMuxeR).
 
+# Plex support seems broken right now, not sure why. It seems to be working good in Kodi though. :/
 
 ## **TO DO:**
 
