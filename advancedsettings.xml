@@ -4,7 +4,7 @@
     <musiclibrary>
     	<itemseparator> | </itemseparator>
 	<artistseparators>
-		<separator>; </separator>
+		<separator> / </separator>
 	</artistseparators>
     </musiclibrary>
 </advancedsettings>
