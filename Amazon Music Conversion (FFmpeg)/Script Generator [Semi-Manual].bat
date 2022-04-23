@@ -4,7 +4,7 @@ setlocal enableDelayedExpansion
 :initialize
 set /A TRACK_COUNTER=0
 
-set /P artist=Artist/Band Name (currently need to adjust generated script if multiple artists in album): 
+set /P artist=Artist/Band Name (currently need to adjust generated script if multiple artists in album (seperate with '; '): 
 set /P language=Language (Use 'eng' instead of 'English' for example, and other ISO 639-2 codes): 
 set /P album-or-single=Is this an Album or Singles (0 for album, 1 for singles): 
 
@@ -16,7 +16,7 @@ if %album-or-single% EQU 0 goto album (
 set /P album=Album Name: 
 set /P track_amount=How many Tracks are in this Album: 
 set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3/M4A or JPG/PNG): 
-set /P genre=Genre of Album (currently need to adjust generated script if multiple genres in album): 
+set /P genre=Genre of Album (seperate with ' | ' if multiple genres): 
 set /P date=Enter the release date of the album (in YYYY-MM-DD format, or type nothing if unknown): 
 	
 echo mkdir "%album% [Converted]" >"%album% [Generated].bat"
@@ -44,7 +44,7 @@ echo.>>"[Singles] [Generated].bat"
 
 DIR /on /b *.mp3
 
-for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3 or JPG/PNG): & echo ffmpeg -y -i "!cover-art!" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png >>"[Singles] [Generated].bat" & set /P title=Song Name: & set /P genre=Genre: & set /P date=Enter the release date of the single (in YYYY-MM-DD format, or type nothing if unknown): & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata title="!title!" -metadata genre="!genre!" -metadata language="%language%" -metadata date="!date!" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"[Singles] [Generated].bat" & echo move "!title!.m4a" "[Singles] [Converted]" >>"[Singles] [Generated].bat" & echo.>>"[Singles] [Generated].bat"
+for /L %%t in (1,1,%track_amount%) do set /A TRACK_COUNTER+=1 & set /P filename=Song File Name (!TRACK_COUNTER!/%track_amount%): & set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3 or JPG/PNG): & echo ffmpeg -y -i "!cover-art!" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png >>"[Singles] [Generated].bat" & set /P title=Song Name: & set /P genre=Genre: & set /P date=Enter the release date of the single (in YYYY-MM-DD format, or type nothing if unknown): & echo ffmpeg -i "!filename!" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="%artist%" -metadata album_artist="%artist%" -metadata album="!title! [Single]" -metadata title="!title!" -metadata genre="!genre!" -metadata language="%language%" -metadata date="!date!" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "!title!.m4a" >>"[Singles] [Generated].bat" & echo move "!title!.m4a" "[Singles] [Converted]" >>"[Singles] [Generated].bat" & echo.>>"[Singles] [Generated].bat"
 
 echo pause >>"[Singles] [Generated].bat"
 echo.>>"[Singles] [Generated].bat"
