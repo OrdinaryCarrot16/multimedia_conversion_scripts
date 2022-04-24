@@ -1,7 +1,7 @@
 mkdir "DELTARUNE (Chapter 1) (Sound-Track) [Converted]" 
 chcp 65001 
 
-ffmpeg -i "cover.png" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png 
+ffmpeg -i "cover.png" -an -vf scale=512:512 -sws_flags neighbor cover_TMP.png 
 
 ffmpeg -i "Toby Fox - DELTARUNE Chapter 1 OST - 01 ANOTHER HIM.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="Toby Fox" -metadata album_artist="Toby Fox" -metadata album="DELTARUNE (Chapter 1) (Sound-Track)" -metadata title="Another Him" -metadata track="1/40" -metadata genre="Sound-Track" -metadata language="" -metadata date="2018-11-01" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-15.5:measured_LRA=4.6:measured_TP=0:measured_thresh=-25.5" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Another Him.m4a"  
 move "Another Him.m4a" "DELTARUNE (Chapter 1) (Sound-Track) [Converted]"  
