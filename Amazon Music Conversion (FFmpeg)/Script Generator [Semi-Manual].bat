@@ -4,8 +4,8 @@ setlocal enableDelayedExpansion
 :initialize
 set /A TRACK_COUNTER=0
 
-set /P artist=Artist/Band Name (currently need to adjust generated script if multiple artists in album (seperate with '; '): 
-set /P language=Language (Use 'eng' instead of 'English' for example, and other ISO 639-2 codes): 
+set /P artist=Artist/Band Name: 
+set /P language=Language (use ISO 639-2 codes): 
 set /P album-or-single=Is this an Album or Singles (0 for album, 1 for singles): 
 
 if %album-or-single% EQU 0 goto album (
@@ -16,7 +16,7 @@ if %album-or-single% EQU 0 goto album (
 set /P album=Album Name: 
 set /P track_amount=How many Tracks are in this Album: 
 set /P cover-art=Select the Audio/Image file with the Cover Art (ex. MP3/M4A or JPG/PNG): 
-set /P genre=Genre of Album (seperate with ' | ' if multiple genres): 
+set /P genre=Genre of Album: 
 set /P date=Enter the release date of the album (in YYYY-MM-DD format, or type nothing if unknown): 
 	
 echo mkdir "%album% [Converted]" >"%album% [Generated].bat"
