@@ -9,7 +9,7 @@ mkdir "[Singles] [Converted]"
 chcp 65001 
 
 ffmpeg -y -i "01 - Every Door.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
-ffmpeg -i "01 - Every Door.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="CG5; Caleb Hyles" -metadata album="Every Door [Single]" -metadata title="Every Door" -metadata genre="Pop" -metadata language="eng" -metadata date="2018-09-15" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-7.5:measured_LRA=9.4:measured_TP=1.3:measured_thresh=-17.8" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Every Door.m4a"  
+ffmpeg -i "01 - Every Door.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="CG5 / Caleb Hyles" -metadata album="Every Door [Single]" -metadata title="Every Door" -metadata genre="Pop" -metadata language="eng" -metadata date="2018-09-15" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-7.5:measured_LRA=9.4:measured_TP=1.3:measured_thresh=-17.8" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Every Door.m4a"  
 move "Every Door.m4a" "[Singles] [Converted]"  
 
 ffmpeg -y -i "01 - I See a Dreamer.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
@@ -17,7 +17,7 @@ ffmpeg -i "01 - I See a Dreamer.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 
 move "I See a Dreamer.m4a" "[Singles] [Converted]"  
 
 ffmpeg -y -i "01 - Labyrinth.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
-ffmpeg -i "01 - Labyrinth.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="CG5; Caleb Hyles; Chi-Chi; DA Games; Dawko; Fandroid" -metadata album="Labyrinth [Single]" -metadata title="Labyrinth" -metadata genre="Pop" -metadata language="eng" -metadata date="2017-12-16" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-4.9:measured_LRA=6.4:measured_TP=3.5:measured_thresh=-15.2" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Labyrinth.m4a"  
+ffmpeg -i "01 - Labyrinth.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="CG5 / Caleb Hyles / Chi-Chi / DA Games / Dawko / Fandroid" -metadata album="Labyrinth [Single]" -metadata title="Labyrinth" -metadata genre="Pop" -metadata language="eng" -metadata date="2017-12-16" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-4.9:measured_LRA=6.4:measured_TP=3.5:measured_thresh=-15.2" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Labyrinth.m4a"  
 move "Labyrinth.m4a" "[Singles] [Converted]"  
 
 ffmpeg -y -i "01 - Lyin' 2 Me.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
@@ -25,7 +25,7 @@ ffmpeg -i "01 - Lyin' 2 Me.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 
 move "Lying to Me.m4a" "[Singles] [Converted]"  
 
 ffmpeg -y -i "01 - Make Your Move.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
-ffmpeg -i "01 - Make Your Move.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="CG5; Dawko" -metadata album="Make Your Move [Single]" -metadata title="Make Your Move" -metadata genre="Pop" -metadata language="eng" -metadata date="2018-11-23" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-7.1:measured_LRA=7.4:measured_TP=2.4:measured_thresh=-17.4" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Make Your Move.m4a"  
+ffmpeg -i "01 - Make Your Move.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="CG5 / Dawko" -metadata album="Make Your Move [Single]" -metadata title="Make Your Move" -metadata genre="Pop" -metadata language="eng" -metadata date="2018-11-23" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:TP=-2:LRA=8:linear=true:measured_I=-7.1:measured_LRA=7.4:measured_TP=2.4:measured_thresh=-17.4" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Make Your Move.m4a"  
 move "Make Your Move.m4a" "[Singles] [Converted]"  
 
 ffmpeg -y -i "01 - Show Yourself.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png  
