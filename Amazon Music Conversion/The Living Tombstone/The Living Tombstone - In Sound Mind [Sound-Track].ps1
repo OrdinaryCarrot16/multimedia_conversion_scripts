@@ -1,3 +1,10 @@
+# https://www.amazon.com/dp/B09H8PD7CW (In Sound Mind) (Sound-Track)
+
+
+# Original (Total) File Size: 234 MB
+
+# Transcoded (Total) File Size: 177 MB
+
 New-Item -Path "The Living Tombstone/In Sound Mind [Sound-Track] [Converted]" -ItemType Directory
 
 
