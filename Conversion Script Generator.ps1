@@ -1,3 +1,5 @@
+# To-Do:	1. Add support for media other than music.
+
 # Initialize
 [int]$TRACK_COUNTER=0
 
