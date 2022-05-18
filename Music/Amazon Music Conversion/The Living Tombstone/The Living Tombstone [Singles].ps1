@@ -4,6 +4,7 @@
 # https://www.amazon.com/dp/B076J68YH6 (ECHO) (Remix)
 # https://www.amazon.com/dp/B09TY7NMVL (Hit The Snooze)
 # https://www.amazon.com/dp/B086R97Y1Q (I Can't Fix You)
+# https://www.amazon.com/dp/B08DWG65QS (Love I Need)
 # https://www.amazon.com/dp/B09R3T568F (Temporary Love)
 
 New-Item -Path "The Living Tombstone/[Singles] [Converted]" -ItemType Directory
@@ -32,6 +33,10 @@ Move-Item -Path "Hit The Snooze.m4a" -Destination "The Living Tombstone/[Singles
 ffmpeg -y -i "01 - I Can't Fix You (feat. Crusher-P).mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png
 ffmpeg -i "01 - I Can't Fix You (feat. Crusher-P).mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone / Crusher-P" -metadata album_artist="The Living Tombstone" -metadata album="I Can't Fix You [Single]" -metadata date="2016-12-10" -metadata genre="Dub-Step" -metadata title="I Can't Fix You" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:LRA=8:TP=-2:linear=true:measured_I=-7:measured_LRA=7.9:measured_TP=0.7:measured_thresh=-17.3" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "I Can't Fix You.m4a"
 Move-Item -Path "I Can't Fix You.m4a" -Destination "The Living Tombstone/[Singles] [Converted]"
+
+ffmpeg -y -i "01 - Love I Need.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png
+ffmpeg -i "01 - Love I Need.mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone" -metadata album="Love I Need [Single]" -metadata date="2020-08-06" -metadata genre="Electronic / Pop" -metadata title="Love I Need" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:LRA=8:TP=-2:linear=true:measured_I=-7.5:measured_LRA=2.5:measured_TP=0.8:measured_thresh=-17.7" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Love I Need.m4a"
+Move-Item -Path "Love I Need.m4a" -Destination "The Living Tombstone/[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Temporary Love (feat. CG5).mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png
 ffmpeg -i "01 - Temporary Love (feat. CG5).mp3" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone / CG5" -metadata album="Temporary Love [Single]" -metadata date="2022-01-28" -metadata genre="Electronic | Pop" -metadata title="Temporary Love" -c:1 png -disposition:1 attached_pic -af "loudnorm=I=-18:LRA=8:TP=-2:linear=true:measured_I=-7.8:measured_LRA=7.4:measured_TP=1:measured_thresh=-17.9" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart "Temporary Love.m4a"
