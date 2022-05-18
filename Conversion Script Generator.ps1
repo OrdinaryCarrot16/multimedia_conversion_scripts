@@ -42,7 +42,7 @@ if ($album_or_single -eq 1) {
 			$songname=Read-Host -Prompt "Name of the Song"
 			$genre=Read-Host -Prompt "Genre of the Song"
 			$date=Read-Host -Prompt "Enter the release date of the single (in YYYY-MM-DD format, or type nothing if unknown)"
-				Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "ffmpeg -i `"$filename`" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$songname [Single]`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$songname`" -c:1 png -disposition:1 attached_pic -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart `"$songname.m4a`""
+				Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "ffmpeg -i `"$filename`" -i cover_TMP.png -map_metadata -1 -map 0:0 -map 1:0 -id3v2_version 3 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$songname [Single]`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$songname`" -c:1 png -disposition:1 attached_pic -af `"silenceremove=start_periods=1:stop_periods=1:start_threshold=-60dB:stop_threshold=-60dB,apad=pad_dur=5`" -c:a aac -aac_coder fast -ar 44100 -b:a 160k -movflags +faststart `"$songname.m4a`""
 				Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "Move-Item -Path `"$songname.m4a`" -Destination `"$artist/[Singles] [Converted]`"`n"
 		} until ($TRACK_COUNTER -eq $track_amount)
 	Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "`nRemove-Item `"cover_TMP.png`"`n`n"
