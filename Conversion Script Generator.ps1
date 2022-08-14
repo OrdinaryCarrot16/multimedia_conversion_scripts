@@ -16,7 +16,7 @@ if ($album_or_single -eq 0) {
 		New-Item "$artist - $album [Generated].ps1" -ItemType File -Force
 		Add-Content -LiteralPath "$artist - $album [Generated].ps1" -Value "New-Item -Path `"$artist/$album [Converted]`" -ItemType Directory`n`n"
 		Add-Content -LiteralPath "$artist - $album [Generated].ps1" -Value "ffmpeg -i `"$cover_art`" -an -vf scale=512:512 -sws_flags bicubic thumb.png"
-		Add-Content -LiteralPath "$artist - $album [Generated].ps1" -Value "Move-Item -Path `"thumb.png`" -Destination `"$artist/$album [Converted]/thumb.png`"`n`n"
+		Add-Content -LiteralPath "$artist - $album [Generated].ps1" -Value "Move-Item -Path `"thumb.png`" -Destination `"$artist/$album [Converted]`"`n`n"
 		Get-ChildItem "*.*"
 			do {
 				$TRACK_COUNTER+=1
