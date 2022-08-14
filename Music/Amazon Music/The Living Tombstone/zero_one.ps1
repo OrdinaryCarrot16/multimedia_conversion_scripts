@@ -1,8 +1,8 @@
 New-Item -Path "The Living Tombstone/zero_one [Converted]" -ItemType Directory
 
 
-ffmpeg -i "01 - What I Want.mp3" -an -vf scale=512:512 -sws_flags bicubic cover_TMP.png
-Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/zero_one [Converted]/cover.png"
+ffmpeg -i "01 - What I Want.mp3" -an -vf scale=512:512 -sws_flags bicubic thumb.png
+Move-Item -Path "thumb.png" -Destination "The Living Tombstone/zero_one [Converted]"
 
 
 ffmpeg -i "01 - What I Want.mp3" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone" -metadata album="zero_one" -metadata date="2020-09-04" -metadata genre="Electronic" -metadata track="1/10" -metadata title="What I Want" -c:a libvorbis -q 5 -minrate 128k "What I Want.ogg"
