@@ -1,3 +1,5 @@
+# https://www.amazon.com/dp/B08CRZFJVK
+
 New-Item -Path "The Living Tombstone/zero_one [Converted]" -ItemType Directory
 
 
