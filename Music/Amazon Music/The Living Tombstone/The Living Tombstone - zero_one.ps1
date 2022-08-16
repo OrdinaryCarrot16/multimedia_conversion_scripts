@@ -37,4 +37,5 @@ Move-Item -Path "Fly Home.ogg" -Destination "The Living Tombstone/zero_one [Conv
 ffmpeg -i "10 - Chosen.mp3" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone" -metadata album="zero_one" -metadata date="2020-09-04" -metadata genre="Electronic" -metadata track="10/10" -metadata title="Chosen" -c:a libvorbis -q 5 -minrate 128k "Chosen.ogg"
 Move-Item -Path "Chosen.ogg" -Destination "The Living Tombstone/zero_one [Converted]"
 
+
 pause
