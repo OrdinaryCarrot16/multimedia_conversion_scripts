@@ -1,3 +1,12 @@
+# https://www.amazon.com/dp/B071VPGFRZ (1000 Doors)
+# https://www.amazon.com/dp/B076HM6C8V (Beep Beep I'm a Sheep) (Remix)
+# https://www.amazon.com/dp/B01N17AY0V (Cut The Cord)
+# https://www.amazon.com/dp/B076J68YH6 (Echo) (Remix)
+# https://www.amazon.com/dp/B09TY7NMVL (Hit The Snooze)
+# https://www.amazon.com/dp/B086R97Y1Q (I Can't Fix You)
+# https://www.amazon.com/dp/B08DWG65QS (Love I Need)
+# https://www.amazon.com/dp/B09R3T568F (Temporary Love)
+
 New-Item -Path "The Living Tombstone/[Singles] [Converted]" -ItemType Directory
 
 
