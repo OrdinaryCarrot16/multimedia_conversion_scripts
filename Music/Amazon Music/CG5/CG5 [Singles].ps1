@@ -1,3 +1,12 @@
+# https://www.amazon.com/dp/B08X1KQTZW (Every Door)
+# https://www.amazon.com/dp/B08X1JQG4Q (Father's Day)
+# https://www.amazon.com/dp/B06XWFCTBH (Fish Out of Water)
+# https://www.amazon.com/dp/B08X1X4FFJ (Good to Be Alive)
+# https://www.amazon.com/dp/B08X1R3GQD (Labyrinth)
+# https://www.amazon.com/dp/B08X1YXTV8 (Lyin' 2 Me)
+# https://www.amazon.com/dp/B08X1FT5TP (Make Your Move)
+# https://www.amazon.com/dp/B08X1X664N (Show Yourself)
+
 New-Item -Path "CG5/[Singles] [Converted]" -ItemType Directory
 
 
