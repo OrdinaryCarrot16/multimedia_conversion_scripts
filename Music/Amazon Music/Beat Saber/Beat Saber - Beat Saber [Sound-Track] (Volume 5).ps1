@@ -25,4 +25,5 @@ Move-Item -Path "Curtains (All Night Long).ogg" -Destination "Beat Saber/Beat Sa
 ffmpeg -i "06 - `$1.78.mp3" -map_metadata -1 -map 0:0 -metadata artist="Schwank" -metadata album_artist="Beat Saber" -metadata album="Beat Saber [Sound-Track] (Volume 5)" -metadata date="2022-03-08" -metadata genre="Sound-Track" -metadata track="6/6" -metadata title="$1.78" -c:a libvorbis -q 5 -minrate 128k "1.78.ogg"
 Move-Item -Path "1.78.ogg" -Destination "Beat Saber/Beat Saber [Sound-Track] (Volume 5) [Converted]"
 
+
 pause
