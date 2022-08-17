@@ -11,7 +11,7 @@ New-Item -Path "CG5/[Singles] [Converted]" -ItemType Directory
 
 
 ffmpeg -y -i "01 - Every Door.mp3" -an -vf scale=512:512 -sws_flags bicubic "Every Door (thumb).png"
-ffmpeg -i "01 - Every Door.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 | Caleb Hyles" -metadata album_artist="CG5" -metadata album="Every Door [Single]" -metadata date="2018-09-15" -metadata genre="Pop" -metadata title="Every Door" -c:a libvorbis -q 5 -minrate 128k "Every Door.ogg"
+ffmpeg -i "01 - Every Door.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 / Caleb Hyles" -metadata album_artist="CG5" -metadata album="Every Door [Single]" -metadata date="2018-09-15" -metadata genre="Pop" -metadata title="Every Door" -c:a libvorbis -q 5 -minrate 128k "Every Door.ogg"
 Move-Item -Path "Every Door.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Every Door (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
@@ -31,7 +31,7 @@ Move-Item -Path "Good to Be Alive.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Good to Be Alive (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Labyrinth.mp3" -an -vf scale=512:512 -sws_flags bicubic "Labyrinth (thumb).png"
-ffmpeg -i "01 - Labyrinth.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 | Caleb Hyles | Chi-Chi | DA-Games | Dawko | Fandroid Music" -metadata album_artist="CG5" -metadata album="Labyrinth [Single]" -metadata date="2017-12-16" -metadata genre="Pop" -metadata title="Labyrinth" -c:a libvorbis -q 5 -minrate 128k "Labyrinth.ogg"
+ffmpeg -i "01 - Labyrinth.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 / Caleb Hyles / Chi-Chi / DA-Games / Dawko / Fandroid Music" -metadata album_artist="CG5" -metadata album="Labyrinth [Single]" -metadata date="2017-12-16" -metadata genre="Pop" -metadata title="Labyrinth" -c:a libvorbis -q 5 -minrate 128k "Labyrinth.ogg"
 Move-Item -Path "Labyrinth.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Labyrinth (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
@@ -41,7 +41,7 @@ Move-Item -Path "Lying To Me.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Lying To Me (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Make Your Move.mp3" -an -vf scale=512:512 -sws_flags bicubic "Make Your Move (thumb).png"
-ffmpeg -i "01 - Make Your Move.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 | Dawko" -metadata album_artist="CG5" -metadata album="Make Your Move [Single]" -metadata date="2018-11-23" -metadata genre="Pop" -metadata title="Make Your Move" -c:a libvorbis -q 5 -minrate 128k "Make Your Move.ogg"
+ffmpeg -i "01 - Make Your Move.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 / Dawko" -metadata album_artist="CG5" -metadata album="Make Your Move [Single]" -metadata date="2018-11-23" -metadata genre="Pop" -metadata title="Make Your Move" -c:a libvorbis -q 5 -minrate 128k "Make Your Move.ogg"
 Move-Item -Path "Make Your Move.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Make Your Move (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
