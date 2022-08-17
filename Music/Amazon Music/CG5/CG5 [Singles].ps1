@@ -36,7 +36,7 @@ Move-Item -Path "Labyrinth.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Labyrinth (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Lyin' 2 Me.mp3" -an -vf scale=512:512 -sws_flags bicubic "Lying To Me (thumb).png"
-ffmpeg -i "01 - Lyin' 2 Me.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5" -metadata album_artist="CG5" -metadata album="Lying To Me [Single]" -metadata date="2020-11-18" -metadata genre="Pop" -metadata title="Lyin`' 2 Me" -c:a libvorbis -q 5 -minrate 128k "Lying To Me.ogg"
+ffmpeg -i "01 - Lyin' 2 Me.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5" -metadata album_artist="CG5" -metadata album="Lyin`' 2 Me [Single]" -metadata date="2020-11-18" -metadata genre="Pop" -metadata title="Lyin`' 2 Me" -c:a libvorbis -q 5 -minrate 128k "Lying To Me.ogg"
 Move-Item -Path "Lying To Me.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Lying To Me (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
