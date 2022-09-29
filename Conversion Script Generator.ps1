@@ -65,7 +65,7 @@ if ($media_type -eq "dvd") {
 		Get-ChildItem "*.*"
 		$filename=Read-Host -Prompt "`nMovie File Name"
 		New-Item "$moviename [Generated].ps1" -ItemType File -Force
-		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$moviename`" -c:v libx264 -preset slow -profile:v main -crf 20 -c:a aac -b:a 160k `"$moviename.mp4`""
+		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$moviename`" -c:v libx264 -preset slow -profile:v main -crf 18 -c:a aac -ac 2 -b:a 192k `"$moviename.mp4`""
 		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "Move-Item -Path `"$moviename.mp4`" -Destination `"$publisher/$moviename [Converted]`""
 }}
 
