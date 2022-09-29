@@ -1,7 +1,7 @@
 # Initialize
 [int]$TRACK_COUNTER=0
 
-$media_type=Read-Host -Prompt "Are you converting 'music', a 'dvd' (provided by MakeMKV), a 'blu-ray' (provided by MakeMKV), 'youtube' videos, or something 'else'"
+$media_type=Read-Host -Prompt "Are you converting 'music', a 'dvd' (provided by MakeMKV), a 'blu-ray' (provided by MakeMKV), 'web' videos (such as YouTube), or something 'else'"
 
 #Match 'media_type' for proper conversion
 
@@ -74,7 +74,7 @@ if ($media_type -eq "blu-ray") {
  
 }
 
-if ($media_type -eq "youtube") {
+if ($media_type -eq "web") {
 	$artist=Read-Host -Prompt "Name of You-Tube Channel"
 	$series_or_videos=Read-Host -Prompt "Is this a Series, or a Singular Video (0 for series, 1 for singular video)"
 }
