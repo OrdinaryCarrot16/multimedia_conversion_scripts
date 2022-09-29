@@ -1,10 +1,12 @@
-# To-Do:	1. Add support for media other than music.
-
 # Initialize
 [int]$TRACK_COUNTER=0
 
-$artist=Read-Host -Prompt "Name of Artist/Band"
-$album_or_single=Read-Host -Prompt "Is this an Album/Sound-Track, or a collection of Singles (0 for album/sound-track, 1 for single's)" 
+$media_type=Read-Host -Prompt "Are you converting 'music', or a 'dvd' (provided by MakeMKV)"
+
+if ($media_type -eq "music") {
+	$artist=Read-Host -Prompt "Name of Artist/Band"
+	$album_or_single=Read-Host -Prompt "Is this an Album/Sound-Track, or a collection of Singles (0 for album/sound-track, 1 for single's)" 
+}
 
 # Album
 if ($album_or_single -eq 0) {
@@ -47,6 +49,11 @@ if ($album_or_single -eq 1) {
 				Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "Move-Item -Path `"$songname (thumb).png`" -Destination `"$artist/[Singles] [Converted]`"`n"
 		} until ($TRACK_COUNTER -eq $track_amount)
 	Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "`npause"
+}
+
+
+if ($media_type -eq "dvd") {
+ 
 }
 
 pause
