@@ -1,15 +1,15 @@
 # Initialize
 [int]$TRACK_COUNTER=0
 
-$media_type=Read-Host -Prompt "Are you converting 'music', or a 'dvd' (provided by MakeMKV)"
+$media_type=Read-Host -Prompt "Are you converting 'music', a 'dvd' (provided by MakeMKV), a 'blu-ray' (provided by MakeMKV), 'youtube' videos, or something 'else'"
+
+#Match 'media_type' for proper conversion
 
 if ($media_type -eq "music") {
 	$artist=Read-Host -Prompt "Name of Artist/Band"
 	$album_or_single=Read-Host -Prompt "Is this an Album/Sound-Track, or a collection of Singles (0 for album/sound-track, 1 for single's)" 
-}
-
-# Album
-if ($album_or_single -eq 0) {
+	# Album
+	if ($album_or_single -eq 0) {
 	$album=Read-Host -Prompt "Name of the Album"
 	$date=Read-Host -Prompt "Enter the release date of the album (in YYYY-MM-DD format, or type nothing if unknown)"
 	$genre=Read-Host -Prompt "Genre of the Album" 
@@ -28,10 +28,9 @@ if ($album_or_single -eq 0) {
 					Add-Content -LiteralPath "$artist - $album [Generated].ps1" -Value "Move-Item -Path `"$songname.ogg`" -Destination `"$artist/$album [Converted]`"`n"
 			} until ($TRACK_COUNTER -eq $track_amount)
 	Add-Content -LiteralPath "$artist - $album [Generated].ps1" -Value "pause"
-}
-
-# Singles
-if ($album_or_single -eq 1) {
+	}
+	# Singles
+	if ($album_or_single -eq 1) {
 	[int]$track_amount=Read-Host -Prompt "How many seperate Single`'s are there"
 		New-Item "$artist [Singles] [Generated].ps1" -ItemType File -Force
 		Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "New-Item -Path `"$artist/[Singles] [Converted]`" -ItemType Directory`n`n"
@@ -49,10 +48,37 @@ if ($album_or_single -eq 1) {
 				Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "Move-Item -Path `"$songname (thumb).png`" -Destination `"$artist/[Singles] [Converted]`"`n"
 		} until ($TRACK_COUNTER -eq $track_amount)
 	Add-Content -LiteralPath "$artist [Singles] [Generated].ps1" -Value "`npause"
-}
-
+}}
 
 if ($media_type -eq "dvd") {
+	$publisher=Read-Host -Prompt "Name of Publisher"
+	$show_or_movie=Read-Host -Prompt "Is this a Series, or a Movie/Film (0 for show, 1 for movie)"
+	# Series
+	if ($show_or_movie -eq 0) {
+		Read-Host "You are winner"
+	}
+	# Movie
+	if ($show_or_movie -eq 1) {
+		$moviename=Read-Host -Prompt "Name of the Movie"
+		$date=Read-Host -Prompt "Enter the release date of the movie (in YYYY-MM-DD format, or type nothing if unknown)"
+		$genre=Read-Host -Prompt "Genre of the Movie"
+		Get-ChildItem "*.*"
+		$filename=Read-Host -Prompt "`nMovie File Name"
+		New-Item "$moviename [Generated].ps1" -ItemType File -Force
+		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$moviename`" -c:v libx264 -preset slow -profile:v main -crf 20 -c:a aac -b:a 160k `"$moviename.mp4`""
+		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "Move-Item -Path `"$moviename.mp4`" -Destination `"$publisher/$moviename [Converted]`""
+}}
+
+if ($media_type -eq "blu-ray") {
+ 
+}
+
+if ($media_type -eq "youtube") {
+	$artist=Read-Host -Prompt "Name of You-Tube Channel"
+	$series_or_videos=Read-Host -Prompt "Is this a Series, or a Singular Video (0 for series, 1 for singular video)"
+}
+
+if ($media_type -eq "else") {
  
 }
 
