@@ -55,7 +55,21 @@ if ($media_type -eq "dvd") {
 	$show_or_movie=Read-Host -Prompt "Is this a Series, or a Movie/Film (0 for show, 1 for movie)"
 	# Series
 	if ($show_or_movie -eq 0) {
-		Read-Host "You are winner"
+		$seriesname=Read-Host -Prompt "Name of the Series"
+		$snum=Read-Host -Prompt "Which season number is this"
+		[int]$episode_amount=Read-Host -Prompt "How many seperate Episode`'s are there"
+		$genre=Read-Host -Prompt "Genre of the Show"
+		New-Item "$seriesname [Generated].ps1" -ItemType File -Force
+		Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "New-Item -Path `"$publisher/$seriesname [Converted]`" -ItemType Directory`n`n"
+		Get-ChildItem "*.*"
+			do {
+				$TRACK_COUNTER+=1
+				$filename=Read-Host -Prompt "`nVideo File Name ($TRACK_COUNTER/$episode_amount)"
+				$episodename=Read-Host -Prompt "Enter the name of the episode (or type nothing if none)"
+				$date=Read-Host -Prompt "Enter the release date of the episode or season (in YYYY-MM-DD format, or type nothing if unknown)"
+				Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "`nffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata show=`"$seriesname`" -metadata title=`"$episodename`" -vf `"format=yuv420p`" -c:v libx264 -preset slow -profile:v main -crf 18 -c:a aac -ac 2 -b:a 192k `"$seriesname (S$snum`E$TRACK_COUNTER) - $episodename.mp4`""
+				Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "Move-Item -Path `"$seriesname (S$snum`E$TRACK_COUNTER) - $episodename.mp4`" -Destination `"$publisher/$seriesname [Converted]`""
+			} until ($TRACK_COUNTER -eq $episode_amount)
 	}
 	# Movie
 	if ($show_or_movie -eq 1) {
