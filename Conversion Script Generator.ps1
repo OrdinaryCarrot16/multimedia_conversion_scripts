@@ -60,7 +60,7 @@ if ($media_type -eq "dvd") {
 		[int]$episode_amount=Read-Host -Prompt "How many seperate Episode`'s are there"
 		$genre=Read-Host -Prompt "Genre of the Show"
 		New-Item "$seriesname [Generated].ps1" -ItemType File -Force
-		Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "New-Item -Path `"$publisher/$seriesname [Converted]`" -ItemType Directory`n`n"
+		Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "New-Item -Path `"$publisher/$seriesname [Converted]`" -ItemType Directory`n"
 		Get-ChildItem "*.*"
 			do {
 				$TRACK_COUNTER+=1
