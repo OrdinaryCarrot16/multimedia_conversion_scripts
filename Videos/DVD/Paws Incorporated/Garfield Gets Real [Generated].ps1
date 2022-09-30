@@ -1,3 +1,5 @@
+# https://www.amazon.com/Garfield-Gets-Real-Frank-Welker/dp/B000UZDO5S
+
 New-Item -Path "Paws Incorporated/Garfield Gets Real [Converted]"
 
 ffmpeg -i "A1_t00.mkv" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist="Paws Inc." -metadata date="2007-11-20" -metadata genre="Comedy" -metadata title="Garfield Gets Real" -vf "format=yuv420p" -c:v libx264 -preset slow -profile:v main -tune film -crf 18 -r 24 -c:a aac -ac 2 -b:a 192k "Garfield Gets Real.mp4"
