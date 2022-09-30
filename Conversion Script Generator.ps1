@@ -67,8 +67,8 @@ if ($media_type -eq "dvd") {
 				$filename=Read-Host -Prompt "`nVideo File Name ($TRACK_COUNTER/$episode_amount)"
 				$episodename=Read-Host -Prompt "Enter the name of the episode (or type nothing if none)"
 				$date=Read-Host -Prompt "Enter the release date of the episode or season (in YYYY-MM-DD format, or type nothing if unknown)"
-				Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "`nffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata show=`"$seriesname`" -metadata title=`"$episodename`" -vf `"format=yuv420p`" -c:v libx264 -preset slow -profile:v main -crf 18 -c:a aac -ac 2 -b:a 192k `"$seriesname (S$snum`E$TRACK_COUNTER) - $episodename.mp4`""
-				Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "Move-Item -Path `"$seriesname (S$snum`E$TRACK_COUNTER) - $episodename.mp4`" -Destination `"$publisher/$seriesname [Converted]`""
+				Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "`nffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata show=`"$seriesname`" -metadata title=`"$episodename`" -vf `"format=yuv420p`" -c:v libx264 -preset slow -profile:v main -crf 18 -c:a aac -ac 2 -b:a 192k `"$seriesname (S$snum`E$TRACK_COUNTER) - $episodename.mkv`""
+				Add-Content -LiteralPath "$seriesname [Generated].ps1" -Value "Move-Item -Path `"$seriesname (S$snum`E$TRACK_COUNTER) - $episodename.mkv`" -Destination `"$publisher/$seriesname [Converted]`""
 			} until ($TRACK_COUNTER -eq $episode_amount)
 	}
 	# Movie
@@ -80,8 +80,8 @@ if ($media_type -eq "dvd") {
 		$filename=Read-Host -Prompt "`nMovie File Name"
 		New-Item "$moviename [Generated].ps1" -ItemType File -Force
 		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "New-Item -Path `"$publisher/$moviename [Converted]`" -ItemType Directory`n`n"
-		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$moviename`" -vf `"format=yuv420p`" -c:v libx264 -preset slow -profile:v main -crf 18 -c:a aac -ac 2 -b:a 192k `"$moviename.mp4`""
-		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "Move-Item -Path `"$moviename.mp4`" -Destination `"$publisher/$moviename [Converted]`""
+		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map_chapters -1 -map 0:0 -map 0:1 -metadata artist=`"$publisher`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$moviename`" -vf `"format=yuv420p`" -c:v libx264 -preset slow -profile:v main -crf 18 -c:a aac -ac 2 -b:a 192k `"$moviename.mkv`""
+		Add-Content -LiteralPath "$moviename [Generated].ps1" -Value "Move-Item -Path `"$moviename.mkv`" -Destination `"$publisher/$moviename [Converted]`""
 }}
 
 if ($media_type -eq "blu-ray") {
