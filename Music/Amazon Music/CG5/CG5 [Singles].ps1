@@ -2,6 +2,7 @@
 # https://www.amazon.com/dp/B08X1JQG4Q (Father's Day)
 # https://www.amazon.com/dp/B06XWFCTBH (Fish Out of Water)
 # https://www.amazon.com/dp/B08X1X4FFJ (Good to Be Alive)
+# https://www.amazon.com/dp/B08X1NVYLC (I See A Dreamer)
 # https://www.amazon.com/dp/B08X1R3GQD (Labyrinth)
 # https://www.amazon.com/dp/B08X1YXTV8 (Lyin' 2 Me)
 # https://www.amazon.com/dp/B08X1FT5TP (Make Your Move)
@@ -29,6 +30,11 @@ ffmpeg -y -i "01 - Good to Be Alive.mp3" -an -vf scale=512:512 -sws_flags bicubi
 ffmpeg -i "01 - Good to Be Alive.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5" -metadata album_artist="CG5" -metadata album="Good to Be Alive [Single]" -metadata date="2021-02-03" -metadata genre="Pop" -metadata title="Good to Be Alive" -c:a libvorbis -q 5 -minrate 128k "Good to Be Alive.ogg"
 Move-Item -Path "Good to Be Alive.ogg" -Destination "CG5/[Singles] [Converted]"
 Move-Item -Path "Good to Be Alive (thumb).png" -Destination "CG5/[Singles] [Converted]"
+
+ffmpeg -y -i "01 - I See a Dreamer.mp3" -an -vf scale=512:512 -sws_flags bicubic "I See A Dreamer (thumb).png"
+ffmpeg -i "01 - I See a Dreamer.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5" -metadata album_artist="CG5" -metadata album="I See A Dreamer [Single]" -metadata date="2021-01-13" -metadata genre="Pop" -metadata title="I See A Dreamer" -c:a libvorbis -q 5 -minrate 128k "I See A Dreamer.ogg"
+Move-Item -Path "I See A Dreamer.ogg" -Destination "CG5/[Singles] [Converted]"
+Move-Item -Path "I See A Dreamer (thumb).png" -Destination "CG5/[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Labyrinth.mp3" -an -vf scale=512:512 -sws_flags bicubic "Labyrinth (thumb).png"
 ffmpeg -i "01 - Labyrinth.mp3" -map_metadata -1 -map 0:0 -metadata artist="CG5 / Caleb Hyles / Chi-Chi / DA-Games / Dawko / Fandroid Music" -metadata album_artist="CG5" -metadata album="Labyrinth [Single]" -metadata date="2017-12-16" -metadata genre="Pop" -metadata title="Labyrinth" -c:a libvorbis -q 5 -minrate 128k "Labyrinth.ogg"
