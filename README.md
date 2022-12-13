@@ -1,4 +1,10 @@
-# FFmpeg Conversion Scripts
-A collection of handmade & generated powershell/batch scripts that will automatically encode music and videos, using the awesome FFmpeg.
+# Multimedia Conversion Scripts
+A collection of generated + tweaked powershell/batch scripts that will automatically encode music, videos, and other types of media, using the amazing FFmpeg (and co. when needed).
 
-# At the moment, I'm mainly working on getting this to work with Kodi. There seems to be inconsistincies between different media software, so it would be a pleasant surprise if most things work seamlessly (with Emby/Plex & the like).
+
+## Dependencies
+
+- [PowerShell](https://github.com/PowerShell/PowerShell) (for generating & running the scripts)
+- [FFmpeg](https://ffmpeg.org/) (for pretty much all encoding/decoding tasks)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (for YouTube conversion)
+- [MakeMKV](https://makemkv.com/) (for DVD/Blu-Ray conversion) (W.I.P.)
