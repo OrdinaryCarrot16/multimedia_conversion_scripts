@@ -14,7 +14,9 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
 
 I have made a 'script generator' to ease the creation of these FFmpeg scripts, though you should probably check the generated script if you want more control over whats encoded (as I do for the ones I publish here), as it is mostly just a template generator; having no fine-tuned control (as of this moment). 
 
-I would try to avoid using special characters for the filename of the song (the filename is taken from the 'title' metadata), as symbols that might work well on your OS could be problematic on another. It should be fine though if you just change the filename of the song, and change the 'title' metadata of the song within the generated script (the title that gets shown when you play it) to have the special characters.
+I would try to avoid using special characters (including most symbols) for the filename of the song (the filename is taken from the 'title' metadata), as symbols that might work well on your OS could be problematic on another. It should be fine though if you just change the filename of the song, and change the 'title' metadata of the song within the generated script (the title that gets shown when you play it) to have the special characters.
+
+I had some of my files corrupt from using special characters (transferring from Linux to Windows), but I'm not certain which ones you shouldn't use. 
 
 ###### Multiple Artists
 
