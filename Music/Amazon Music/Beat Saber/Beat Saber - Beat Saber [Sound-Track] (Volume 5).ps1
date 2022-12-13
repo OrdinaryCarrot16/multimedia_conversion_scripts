@@ -7,7 +7,7 @@ ffmpeg -i "01 - I Wanna Be A Machine.mp3" -an -vf scale=512:512 -sws_flags bicub
 Move-Item -Path "thumb.png" -Destination "Beat Saber/Beat Saber [Sound-Track] (Volume 5) [Converted]"
 
 
-ffmpeg -i "01 - I Wanna Be A Machine.mp3" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="Beat Saber" -metadata album="Beat Saber [Sound-Track] (Volume 5)" -metadata date="2022-03-08" -metadata genre="Sound-Track | Techno | Pop" -metadata track="1/6" -metadata title="I Wanna Be A Machine" -c:a libvorbis -q 5 -minrate 128k "I Wanna Be A Machine.ogg"
+ffmpeg -i "01 - I Wanna Be A Machine.mp3" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="Beat Saber" -metadata album="Beat Saber [Sound-Track] (Volume 5)" -metadata date="2022-03-08" -metadata genre="Sound-Track | Techno | Pop" -metadata track="1/6" -metadata title="I Wanna Be A Machine" -af "volume=-10dB" -c:a libvorbis -q 5 -minrate 128k "I Wanna Be A Machine.ogg"
 Move-Item -Path "I Wanna Be A Machine.ogg" -Destination "Beat Saber/Beat Saber [Sound-Track] (Volume 5) [Converted]"
 
 ffmpeg -i "02 - Firestarter.mp3" -map_metadata -1 -map 0:0 -metadata artist="Tanger" -metadata album_artist="Beat Saber" -metadata album="Beat Saber [Sound-Track] (Volume 5)" -metadata date="2022-03-08" -metadata genre="Sound-Track" -metadata track="2/6" -metadata title="Fire-Starter" -c:a libvorbis -q 5 -minrate 128k "Fire-Starter.ogg"
