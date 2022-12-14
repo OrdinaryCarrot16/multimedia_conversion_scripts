@@ -26,4 +26,4 @@ However, I haven't seen a way to deal with multiple artists in FFmpeg, so; I am 
 
 ###### Multi Genre
 
-You might not need multiple genres, but I like being more specific when setting genres (though my genre decisions may be off, feel free to post an issue if some bother you). Like multiple artist support in FFmpeg, I don't think it supports multiple genre. But, I am using ' | ' as a seperator for multiple genres, and it seems to be working well (Emby picked up on it, but again Kodi may need tweaks).
+You might not need multiple genres, but I like being more specific when setting genres (though my genre decisions may be off, feel free to post an issue if some bother you). Like multiple artist support in FFmpeg, I don't think it supports multiple genre. But, I am using ' | ' (minus the quotes) as a seperator for multiple genres, and it seems to be working well (Emby picked up on it, but again Kodi may need tweaks).
