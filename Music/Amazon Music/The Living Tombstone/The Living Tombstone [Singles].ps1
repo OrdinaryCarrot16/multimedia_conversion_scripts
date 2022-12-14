@@ -16,7 +16,7 @@ Move-Item -Path "1000 Doors.ogg" -Destination "The Living Tombstone/[Singles] [C
 Move-Item -Path "1000 Doors (thumb).png" -Destination "The Living Tombstone/[Singles] [Converted]"
 
 ffmpeg -y -i "01 - Beep Beep I'm a Sheep (feat. LilDeuceDeuce, TomSka & BlackGryph0n).mp3" -an -vf scale=512:512 -sws_flags bicubic "Beep Beep I'm a Sheep (thumb).png"
-ffmpeg -i "01 - Beep Beep I'm a Sheep (feat. LilDeuceDeuce, TomSka & BlackGryph0n).mp3" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone / " -metadata album_artist="The Living Tombstone" -metadata album="Beep Beep I'm a Sheep [Single] [Remix]" -metadata date="2017-04-26" -metadata genre="Remix | Dub-Step | EDM" -metadata title="Beep Beep I'm a Sheep" -metadata comment="Song originally by `'LilDeuceDeuce`'" -af "volume=-10dB" -c:a libvorbis -q 5 -minrate 128k "Beep Beep I'm a Sheep.ogg"
+ffmpeg -i "01 - Beep Beep I'm a Sheep (feat. LilDeuceDeuce, TomSka & BlackGryph0n).mp3" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone / LilDeuceDeuce" -metadata album_artist="The Living Tombstone" -metadata album="Beep Beep I'm a Sheep [Single] [Remix]" -metadata date="2017-04-26" -metadata genre="Remix | Dub-Step | EDM" -metadata title="Beep Beep I'm a Sheep" -metadata comment="Song originally by `'LilDeuceDeuce`'" -af "volume=-10dB" -c:a libvorbis -q 5 -minrate 128k "Beep Beep I'm a Sheep.ogg"
 Move-Item -Path "Beep Beep I'm a Sheep.ogg" -Destination "The Living Tombstone/[Singles] [Converted]"
 Move-Item -Path "Beep Beep I'm a Sheep (thumb).png" -Destination "The Living Tombstone/[Singles] [Converted]"
 
