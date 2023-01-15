@@ -45,4 +45,4 @@ Here is a list of the various codecs/containers I will be using in this project,
 ###### Music
 
 - OGG (the most common container for Vorbis) (open-source)
-- Vorbis (supposedly better efficiency than MP3) (open-source)
+- Vorbis (supposedly better efficiency than MP3, and maybe more support than Opus) (open-source)
