@@ -27,3 +27,22 @@ However, I haven't seen a way to deal with multiple artists in FFmpeg, so; I am 
 ###### Multi Genre
 
 You might not need multiple genres, but I like being more specific when setting genres (though my genre decisions may be off, feel free to post an issue if some bother you). Like multiple artist support in FFmpeg, I don't think it supports multiple genre. But, I am using ' | ' (minus the quotes) as a seperator for multiple genres, and it seems to be working well (Emby picked up on it, but again Kodi may need tweaks).
+
+## Codecs/Containers
+
+Here is a list of the various codecs/containers I will be using in this project, in certain catagories, and maybe an explanation as to why I chose it. I'm still experimenting with these codecs, the selection may change.
+
+###### Image
+
+- PNG (for lossless thumbnails) (open-source)
+
+###### Video
+
+- MKV (supports pretty much every common codec) (open-source)
+- VP9 (open-source video codec) (open-source)
+- Opus (better than AAC?) (open-source)
+
+###### Music
+
+- OGG (the most common container for Vorbis) (open-source)
+- Vorbis (supposedly better efficiency than MP3) (open-source)
