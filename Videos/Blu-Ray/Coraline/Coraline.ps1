@@ -15,5 +15,34 @@ Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t04.mkv" -NewName 
 ./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 05 "$home/Videos/MakeMKV/Coraline/Extras"
 Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t05.mkv" -NewName "Deleted Scenes.mkv"
 
-./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 07 "$home/Videos/MakeMKV/Coraline/Extras"
-Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t07.mkv" -NewName "Setting The Stage - How Does Your Fantastic Garden Grow.mkv"
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 08 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t08.mkv" -NewName "Inside Laika - The Cat.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 09 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t09.mkv" -NewName "Voices Of Coraline.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 22 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t22.mkv" -NewName "Inside Laika - Wybie Lovat.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 23 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t23.mkv" -NewName "Inside Laika - Other Mother.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 24 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t24.mkv" -NewName "Inside Laika - Other Father.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 25 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t25.mkv" -NewName "Inside Laika - Coraline Jones.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 26 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t26.mkv" -NewName "Inside Laika - Mr Bobinsky.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 27 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t27.mkv" -NewName "Inside Laika - The Beldam.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 29 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t29.mkv" -NewName "Horrors Of Coraline.mkv"
+
+./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 29 "$home/Videos/MakeMKV/Coraline/Extras"
+Rename-Item -Path "$home/Videos/MakeMKV/Coraline/Extras/title_t29.mkv" -NewName "Stop-Motion.mkv"
+
+pause
