@@ -39,7 +39,7 @@ Here is a list of the various codecs/containers I will be using in this project,
 ###### Video
 
 - MKV (supports pretty much every common codec) (open-source)
-- VP9 (open-source video codec) (open-source)
+- VP8 (open-source video codec) (open-source)
 - Opus (better than AAC?) (open-source)
 
 ###### Music
