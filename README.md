@@ -38,11 +38,11 @@ Here is a list of the various codecs/containers I will be using in this project,
 
 ###### Video
 
-- MKV (supports pretty much every common codec) (open-source)
-- VP8 (open-source video codec) (open-source)
-- Opus (better than AAC?) (open-source)
+- MKV (open-source container) (supports pretty much every common codec)
+- VP8 (open-source video codec) (open-source) (1080p>720p downscale for Blu-Ray (more space savings and still good quality), 480p for DVD)
+- Opus (open-source audio codec) (better than AAC?) 
 
 ###### Music
 
-- OGG (the most common container for Vorbis) (open-source)
-- Vorbis (supposedly better efficiency than MP3, and maybe more compatability than Opus) (open-source)
+- OGG (open-source container) (the most common container for Vorbis)
+- Vorbis (supposedly better efficiency than MP3, and maybe more compatability than Opus) (open-source) (-q5 (averages 160k) (a good balance between size and quality)
