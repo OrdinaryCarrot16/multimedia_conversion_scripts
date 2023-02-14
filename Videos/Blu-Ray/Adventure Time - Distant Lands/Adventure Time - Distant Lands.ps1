@@ -12,6 +12,5 @@ Rename-Item -Path "$home/Videos/MakeMKV/Adventure Time - Distant Lands/Adventure
 ./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 07 "$home/Videos/MakeMKV/Adventure Time - Distant Lands"
 Rename-Item -Path "$home/Videos/MakeMKV/Adventure Time - Distant Lands/Adventure Time- Distant Lands Season 1 Disc 1_t07.mkv" -NewName "E04 - Wizard City.mkv"
 
-
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
