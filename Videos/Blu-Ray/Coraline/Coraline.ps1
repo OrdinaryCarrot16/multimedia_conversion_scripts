@@ -1,5 +1,5 @@
-New-Item -Path "$home/Videos/MakeMKV/Coraline" -ItemType Directory
-New-Item -Path "$home/Videos/MakeMKV/Coraline/Extras" -ItemType Directory
+New-Item -Path "MakeMKV/Coraline" -ItemType Directory
+New-Item -Path "MakeMKV/Coraline/Extras" -ItemType Directory
 
 # Movie
 ./"makemkvcon64" --minlength=15 --progress=-same mkv disc:0 06 "$home/Videos/MakeMKV/Coraline"
