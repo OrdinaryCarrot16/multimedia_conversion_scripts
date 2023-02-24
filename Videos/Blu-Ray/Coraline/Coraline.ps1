@@ -48,6 +48,8 @@ Rename-Item -Path "MakeMKV/Coraline/Extras/Coraline_t30.mkv" -NewName "Stop-Moti
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
 
+cd "MakeMKV/Coraline"
+
 New-Item -Path "Coraline [Converted]" -ItemType Directory
 
 # Generate blank video
