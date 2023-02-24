@@ -15,6 +15,8 @@ Rename-Item -Path "MakeMKV/Adventure Time - Distant Lands/Adventure Time- Distan
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
 
+cd "MakeMKV/Adventure Time - Distant Lands"
+
 New-Item -Path "Adventure Time - Distant Lands [Converted]" -ItemType Directory
 
 # Generate blank video
