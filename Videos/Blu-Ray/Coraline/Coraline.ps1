@@ -42,8 +42,8 @@ Rename-Item -Path "MakeMKV/Coraline/Extras/Coraline_t27.mkv" -NewName "Inside La
 makemkvcon64 --minlength=15 --progress=-same mkv disc:0 29 "MakeMKV/Coraline/Extras"
 Rename-Item -Path "MakeMKV/Coraline/Extras/Coraline_t29.mkv" -NewName "Horrors Of Coraline.mkv"
 
-makemkvcon64 --minlength=15 --progress=-same mkv disc:0 29 "MakeMKV/Coraline/Extras"
-Rename-Item -Path "MakeMKV/Coraline/Extras/Coraline_t29.mkv" -NewName "Stop-Motion.mkv"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 30 "MakeMKV/Coraline/Extras"
+Rename-Item -Path "MakeMKV/Coraline/Extras/Coraline_t30.mkv" -NewName "Stop-Motion.mkv"
 
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
