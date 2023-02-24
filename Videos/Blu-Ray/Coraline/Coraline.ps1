@@ -51,10 +51,10 @@ pause
 New-Item -Path "Coraline [Converted]" -ItemType Directory
 
 # Generate blank video
-ffmpeg -f lavfi -i "color=black:size=1280x720:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 16 "blank_5.mkv"
+ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 16 "blank_5.mkv"
 
 # Transcode movie
-ffmpeg -ss 00:00:03.500 -i "Coraline.mkv" -to 01:40:35.200 -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=-3dB [0:1]; [0:0][0:1] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="Coraline" -r 24 -c:v libvpx -crf 16 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Coraline_TMP.mkv"
+ffmpeg -ss 00:00:03.500 -i "Coraline.mkv" -to 01:40:35.200 -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=-3dB [0:1]; scale=1280:720:flags=bicubic [1:0]; [0:0][0:1] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="Coraline" -r 24 -c:v libvpx -crf 16 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Coraline_TMP.mkv"
 
 Move-Item -Path "Coraline_TMP.mkv" -Destination "Coraline [Converted]/Coraline.mkv"
 Remove-Item "blank_5.mkv"
