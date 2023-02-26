@@ -32,7 +32,7 @@ New-Item -Path "The Simpsons Movie (Converted)/Extras/Russ Cargill - Visual Deve
 New-Item -Path "The Simpsons Movie (Converted)/Extras/Multi-Eyed Creature - Visual Development" -ItemType Directory
 
 # Generate blank video
-ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 16 "blank_5.mkv"
+ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 12 "blank_5.mkv"
 
 # Transcode movie
 ffmpeg -ss 00:00:02.100 -to 01:26:44.400 -i "The Simpsons Movie.mkv" -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=0dB [0:1]; scale=1280:720:flags=bicubic [1:0]; [0:0][0:1] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="The Simpsons Movie" -metadata date="2007-07-27" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "The Simpsons Movie_TMP.mkv"
