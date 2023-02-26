@@ -61,9 +61,9 @@ pause
 
 
 New-Item -Path "Coraline (Converted)" -ItemType Directory
-New-Item -Path "Coraline (Converted)/Extra/Behind The Scenes (Stills Gallery)" -ItemType Directory
-New-Item -Path "Coraline (Converted)/Extra/Concept Art (Stills Gallery)" -ItemType Directory
-New-Item -Path "Coraline (Converted)/Extra/Character Art (Stills Gallery)" -ItemType Directory
+New-Item -Path "Coraline (Converted)/Extras/Behind The Scenes (Stills Gallery)" -ItemType Directory
+New-Item -Path "Coraline (Converted)/Extras/Concept Art (Stills Gallery)" -ItemType Directory
+New-Item -Path "Coraline (Converted)/Extras/Character Art (Stills Gallery)" -ItemType Directory
 
 # Generate blank video
 ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 16 "blank_5.mkv"
@@ -73,50 +73,50 @@ ffmpeg -ss 00:00:03.500 -to 01:40:35.200 -i "Coraline.mkv" -i "blank_5.mkv" -map
 Move-Item -Path "Coraline_TMP.mkv" -Destination "Coraline (Converted)/Coraline.mkv"
 
 # Transcode extras
-ffmpeg -i "Behind The Scenes (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extra/Behind The Scenes (Stills Gallery)/image_%03d.png"
+ffmpeg -i "Behind The Scenes (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extras/Behind The Scenes (Stills Gallery)/image_%03d.png"
 
-ffmpeg -i "Concept Art (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extra/Concept Art (Stills Gallery)/image_%03d.png"
+ffmpeg -i "Concept Art (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extras/Concept Art (Stills Gallery)/image_%03d.png"
 
-ffmpeg -i "Character Art (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extra/Character Art (Stills Gallery)/image_%03d.png"
+ffmpeg -i "Character Art (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extras/Character Art (Stills Gallery)/image_%03d.png"
 
 ffmpeg -i "The Making of Coraline.mkv" -map_metadata -1 -map_chapters -1 -metadata title="The Making of Coraline" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "The Making of Coraline_TMP.mkv"
-Move-Item -Path "The Making of Coraline_TMP.mkv" "Coraline (Converted)/Extra/The Making of Coraline.mkv"
+Move-Item -Path "The Making of Coraline_TMP.mkv" "Coraline (Converted)/Extras/The Making of Coraline.mkv"
 
 ffmpeg -i "Coraline Animatic.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Coraline Animatic" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Coraline Animatic_TMP.mkv"
-Move-Item -Path "Coraline Animatic_TMP.mkv" "Coraline (Converted)/Extra/Coraline Animatic.mkv"
+Move-Item -Path "Coraline Animatic_TMP.mkv" "Coraline (Converted)/Extras/Coraline Animatic.mkv"
 
 ffmpeg -i "Deleted Scenes.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Deleted Scenes" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Deleted Scenes_TMP.mkv"
-Move-Item -Path "Deleted Scenes_TMP.mkv" "Coraline (Converted)/Extra/Deleted Scenes.mkv"
+Move-Item -Path "Deleted Scenes_TMP.mkv" "Coraline (Converted)/Extras/Deleted Scenes.mkv"
 
 ffmpeg -i "Inside Laika - The Cat.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - The Cat" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - The Cat_TMP.mkv"
-Move-Item -Path "Inside Laika - The Cat_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - The Cat.mkv"
+Move-Item -Path "Inside Laika - The Cat_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - The Cat.mkv"
 
 ffmpeg -i "Voices Of Coraline.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Voices Of Coraline" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Voices Of Coraline_TMP.mkv"
-Move-Item -Path "Voices Of Coraline_TMP.mkv" "Coraline (Converted)/Extra/Voices Of Coraline.mkv"
+Move-Item -Path "Voices Of Coraline_TMP.mkv" "Coraline (Converted)/Extras/Voices Of Coraline.mkv"
 
 ffmpeg -i "Inside Laika - Wybie Lovat.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - Wybie Lovat" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - Wybie Lovat_TMP.mkv"
-Move-Item -Path "Inside Laika - Wybie Lovat_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - Wybie Lovat.mkv"
+Move-Item -Path "Inside Laika - Wybie Lovat_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - Wybie Lovat.mkv"
 
 ffmpeg -i "Inside Laika - Other Mother.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - Other Mother" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - Other Mother_TMP.mkv"
-Move-Item -Path "Inside Laika - Other Mother_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - Other Mother.mkv"
+Move-Item -Path "Inside Laika - Other Mother_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - Other Mother.mkv"
 
 ffmpeg -i "Inside Laika - Other Father.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - Other Father" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - Other Father_TMP.mkv"
-Move-Item -Path "Inside Laika - Other Father_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - Other Father.mkv"
+Move-Item -Path "Inside Laika - Other Father_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - Other Father.mkv"
 
 ffmpeg -i "Inside Laika - Coraline Jones.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - Coraline Jones" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - Coraline Jones_TMP.mkv"
-Move-Item -Path "Inside Laika - Coraline Jones_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - Coraline Jones.mkv"
+Move-Item -Path "Inside Laika - Coraline Jones_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - Coraline Jones.mkv"
 
 ffmpeg -i "Inside Laika - Mr Bobinsky.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - Mr. Bobinsky" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - Mr Bobinsky_TMP.mkv"
-Move-Item -Path "Inside Laika - Mr Bobinsky_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - Mr Bobinsky.mkv"
+Move-Item -Path "Inside Laika - Mr Bobinsky_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - Mr Bobinsky.mkv"
 
 ffmpeg -i "Inside Laika - The Beldam.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Inside Laika - The Beldam" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Inside Laika - The Beldam_TMP.mkv"
-Move-Item -Path "Inside Laika - The Beldam_TMP.mkv" "Coraline (Converted)/Extra/Inside Laika - The Beldam.mkv"
+Move-Item -Path "Inside Laika - The Beldam_TMP.mkv" "Coraline (Converted)/Extras/Inside Laika - The Beldam.mkv"
 
 ffmpeg -i "Horrors Of Coraline.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Horrors Of Coraline" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Horrors Of Coraline_TMP.mkv"
-Move-Item -Path "Horrors Of Coraline_TMP.mkv" "Coraline (Converted)/Extra/Horrors Of Coraline.mkv"
+Move-Item -Path "Horrors Of Coraline_TMP.mkv" "Coraline (Converted)/Extras/Horrors Of Coraline.mkv"
 
 ffmpeg -i "Stop-Motion.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Stop-Motion" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Stop-Motion_TMP.mkv"
-Move-Item -Path "Stop-Motion_TMP.mkv" "Coraline (Converted)/Extra/Stop-Motion.mkv"
+Move-Item -Path "Stop-Motion_TMP.mkv" "Coraline (Converted)/Extras/Stop-Motion.mkv"
 
 
 Remove-Item "blank_5.mkv"
