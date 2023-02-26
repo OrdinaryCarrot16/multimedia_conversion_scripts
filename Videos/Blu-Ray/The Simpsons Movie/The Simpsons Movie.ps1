@@ -27,9 +27,9 @@ pause
 
 
 New-Item -Path "The Simpsons Movie (Converted)" -ItemType Directory
-New-Item -Path "The Simpsons Movie (Converted)/Extra/Lisa's Boyfriend - Visual Development" -ItemType Directory
-New-Item -Path "The Simpsons Movie (Converted)/Extra/Russ Cargill - Visual Development" -ItemType Directory
-New-Item -Path "The Simpsons Movie (Converted)/Extra/Multi-Eyed Creature - Visual Development" -ItemType Directory
+New-Item -Path "The Simpsons Movie (Converted)/Extras/Lisa's Boyfriend - Visual Development" -ItemType Directory
+New-Item -Path "The Simpsons Movie (Converted)/Extras/Russ Cargill - Visual Development" -ItemType Directory
+New-Item -Path "The Simpsons Movie (Converted)/Extras/Multi-Eyed Creature - Visual Development" -ItemType Directory
 
 # Generate blank video
 ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 16 "blank_5.mkv"
@@ -39,17 +39,17 @@ ffmpeg -ss 00:00:02.100 -to 01:26:44.400 -i "The Simpsons Movie.mkv" -i "blank_5
 Move-Item -Path "The Simpsons Movie_TMP.mkv" -Destination "The Simpsons Movie (Converted)/The Simpsons Movie.mkv"
 
 # Transcode extras
-ffmpeg -i "Lisa's Boyfriend - Visual Development.mkv" -map_metadata -1 -map_chapters -1 -vf "fps=24/1" -c:v png -an "The Simpsons Movie (Converted)/Extra/Lisa's Boyfriend - Visual Development/image_%03d.png"
+ffmpeg -i "Lisa's Boyfriend - Visual Development.mkv" -map_metadata -1 -map_chapters -1 -vf "fps=24/1" -c:v png -an "The Simpsons Movie (Converted)/Extras/Lisa's Boyfriend - Visual Development/image_%03d.png"
 
-ffmpeg -i "Russ Cargill - Visual Development.mkv" -map_metadata -1 -map_chapters -1 -vf "fps=24/1" -c:v png -an "The Simpsons Movie (Converted)/Extra/Russ Cargill - Visual Development/image_%03d.png"
+ffmpeg -i "Russ Cargill - Visual Development.mkv" -map_metadata -1 -map_chapters -1 -vf "fps=24/1" -c:v png -an "The Simpsons Movie (Converted)/Extras/Russ Cargill - Visual Development/image_%03d.png"
 
-ffmpeg -i "Multi-Eyed Creature - Visual Development.mkv" -map_metadata -1 -map_chapters -1 -vf "fps=24/1" -c:v png -an "The Simpsons Movie (Converted)/Extra/Multi-Eyed Creature - Visual Development/image_%03d.png"
+ffmpeg -i "Multi-Eyed Creature - Visual Development.mkv" -map_metadata -1 -map_chapters -1 -vf "fps=24/1" -c:v png -an "The Simpsons Movie (Converted)/Extras/Multi-Eyed Creature - Visual Development/image_%03d.png"
 
 ffmpeg -i "Talk Show + American Idol.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Talk Show + American Idol" -metadata date="2007-07-27" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Talk Show + American Idol_TMP.mkv"
-Move-Item -Path "Talk Show + American Idol_TMP.mkv" -Destination "The Simpsons Movie (Converted)/Extra/Talk Show + American Idol.mkv"
+Move-Item -Path "Talk Show + American Idol_TMP.mkv" -Destination "The Simpsons Movie (Converted)/Extras/Talk Show + American Idol.mkv"
 
 ffmpeg -i "Deleted Scenes.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Deleted Scenes" -metadata date="2007-07-27" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Deleted Scenes_TMP.mkv"
-Move-Item -Path "Deleted Scenes_TMP.mkv" -Destination "The Simpsons Movie (Converted)/Extra/Deleted Scenes.mkv"
+Move-Item -Path "Deleted Scenes_TMP.mkv" -Destination "The Simpsons Movie (Converted)/Extras/Deleted Scenes.mkv"
 
 
 Remove-Item "blank_5.mkv"
