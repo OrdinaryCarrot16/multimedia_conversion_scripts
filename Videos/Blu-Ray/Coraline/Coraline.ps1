@@ -2,57 +2,57 @@ New-Item -Path "MakeMKV/Coraline" -ItemType Directory
 cd "MakeMKV/Coraline"
 
 # Movie
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 06 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 06 "./"
 Rename-Item -Path "Coraline_t06.mkv" -NewName "Coraline.mkv"
 
 # Extra
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 00 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "Coraline_t00.mkv" -NewName "Behind The Scenes (Still Gallery).mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 01 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 01 "./"
 Rename-Item -Path "Coraline_t01.mkv" -NewName "Concept Art (Still Gallery).mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 02 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 02 "./"
 Rename-Item -Path "Coraline_t02.mkv" -NewName "Character Art (Still Gallery).mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 03 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 03 "./"
 Rename-Item -Path "Coraline_t03.mkv" -NewName "The Making of Coraline.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 04 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 04 "./"
 Rename-Item -Path "Coraline_t04.mkv" -NewName "Coraline Animatic.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 05 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 05 "./"
 Rename-Item -Path "Coraline_t05.mkv" -NewName "Deleted Scenes.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 08 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 08 "./"
 Rename-Item -Path "Coraline_t08.mkv" -NewName "Inside Laika - The Cat.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 09 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 09 "./"
 Rename-Item -Path "Coraline_t09.mkv" -NewName "Voices Of Coraline.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 22 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 22 "./"
 Rename-Item -Path "Coraline_t22.mkv" -NewName "Inside Laika - Wybie Lovat.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 23 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 23 "./"
 Rename-Item -Path "Coraline_t23.mkv" -NewName "Inside Laika - Other Mother.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 24 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 24 "./"
 Rename-Item -Path "Coraline_t24.mkv" -NewName "Inside Laika - Other Father.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 25 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 25 "./"
 Rename-Item -Path "Coraline_t25.mkv" -NewName "Inside Laika - Coraline Jones.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 26 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 26 "./"
 Rename-Item -Path "Coraline_t26.mkv" -NewName "Inside Laika - Mr Bobinsky.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 27 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 27 "./"
 Rename-Item -Path "Coraline_t27.mkv" -NewName "Inside Laika - The Beldam.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 29 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 29 "./"
 Rename-Item -Path "Coraline_t29.mkv" -NewName "Horrors Of Coraline.mkv"
 
-#makemkvcon64 --minlength=15 --progress=-same mkv disc:0 30 "./"
+makemkvcon64 --minlength=15 --progress=-same mkv disc:0 30 "./"
 Rename-Item -Path "Coraline_t30.mkv" -NewName "Stop-Motion.mkv"
 
 
@@ -69,7 +69,7 @@ New-Item -Path "Coraline (Converted)/Extra/Character Art (Stills Gallery)" -Item
 ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 16 "blank_5.mkv"
 
 # Transcode movie
-#ffmpeg -ss 00:00:03.500 -to 01:40:35.200 -i "Coraline.mkv" -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=-3dB [0:1]; scale=1280:720:flags=bicubic [1:0]; [0:0][0:1] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="Coraline" -metadata date="2009-02-06" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Coraline_TMP.mkv"
+ffmpeg -ss 00:00:03.500 -to 01:40:35.200 -i "Coraline.mkv" -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=-3dB [0:1]; scale=1280:720:flags=bicubic [1:0]; [0:0][0:1] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="Coraline" -metadata date="2009-02-06" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Coraline_TMP.mkv"
 Move-Item -Path "Coraline_TMP.mkv" -Destination "Coraline (Converted)/Coraline.mkv"
 
 # Transcode extras
@@ -79,7 +79,7 @@ ffmpeg -i "Concept Art (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -
 
 ffmpeg -i "Character Art (Stills Gallery).mkv" -map_metadata -1 -map_chapters -1 -vf "fps=1/5" -c:v png -an "Coraline (Converted)/Extra/Character Art (Stills Gallery)/image_%03d.png"
 
-#ffmpeg -i "The Making of Coraline.mkv" -map_metadata -1 -map_chapters -1 -metadata title="The Making of Coraline" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "The Making of Coraline_TMP.mkv"
+ffmpeg -i "The Making of Coraline.mkv" -map_metadata -1 -map_chapters -1 -metadata title="The Making of Coraline" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "The Making of Coraline_TMP.mkv"
 Move-Item -Path "The Making of Coraline_TMP.mkv" "Coraline (Converted)/Extra/The Making of Coraline.mkv"
 
 ffmpeg -i "Coraline Animatic.mkv" -map_metadata -1 -map_chapters -1 -metadata title="Coraline Animatic" -metadata date="2009-02-06" -vf "scale=1280:720:flags=bicubic" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "Coraline Animatic_TMP.mkv"
