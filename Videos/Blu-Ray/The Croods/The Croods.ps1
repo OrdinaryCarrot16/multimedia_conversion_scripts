@@ -1,7 +1,6 @@
 New-Item -Path "MakeMKV/The Croods" -ItemType Directory
 cd "MakeMKV/The Croods"
 
-<#
 # Movie
 makemkvcon64 --minlength=15 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "The Croods_t00.mkv" -NewName "The Croods.mkv"
@@ -19,7 +18,7 @@ Rename-Item -Path "The Croods_t03.mkv" -NewName "Be An Artist.mkv"
 
 makemkvcon64 --minlength=15 --progress=-same mkv disc:0 13 "./"
 Rename-Item -Path "The Croods_t13.mkv" -NewName "Belt's Cave Journal.mkv"
-#>
+
 
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
