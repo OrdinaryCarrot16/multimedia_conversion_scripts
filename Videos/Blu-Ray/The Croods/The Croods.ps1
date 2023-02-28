@@ -32,7 +32,7 @@ New-Item -Path "The Croods (Converted)/Extras" -ItemType Directory
 ffmpeg -f lavfi -i "color=black:size=1920x1080:rate=23.976" -f lavfi -i "anullsrc=sample_rate=48000:channel_layout=5.1" -t 5 -c:v libx264 -profile:v main -crf 12 "blank_5.mkv"
 
 # Transcode movie
-ffmpeg -ss 00:00:02.000 -to 01:38:35.200 -i "The Croods.mkv" -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=0dB [0:2]; scale=1280:720:flags=bicubic [1:0]; [0:0][0:2] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="The Croods" -metadata date="2013-03-22" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "The Croods_TMP.mkv"
+ffmpeg -ss 00:00:02.000 -to 01:38:35.200 -i "The Croods.mkv" -i "blank_5.mkv" -map_metadata -1 -map_chapters -1 -filter_complex "scale=1280:720:flags=bicubic [0:0]; volume=-5dB [0:2]; scale=1280:720:flags=bicubic [1:0]; [0:0][0:2] [1:0][1:1] concat=n=2:v=1:a=1 [v][a]" -map '[v]' -map '[a]' -metadata title="The Croods" -metadata date="2013-03-22" -r 24 -c:v libvpx -crf 12 -b:v 15M -c:a libopus -b:a 160k -ac 2 -ar 48000 "The Croods_TMP.mkv"
 Move-Item -Path "The Croods_TMP.mkv" -Destination "The Croods (Converted)/The Croods.mkv"
 
 # Transcode extras
