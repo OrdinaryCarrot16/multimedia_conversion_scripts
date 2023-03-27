@@ -7,4 +7,4 @@ Music Store Priority:
 
 1. Bandcamp
 2. Qobuz
-3. Amazon Music
+3. Amazon Music (no lossless downloads as far as I can see)
