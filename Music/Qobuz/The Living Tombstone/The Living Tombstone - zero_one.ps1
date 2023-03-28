@@ -1,4 +1,4 @@
-# https://www.amazon.com/dp/B08CRZFJVK
+# https://www.qobuz.com/us-en/album/zero-one-the-living-tombstone/mi9v2uhgw6lxb
 # This album has pretty bad audio clipping, oh well.
 
 
