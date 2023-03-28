@@ -1,3 +1,7 @@
+# https://www.qobuz.com/us-en/album/its-been-so-long-the-living-tombstone/k0j0v3boxtsda (It's Been So Long)
+# https://www.qobuz.com/us-en/album/long-time-friends-the-living-tombstone/ec00w46z7loma (Long Time Friends (Spooky Mix))
+# https://www.qobuz.com/us-en/album/love-i-need-the-living-tombstone/s9i0tvkqmjhcc (Love I Need)
+
 New-Item -Path "The Living Tombstone/(Singles) (Converted)" -ItemType Directory
 
 
