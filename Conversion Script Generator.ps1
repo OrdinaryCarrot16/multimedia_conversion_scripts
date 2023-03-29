@@ -24,7 +24,7 @@ if ($media_type -eq "music") {
 				$TRACK_COUNTER+=1
 				$filename=Read-Host -Prompt "`nSong File Name ($TRACK_COUNTER/$track_amount)"
 				$songname=Read-Host -Prompt "Name of the Song"
-					Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map 0:0 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$album`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata track=`"$TRACK_COUNTER/$track_amount`" -metadata title=`"$songname`" -c:a libvorbis -q 5 -minrate 128k `"$TRACK_COUNTER - $songname.ogg`""
+					Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map 0:0 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$album`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata track=`"$TRACK_COUNTER/$track_amount`" -metadata title=`"$songname`" -c:a libvorbis -q 6 -minrate 128k `"$TRACK_COUNTER - $songname.ogg`""
 					Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "Move-Item -Path `"$TRACK_COUNTER - $songname.ogg`" -Destination `"$artist/$album (Converted)`"`n"
 			} until ($TRACK_COUNTER -eq $track_amount)
 	Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "pause"
@@ -43,7 +43,7 @@ if ($media_type -eq "music") {
 				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "ffmpeg -y -i `"$cover_art`" -an -vf scale=1024:1024 -sws_flags bicubic `"$songname (thumb).png`""
 			$genre=Read-Host -Prompt "Genre of the Song"
 			$date=Read-Host -Prompt "Enter the release date of the single (in YYYY-MM-DD format, or type nothing if unknown)"
-				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map 0:0 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$songname (Single)`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$songname`" -c:a libvorbis -q 5 -minrate 128k `"$songname.ogg`""
+				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map 0:0 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$songname (Single)`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$songname`" -c:a libvorbis -q 6 -minrate 128k `"$songname.ogg`""
 				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "Move-Item -Path `"$songname.ogg`" -Destination `"$artist/(Singles) (Converted)`""
 				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "Move-Item -Path `"$songname (thumb).png`" -Destination `"$artist/(Singles) (Converted)`"`n"
 		} until ($TRACK_COUNTER -eq $track_amount)
