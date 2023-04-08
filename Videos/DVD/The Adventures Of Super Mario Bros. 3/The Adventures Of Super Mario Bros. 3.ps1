@@ -1,7 +1,7 @@
 New-Item -Path "MakeMKV/The Adventures Of Super Mario Bros. 3" -ItemType Directory
 cd "MakeMKV/The Adventures Of Super Mario Bros. 3"
 
-<#
+
 makemkvcon64 --minlength=0 --progress=-same mkv disc:0 01 "./"
 Rename-Item -Path "C1_t01.mkv" -NewName "E01-E02 - Sneaky Lying Cheating Giant Ninja Koopas + Reptiles In The Rose Garden.mkv"
 
@@ -44,7 +44,7 @@ Rename-Item -Path "D1_t05.mkv" -NewName "E23-E24 - True Colors + Recycled Koopa.
 
 makemkvcon64 --minlength=0 --progress=-same mkv disc:0 06 "./"
 Rename-Item -Path "D2_t06.mkv" -NewName "E25-E26 - The Venice Menace + Super Koopa.mkv"
-#>
+
 
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
