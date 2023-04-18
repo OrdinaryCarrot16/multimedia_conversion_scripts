@@ -3,8 +3,10 @@ I have added some filters to attempt to enhance the songs.
 Enhancements may include manual normalization, and blank space trimming.
 
 
-Music Store Priority:
+Music Download Site Priority:
 
 1. Bandcamp
 2. Qobuz
-3. Amazon Music (no lossless downloads as far as I can see)
+3. Steam
+4. Amazon Music (no lossless downloads as far as I can see)
+5. YouTube Rip (if no download avaliable)
