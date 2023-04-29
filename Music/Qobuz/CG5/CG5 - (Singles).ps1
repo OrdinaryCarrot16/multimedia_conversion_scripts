@@ -1,4 +1,6 @@
+# https://www.qobuz.com/us-en/album/fathers-day-cg5/hc7u7favgolva (Father's Day)
 # https://www.qobuz.com/us-en/album/good-to-be-alive-cg5/qxjl7ste0x6wc (Good To Be Alive)
+# https://www.qobuz.com/us-en/album/i-got-no-time-cg5/rhfpi3jvwkntc (I Got No Time)
 # https://www.qobuz.com/us-en/album/masterpiece-cg5/bpm8dq50ckgjb (Master-Piece)
 # https://www.qobuz.com/us-en/album/world-of-gray-cg5/ihkv0h7hopikb (World Of Gray)
 
