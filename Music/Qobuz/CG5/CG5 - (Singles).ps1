@@ -5,7 +5,7 @@
 New-Item -Path "CG5/(Singles) (Converted)" -ItemType Directory
 
 
-ffmpeg -y -i "01-01-CG5-Father_s_Day-LLS.flac" -an -vf scale=1024:1024 -sws_flags bicubic "Father's Day (thumb).png"
+ffmpeg -y -i "fathers-day-cg5.jpg" -an -vf scale=1024:1024 -sws_flags bicubic "Father's Day (thumb).png"
 ffmpeg -ss 00:00:00.000 -to 00:04:44.500 -i "01-01-CG5-Father_s_Day-LLS.flac" -map_metadata -1 -map 0:0 -metadata artist="CG5" -metadata album_artist="CG5" -metadata album="Father's Day (Single)" -metadata date="2020-05-19" -metadata genre="Rock | Alternative" -metadata title="Father's Day" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "Father's Day.ogg"
 Move-Item -Path "Father's Day.ogg" -Destination "CG5/(Singles) (Converted)"
 Move-Item -Path "Father's Day (thumb).png" -Destination "CG5/(Singles) (Converted)"
@@ -15,7 +15,7 @@ ffmpeg -ss 00:00:00.000 -to 00:02:54.500 -i "01-01-CG5-Good_To_Be_Alive-LLS.flac
 Move-Item -Path "Good To Be Alive.ogg" -Destination "CG5/(Singles) (Converted)"
 Move-Item -Path "Good To Be Alive (thumb).png" -Destination "CG5/(Singles) (Converted)"
 
-ffmpeg -y -i "01-01-CG5-I_Got_No_Time-LLS.flac" -an -vf scale=1024:1024 -sws_flags bicubic "I Got No Time (thumb).png"
+ffmpeg -y -i "i-got-no-time-cg5.jpg" -an -vf scale=1024:1024 -sws_flags bicubic "I Got No Time (thumb).png"
 ffmpeg -ss 00:00:00.000 -to 00:02:56.000 -i "01-01-CG5-I_Got_No_Time-LLS.flac" -map_metadata -1 -map 0:0 -metadata artist="CG5" -metadata album_artist="CG5" -metadata album="I Got No Time (Single)" -metadata date="2017-08-29" -metadata genre="Rock" -metadata title="I Got No Time" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "I Got No Time.ogg"
 Move-Item -Path "I Got No Time.ogg" -Destination "CG5/(Singles) (Converted)"
 Move-Item -Path "I Got No Time (thumb).png" -Destination "CG5/(Singles) (Converted)"
