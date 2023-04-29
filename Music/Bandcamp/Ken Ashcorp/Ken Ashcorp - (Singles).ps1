@@ -1,3 +1,6 @@
+# https://kenashcorp.bandcamp.com/track/absolute-territory (Absolute Territory)
+# https://kenashcorp.bandcamp.com/track/were-shameless (We're Shameless)
+
 New-Item -Path "Ken Ashcorp/(Singles) (Converted)" -ItemType Directory
 
 
