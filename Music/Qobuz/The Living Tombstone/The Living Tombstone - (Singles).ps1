@@ -1,3 +1,6 @@
+# https://www.qobuz.com/us-en/album/basics-in-behavior-the-living-tombstone/g3jmg74q299mb (Basics In Behavior)
+# https://www.qobuz.com/us-en/album/beep-beep-im-a-sheep-the-living-tombstone/qavze6j3s4kgb (Beep Beep I'm A Sheep)
+# https://www.qobuz.com/us-en/album/die-in-a-fire-the-living-tombstone/ua55o5zob7s5b (Die In A Fire)
 # https://www.qobuz.com/us-en/album/its-been-so-long-the-living-tombstone/k0j0v3boxtsda (It's Been So Long)
 # https://www.qobuz.com/us-en/album/long-time-friends-the-living-tombstone/ec00w46z7loma (Long Time Friends (Spooky Mix))
 # https://www.qobuz.com/us-en/album/love-i-need-the-living-tombstone/s9i0tvkqmjhcc (Love I Need)
