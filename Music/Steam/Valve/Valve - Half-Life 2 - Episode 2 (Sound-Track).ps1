@@ -1,4 +1,5 @@
 # Source is not lossless
+# https://store.steampowered.com/app/420/HalfLife_2_Episode_Two/
 
 New-Item -Path "Valve/Half-Life 2 - Episode 2 (Sound-Track) (Converted)" -ItemType Directory
 
