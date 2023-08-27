@@ -4,8 +4,8 @@
 New-Item -Path "Valve/Half-Life 2 - Episode 1 (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Valve/Half-Life 2 - Episode 1 (Sound-Track) (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Valve/Half-Life 2 - Episode 1 (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "01 Disrupted Original.mp3" -map_metadata -1 -map 0:0 -metadata artist="Valve" -metadata album_artist="Valve" -metadata album="Half-Life 2 - Episode 1 (Sound-Track)" -metadata date="2006-06-01" -metadata genre="Sound-Track" -metadata track="1/10" -metadata title="Disrupted Original" -af "volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "1 - Disrupted Original.ogg"
