@@ -3,8 +3,8 @@
 New-Item -Path "Valve/Portal (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Valve/Portal (Sound-Track) (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Valve/Portal (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "Portal-01-Subject_Name_Here.flac" -map_metadata -1 -map 0:0 -metadata artist="Valve" -metadata album_artist="Valve" -metadata album="Portal (Sound-Track)" -metadata date="2007-10-10" -metadata genre="Sound-Track" -metadata track="1/13" -metadata title="Subject_Name_Here" -c:a libvorbis -q 6 -minrate 128k "1 - Subject_Name_Here.ogg"
