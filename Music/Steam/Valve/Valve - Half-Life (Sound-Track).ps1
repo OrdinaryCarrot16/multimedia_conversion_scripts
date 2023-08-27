@@ -3,8 +3,8 @@
 New-Item -Path "Valve/Half-Life (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Valve/Half-Life (Sound-Track) (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Valve/Half-Life (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "01 Adrenaline Horror.flac" -map_metadata -1 -map 0:0 -metadata artist="Valve" -metadata album_artist="Valve" -metadata album="Half-Life (Sound-Track)" -metadata date="1998-11-08" -metadata genre="Sound-Track" -metadata track="1/27" -metadata title="Adrenaline Horror" -af "volume=-3dB" -c:a libvorbis -q 6 -minrate 128k "1 - Adrenaline Horror.ogg"
