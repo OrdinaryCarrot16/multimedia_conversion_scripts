@@ -3,8 +3,8 @@
 New-Item -Path "Laura Shigihara/Plants VS Zombies (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Laura Shigihara/Plants VS Zombies (Sound-Track) (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Laura Shigihara/Plants VS Zombies (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "Laura Shigihara - Plants vs. Zombies Soundtrack - 01 Crazy Dave's Greeting.flac" -map_metadata -1 -map 0:0 -metadata artist="Laura Shigihara" -metadata album_artist="Laura Shigihara" -metadata album="Plants VS Zombies (Sound-Track)" -metadata date="2010-11-22" -metadata genre="Sound-Track" -metadata track="1/16" -metadata title="Crazy Dave's Greeting" -af "volume=-3dB" -c:a libvorbis -q 6 -minrate 128k "1 - Crazy Dave's Greeting.ogg"
