@@ -3,8 +3,8 @@
 New-Item -Path "Ridiculon/The Binding Of Isaac - Repentence (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Ridiculon/The Binding Of Isaac - Repentence (Sound-Track) (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Ridiculon/The Binding Of Isaac - Repentence (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "Ridiculon - The Binding Of Isaac - Repentance- OST - 01 Genesis Retake Light.flac" -map_metadata -1 -map 0:0 -metadata artist="Ridiculon" -metadata album_artist="Ridiculon" -metadata album="The Binding Of Isaac - Repentence (Sound-Track)" -metadata date="2021-03-31" -metadata genre="Sound-Track" -metadata track="1/20" -metadata title="Genesis Re-Take (Light)" -af "volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "1 - Genesis Re-Take (Light).ogg"
