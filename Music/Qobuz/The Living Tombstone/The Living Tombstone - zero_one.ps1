@@ -4,8 +4,8 @@
 New-Item -Path "The Living Tombstone/zero_one (Converted)" -ItemType Directory
 
 
-ffmpeg -i "zero-one-the-living-tombstone.jpg" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "The Living Tombstone/zero_one (Converted)"
+ffmpeg -i "zero-one-the-living-tombstone.jpg" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/zero_one (Converted)/cover.png"
 
 
 ffmpeg -ss 00:00:00.000 -to 00:03:26.250 -i "01-01-MACHINE-What_I_Want-LLS.flac" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone" -metadata album="zero_one" -metadata date="2020-09-03" -metadata genre="Electronic" -metadata track="1/10" -metadata title="What I Want" -af "apad=pad_dur=3s,volume=-7dB" -c:a libvorbis -q 6 -minrate 128k "1 - What I Want.ogg"
