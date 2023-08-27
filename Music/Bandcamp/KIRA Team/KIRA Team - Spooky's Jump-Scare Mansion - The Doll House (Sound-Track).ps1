@@ -3,8 +3,8 @@
 New-Item -Path "KIRA Team/Spooky's Jump-Scare Mansion - The Doll House (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.jpg" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "KIRA Team/Spooky's Jump-Scare Mansion - The Doll House (Sound-Track) (Converted)"
+ffmpeg -i "cover.jpg" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "KIRA Team/Spooky's Jump-Scare Mansion - The Doll House (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "Various Artists - The Doll House (Original Soundtrack) - 01 Nolan Reese - An Invitation.flac" -map_metadata -1 -map 0:0 -metadata artist="Nolan Reese" -metadata album_artist="KIRA Team" -metadata album="Spooky's Jump-Scare Mansion - The Doll House (Sound-Track)" -metadata date="2020-10-09" -metadata genre="Sound-Track" -metadata track="1/23" -metadata title="An Invitation" -af "volume=-3dB" -c:a libvorbis -q 6 -minrate 128k "1 - An Invitation.ogg"
