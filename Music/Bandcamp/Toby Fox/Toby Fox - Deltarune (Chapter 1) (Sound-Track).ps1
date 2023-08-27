@@ -3,8 +3,8 @@
 New-Item -Path "Toby Fox/Deltarune (Chapter 1) (Sound-Track) (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Toby Fox/Deltarune (Chapter 1) (Sound-Track) (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Toby Fox/Deltarune (Chapter 1) (Sound-Track) (Converted)/cover.png"
 
 
 ffmpeg -i "Toby Fox - DELTARUNE Chapter 1 OST - 01 ANOTHER HIM.flac" -map_metadata -1 -map 0:0 -metadata artist="Toby Fox" -metadata album_artist="Toby Fox" -metadata album="Deltarune (Chapter 1) (Sound-Track)" -metadata date="2018-11-01" -metadata genre="Sound-Track" -metadata track="1/40" -metadata title="Another Him" -af "volume=-3dB" -c:a libvorbis -q 6 -minrate 128k "1 - Another Him.ogg"
