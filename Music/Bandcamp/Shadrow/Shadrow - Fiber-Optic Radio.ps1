@@ -3,8 +3,8 @@
 New-Item -Path "Shadrow/Fiber-Optic Radio (Converted)" -ItemType Directory
 
 
-ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png
-Move-Item -Path "thumb.png" -Destination "Shadrow/Fiber-Optic Radio (Converted)"
+ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+Move-Item -Path "cover_TMP.png" -Destination "Shadrow/Fiber-Optic Radio (Converted)/cover.png"
 
 
 ffmpeg -i "Shadrow - Fiber-Optic Radio - Art - Avex - Reboot.png" -an -vf scale=1024:1024 -sws_flags bicubic "Re-Boot (thumb).png"
