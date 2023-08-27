@@ -17,8 +17,8 @@ if ($media_type -eq "music") {
 	[int]$track_amount=Read-Host -Prompt "How many Tracks/Songs are in this Album"
 		New-Item "$artist - $album (Generated).ps1" -ItemType File -Force
 		Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "New-Item -Path `"$artist/$album (Converted)`" -ItemType Directory`n`n"
-		Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "ffmpeg -i `"$cover_art`" -an -vf scale=1024:1024 -sws_flags bicubic thumb.png"
-		Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "Move-Item -Path `"thumb.png`" -Destination `"$artist/$album (Converted)`"`n`n"
+		Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "ffmpeg -i `"$cover_art`" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png"
+		Add-Content -LiteralPath "$artist - $album (Generated).ps1" -Value "Move-Item -Path `"cover_TMP.png`" -Destination `"$artist/$album (Converted)/cover.png`"`n`n"
 		Get-ChildItem "*.*"
 			do {
 				$TRACK_COUNTER+=1
@@ -40,12 +40,13 @@ if ($media_type -eq "music") {
 			$filename=Read-Host -Prompt "`nSong File Name ($TRACK_COUNTER/$track_amount)"
 			$cover_art=Read-Host -Prompt "Select the audio/image file with the Cover Art"
 			$songname=Read-Host -Prompt "Name of the Song"
-				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "ffmpeg -y -i `"$cover_art`" -an -vf scale=1024:1024 -sws_flags bicubic `"$songname (thumb).png`""
+   			Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "New-Item -Path `"$artist/(Singles) (Converted)/$songname (Single)`" -ItemType Directory`n`n"
+				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "ffmpeg -y -i `"$cover_art`" -an -vf scale=1024:1024 -sws_flags bicubic `"cover_TMP.png`""
 			$genre=Read-Host -Prompt "Genre of the Song"
 			$date=Read-Host -Prompt "Enter the release date of the single (in YYYY-MM-DD format, or type nothing if unknown)"
 				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "ffmpeg -i `"$filename`" -map_metadata -1 -map 0:0 -metadata artist=`"$artist`" -metadata album_artist=`"$artist`" -metadata album=`"$songname (Single)`" -metadata date=`"$date`" -metadata genre=`"$genre`" -metadata title=`"$songname`" -c:a libvorbis -q 6 -minrate 128k `"$songname.ogg`""
-				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "Move-Item -Path `"$songname.ogg`" -Destination `"$artist/(Singles) (Converted)`""
-				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "Move-Item -Path `"$songname (thumb).png`" -Destination `"$artist/(Singles) (Converted)`"`n"
+				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "Move-Item -Path `"$songname.ogg`" -Destination `"$artist/(Singles) (Converted)/$songname (Single)`""
+				Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "Move-Item -Path `"cover_TMP.png`" -Destination `"$artist/(Singles) (Converted)/$songname (Single)/cover.png`"`n"
 		} until ($TRACK_COUNTER -eq $track_amount)
 	Add-Content -LiteralPath "$artist (Singles) (Generated).ps1" -Value "`npause"
 }}
