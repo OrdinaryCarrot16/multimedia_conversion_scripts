@@ -1,3 +1,5 @@
+# https://thquib.bandcamp.com/track/the-court-jester-feat-fukase (The Court Jester)
+
 New-Item -Path "Thquib/(Singles) (Converted)" -ItemType Directory
 
 
