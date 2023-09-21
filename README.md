@@ -8,6 +8,8 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
 - [FFmpeg](https://ffmpeg.org/) (for pretty much all encoding/decoding tasks)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (for YouTube conversion)
 - [MakeMKV](https://makemkv.com/) (for DVD/Blu-Ray conversion) (**W.I.P.**)
+- [AviSynth+](https://avs-plus.net/) (for scripted video editing)
+-    [FFMS2](https://github.com/FFMS/ffms2) (AviSynth+ Plugin)
 
 
 ## Script Generator
