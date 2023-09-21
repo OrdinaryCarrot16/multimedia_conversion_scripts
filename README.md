@@ -38,9 +38,9 @@ Here is a list of the various codecs/containers I will be using in this project,
 
 ###### Video
 
-- MKV (open-source container) (supports pretty much every common codec)
-- VP8 (open-source video codec) (open-source) (1080p>720p downscale for Blu-Ray (more space savings and still good quality), 480p for DVD)
-- Opus (open-source audio codec) (better than AAC?) 
+- MP4 (compatible container)
+- x264 (compatible video codec) (open-source) (1080p>720p downscale for Blu-Ray (more space savings and still good quality), 480p for DVD)
+- AAC (compatible audio codec) 
 
 ###### Music
 
