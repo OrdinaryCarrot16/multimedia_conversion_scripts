@@ -1,3 +1,4 @@
+# May take about 5 minutes to index the files
 FFIndex("title_t06.mkv")
 V = FFVideoSource("title_t06.mkv", track=0, fpsnum=24000, fpsden=1001).BicubicResize(1280, 720)#.ShowSMPTE()
 A = FFAudioSource("title_t06.mkv", track=2).AmplifyDB(-3.0)
