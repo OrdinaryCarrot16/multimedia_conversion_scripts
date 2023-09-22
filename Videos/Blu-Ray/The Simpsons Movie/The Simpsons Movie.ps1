@@ -16,5 +16,6 @@ mp4box -add "The Simpsons Movie.264" -add "The Simpsons Movie.aac" -new "The Sim
 
 Remove-Item "The Simpsons Movie.264"
 Remove-Item "The Simpsons Movie.aac"
+Remove-Item "The Simpsosn Movie.mkv.ffindex"
 
 pause
