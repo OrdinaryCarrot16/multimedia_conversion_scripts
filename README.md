@@ -10,7 +10,7 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
 - [MakeMKV](https://makemkv.com/) (for DVD/Blu-Ray conversion) (**W.I.P.**)
 - [AviSynth+](https://avs-plus.net/) (for scripted video editing)
    -    [FFMS2](https://github.com/FFMS/ffms2) (AviSynth+ Input Plugin)
-   -    [Neo Vague Denoiser](https://github.com/HomeOfAviSynthPlusEvolution/neo_Vague_Denoiser) (AviSynth+ Denoise Plugin)
+   -    [Neo Vague Denoiser](https://github.com/HomeOfAviSynthPlusEvolution/neo_Vague_Denoiser) (AviSynth+ Light Denoise Plugin)
 
 
 ## Script Generator
