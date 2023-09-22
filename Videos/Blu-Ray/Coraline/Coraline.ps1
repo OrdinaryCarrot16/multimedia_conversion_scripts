@@ -8,14 +8,13 @@ Rename-Item -Path "Coraline_t06.mkv" -NewName "Coraline.mkv"
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
 
+New-Item -Path "Coraline (Converted)" -ItemType Directory
+
 ffmpeg -i "Coraline.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 16 "Coraline.264"
 ffmpeg -i "Coraline.avs" -c:a aac -b:a 192k "The Simpsons Movie.aac"
 mp4box -add "Coraline.264" -add "Coraline.aac" -new "Coraline.mp4"
 
 Remove-Item "Coraline.264"
 Remove-Item "Coraline.aac"
-
-New-Item -Path "Coraline (Converted)" -ItemType Directory
-
 
 pause
