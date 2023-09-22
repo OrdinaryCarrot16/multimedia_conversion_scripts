@@ -16,5 +16,6 @@ mp4box -add "Coraline.264" -add "Coraline.aac" -new "Coraline.mp4"
 
 Remove-Item "Coraline.264"
 Remove-Item "Coraline.aac"
+Remove-Item "Coraline.mkv.ffindex"
 
 pause
