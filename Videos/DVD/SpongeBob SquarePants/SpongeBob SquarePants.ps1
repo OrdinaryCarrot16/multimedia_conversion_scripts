@@ -122,6 +122,7 @@ pause
 
 New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
 
+# Season 1 - Disc 1
 <#
 ffmpeg -i "S01E01 - Help Wanted.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E01 - Help Wanted.264"
 ffmpeg -i "S01E01 - Help Wanted.avs" -c:a aac -b:a 192k "S01E01 - Help Wanted.aac"
@@ -259,5 +260,7 @@ Move-Item -Path "S01E17 - Squeaky Boots.mp4" -Destination "SpongeBob SquarePants
 Remove-Item "S01E17 - Squeaky Boots.264"
 Remove-Item "S01E17 - Squeaky Boots.aac"
 Remove-Item "S01E17 - Squeaky Boots.mkv.ffindex"
+
+# Season 1 - Disc 2
 
 pause
