@@ -1,5 +1,5 @@
 # 
-<#
+
 New-Item -Path "MakeMKV/SpongeBob SquarePants" -ItemType Directory
 cd "MakeMKV/SpongeBob SquarePants"
 
@@ -65,7 +65,7 @@ pause
 Write-Host "Insert next disc (Season 1 - Disc 3), then press enter to proceed"
 pause
 
-#>
+
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
 
@@ -207,3 +207,5 @@ Move-Item -Path "S01E17 - Squeaky Boots.mp4" -Destination "SpongeBob SquarePants
 Remove-Item "S01E17 - Squeaky Boots.264"
 Remove-Item "S01E17 - Squeaky Boots.aac"
 Remove-Item "S01E17 - Squeaky Boots.mkv.ffindex"
+
+pause
