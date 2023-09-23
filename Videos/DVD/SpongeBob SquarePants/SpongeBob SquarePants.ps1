@@ -6,35 +6,33 @@ cd "MakeMKV/SpongeBob SquarePants"
 Write-Host "Insert disc (Season 1 - Disc 1), then press enter to proceed"
 pause
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
+# First episode comes later due to copyright issues (Season 3)
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "D1_t00.mkv" -NewName "S01E02 - Reef Blower.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "D1_t00.mkv" -NewName "S01E03 - Reef Blower.mkv"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "D2_t01.mkv" -NewName "S01E03 - Tea At The Tree-Dome.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "D1_t00.mkv" -NewName "S01E04 - Reef Blower.mkv"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "D3_t02.mkv" -NewName "S01E04 - Bubble-Stand.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "D1_t00.mkv" -NewName "S01E05 - Reef Blower.mkv"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "D4_t03.mkv" -NewName "S01E05 - Ripped Pants.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "D1_t00.mkv" -NewName "S01E06 - Reef Blower.mkv"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "E1_t04.mkv" -NewName "S01E06 - Jelly-Fishing.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "D1_t00.mkv" -NewName "S01E07 - Reef Blower.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "D1_t00.mkv" -NewName "S01E08 - Reef Blower.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "D1_t00.mkv" -NewName "S01E09 - Reef Blower.mkv"
 
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
 Rename-Item -Path "D1_t00.mkv" -NewName "S01E10 - Reef Blower.mkv"
-
-makemkvcon64 --minlength=0 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "D1_t00.mkv" -NewName "S01E01 - Reef Blower.mkv"
 
 
 Write-Host "Insert next disc (Season 1 - Disc 2), then press enter to proceed"
