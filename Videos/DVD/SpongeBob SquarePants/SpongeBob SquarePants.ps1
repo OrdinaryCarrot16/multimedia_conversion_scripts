@@ -160,7 +160,7 @@ Move-Item -Path "S01E11 - Home Sweet Pineapple.mp4" -Destination "SpongeBob Squa
 Remove-Item "S01E11 - Home Sweet Pineapple.264"
 Remove-Item "S01E11 - Home Sweet Pineapple.aac"
 Remove-Item "S01E11 - Home Sweet Pineapple.mkv.ffindex"
-#>
+
 ffmpeg -i "S01E12 - Mermaid Man And Barnacle Boy.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E12 - Mermaid Man And Barnacle Boy.264"
 ffmpeg -i "S01E12 - Mermaid Man And Barnacle Boy.avs" -c:a aac -b:a 192k "S01E12 - Mermaid Man And Barnacle Boy.aac"
 mp4box -add "S01E12 - Mermaid Man And Barnacle Boy.264" -fps 23.976 -add "S01E12 - Mermaid Man And Barnacle Boy.aac" -new "S01E12 - Mermaid Man And Barnacle Boy.mp4"
