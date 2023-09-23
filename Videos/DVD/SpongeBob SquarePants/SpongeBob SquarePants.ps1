@@ -55,6 +55,9 @@ Rename-Item -Path "G3_t14.mkv" -NewName "S01E16 - Sandys Rocket.mkv"
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
 Rename-Item -Path "G4_t15.mkv" -NewName "S01E17 - Squeaky Boots.mkv"
 
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 17 "./"
+Rename-Item -Path "H3_t17.mkv" -NewName "Credits_TMP.mkv"
+
 
 Write-Host "Insert next disc (Season 1 - Disc 2), then press enter to proceed"
 pause
