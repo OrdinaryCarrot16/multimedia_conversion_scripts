@@ -62,6 +62,57 @@ Rename-Item -Path "H3_t17.mkv" -NewName "Credits_TMP.mkv"
 Write-Host "Insert next disc (Season 1 - Disc 2), then press enter to proceed"
 pause
 
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "C1_t00.mkv" -NewName "S01E18 - Nature Pants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C2_t01.mkv" -NewName "S01E19 - Opposite Day.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C3_t02.mkv" -NewName "S01E20 - Culture Shock.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "C4_t03.mkv" -NewName "S01E21 - FUN.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "D1_t04.mkv" -NewName "S01E22 - MuscleBob BuffPants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "D2_t06.mkv" -NewName "S01E23 - Squidward The Un-Friendly Ghost.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "D3_t07.mkv" -NewName "S01E24 - The Chaperone.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "D4_t08.mkv" -NewName "S01E25 - Employee Of The Month.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "E1_t09.mkv" -NewName "S01E26 - ScaredyPants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "E2_t10.mkv" -NewName "S01E27 - I Was A Teenage Gary.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "E3_t11.mkv" -NewName "S01E28 - SB-129.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "H1_t05.mkv" -NewName "S01E29 - Karate Choppers.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "F1_t12.mkv" -NewName "S01E30 - Sleepy Time.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "F2_t13.mkv" -NewName "S01E31 - Suds.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 14 "./"
+Rename-Item -Path "F3_t14.mkv" -NewName "S01E32 - Valentines Day.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
+Rename-Item -Path "F4_t15.mkv" -NewName "S01E33 - The Paper.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 17 "./"
+Rename-Item -Path "G2_t17.mkv" -NewName "Credits_TMP.mkv"
+
 Write-Host "Insert next disc (Season 1 - Disc 3), then press enter to proceed"
 pause
 
