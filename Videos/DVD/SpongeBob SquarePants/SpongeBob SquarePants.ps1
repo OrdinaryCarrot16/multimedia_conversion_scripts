@@ -114,6 +114,33 @@ Rename-Item -Path "G2_t17.mkv" -NewName "Credits_TMP.mkv"
 Write-Host "Insert next disc (Season 1 - Disc 3), then press enter to proceed"
 pause
 
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "C1_t00.mkv" -NewName "S01E34 - Arrgh.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C2_t01.mkv" -NewName "S01E35 - Rock Bottom.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C3_t02.mkv" -NewName "S01E36 - Texas.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "C4_t03.mkv" -NewName "S01E37 - Walking Small.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "D1_t04.mkv" -NewName "S01E38 - Fools In April.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "D2_t05.mkv" -NewName "S01E39 - Neptunes Spatula.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "D3_t06.mkv" -NewName "S01E40 - Hooky.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "D4_t07.mkv" -NewName "S01E41 - Mermaid Man And Barnacle Boy II.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "F6_t09.mkv" -NewName "Credits_TMP.mkv"
+
 
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
@@ -388,6 +415,72 @@ Move-Item -Path "S01E33 - The Paper.mp4" -Destination "SpongeBob SquarePants (Co
 Remove-Item "S01E33 - The Paper.264"
 Remove-Item "S01E33 - The Paper.aac"
 Remove-Item "S01E33 - The Paper.mkv.ffindex"
+
+# Season 1 - Disc 3
+
+ffmpeg -i "S01E34 - Arrgh.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E34 - Arrgh.264"
+ffmpeg -i "S01E34 - Arrgh.avs" -c:a aac -b:a 192k "S01E34 - Arrgh.aac"
+mp4box -add "S01E34 - Arrgh.264" -fps 23.976 -add "S01E34 - Arrgh.aac" -new "S01E34 - Arrgh.mp4"
+Move-Item -Path "S01E34 - Arrgh.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E34 - Arrgh.mp4"
+Remove-Item "S01E34 - Arrgh.264"
+Remove-Item "S01E34 - Arrgh.aac"
+Remove-Item "S01E34 - Arrgh.mkv.ffindex"
+
+ffmpeg -i "S01E35 - Rock Bottom.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E35 - Rock Bottom.264"
+ffmpeg -i "S01E35 - Rock Bottom.avs" -c:a aac -b:a 192k "S01E35 - Rock Bottom.aac"
+mp4box -add "S01E35 - Rock Bottom.264" -fps 23.976 -add "S01E35 - Rock Bottom.aac" -new "S01E35 - Rock Bottom.mp4"
+Move-Item -Path "S01E35 - Rock Bottom.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E35 - Rock Bottom.mp4"
+Remove-Item "S01E35 - Rock Bottom.264"
+Remove-Item "S01E35 - Rock Bottom.aac"
+Remove-Item "S01E35 - Rock Bottom.mkv.ffindex"
+
+ffmpeg -i "S01E36 - Texas.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E36 - Texas.264"
+ffmpeg -i "S01E36 - Texas.avs" -c:a aac -b:a 192k "S01E36 - Texas.aac"
+mp4box -add "S01E36 - Texas.264" -fps 23.976 -add "S01E36 - Texas.aac" -new "S01E36 - Texas.mp4"
+Move-Item -Path "S01E36 - Texas.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E36 - Texas.mp4"
+Remove-Item "S01E36 - Texas.264"
+Remove-Item "S01E36 - Texas.aac"
+Remove-Item "S01E36 - Texas.mkv.ffindex"
+
+ffmpeg -i "S01E37 - Walking Small.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E37 - Walking Small.264"
+ffmpeg -i "S01E37 - Walking Small.avs" -c:a aac -b:a 192k "S01E37 - Walking Small.aac"
+mp4box -add "S01E37 - Walking Small.264" -fps 23.976 -add "S01E37 - Walking Small.aac" -new "S01E37 - Walking Small.mp4"
+Move-Item -Path "S01E37 - Walking Small.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E37 - Walking Small.mp4"
+Remove-Item "S01E37 - Walking Small.264"
+Remove-Item "S01E37 - Walking Small.aac"
+Remove-Item "S01E37 - Walking Small.mkv.ffindex"
+
+ffmpeg -i "S01E38 - Fools In April.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E38 - Fools In April.264"
+ffmpeg -i "S01E38 - Fools In April.avs" -c:a aac -b:a 192k "S01E38 - Fools In April.aac"
+mp4box -add "S01E38 - Fools In April.264" -fps 23.976 -add "S01E38 - Fools In April.aac" -new "S01E38 - Fools In April.mp4"
+Move-Item -Path "S01E38 - Fools In April.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E38 - Fools In April.mp4"
+Remove-Item "S01E38 - Fools In April.264"
+Remove-Item "S01E38 - Fools In April.aac"
+Remove-Item "S01E38 - Fools In April.mkv.ffindex"
+
+ffmpeg -i "S01E39 - Neptunes Spatula.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E39 - Neptunes Spatula.264"
+ffmpeg -i "S01E39 - Neptunes Spatula.avs" -c:a aac -b:a 192k "S01E39 - Neptunes Spatula.aac"
+mp4box -add "S01E39 - Neptunes Spatula.264" -fps 23.976 -add "S01E39 - Neptunes Spatula.aac" -new "S01E39 - Neptunes Spatula.mp4"
+Move-Item -Path "S01E39 - Neptunes Spatula.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E39 - Neptunes Spatula.mp4"
+Remove-Item "S01E39 - Neptunes Spatula.264"
+Remove-Item "S01E39 - Neptunes Spatula.aac"
+Remove-Item "S01E39 - Neptunes Spatula.mkv.ffindex"
+
+ffmpeg -i "S01E40 - Hooky.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E40 - Hooky.264"
+ffmpeg -i "S01E40 - Hooky.avs" -c:a aac -b:a 192k "S01E40 - Hooky.aac"
+mp4box -add "S01E40 - Hooky.264" -fps 23.976 -add "S01E40 - Hooky.aac" -new "S01E40 - Hooky.mp4"
+Move-Item -Path "S01E40 - Hooky.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E40 - Hooky.mp4"
+Remove-Item "S01E40 - Hooky.264"
+Remove-Item "S01E40 - Hooky.aac"
+Remove-Item "S01E40 - Hooky.mkv.ffindex"
+
+ffmpeg -i "S01E41 - Mermaid Man And Barnacle Boy II.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 18 "S01E41 - Mermaid Man And Barnacle Boy II.264"
+ffmpeg -i "S01E41 - Mermaid Man And Barnacle Boy II.avs" -c:a aac -b:a 192k "S01E41 - Mermaid Man And Barnacle Boy II.aac"
+mp4box -add "S01E41 - Mermaid Man And Barnacle Boy II.264" -fps 23.976 -add "S01E41 - Mermaid Man And Barnacle Boy II.aac" -new "S01E41 - Mermaid Man And Barnacle Boy II.mp4"
+Move-Item -Path "S01E41 - Mermaid Man And Barnacle Boy II.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E41 - Mermaid Man And Barnacle Boy II.mp4"
+Remove-Item "S01E41 - Mermaid Man And Barnacle Boy II.264"
+Remove-Item "S01E41 - Mermaid Man And Barnacle Boy II.aac"
+Remove-Item "S01E41 - Mermaid Man And Barnacle Boy II.mkv.ffindex"
 
 
 pause
