@@ -7,11 +7,11 @@ A_Intro = FFAudioSource("S01E02 - Reef Blower.mkv", track=1)
 V_E = FFVideoSource("S01E04 - Bubble-Stand.mkv", track=0, fpsnum=2997, fpsden=100)
 A_E = FFAudioSource("S01E04 - Bubble-Stand.mkv", track=1)
 
-V_Credits = FFVideoSource("Credits_TMP.mkv", track=0, fpsnum=2997, fpsden=100)
-A_Credits = FFAudioSource("Credits_TMP.mkv", track=1)
+V_Credits = FFVideoSource("Credits_TMP_1.mkv", track=0, fpsnum=2997, fpsden=100)
+A_Credits = FFAudioSource("Credits_TMP_1.mkv", track=1)
 
-V_Corporate = FFVideoSource("Credits_TMP.mkv", track=0, fpsnum=2997, fpsden=100)
-A_Corporate = FFAudioSource("Credits_TMP.mkv", track=1)
+V_Corporate = FFVideoSource("Credits_TMP_1.mkv", track=0, fpsnum=2997, fpsden=100)
+A_Corporate = FFAudioSource("Credits_TMP_1.mkv", track=1)
 
 # Spacers
 S1 = BlankClip(V_E, width=640, height=480, fps=2997, fps_denominator=100, length=36, color=$000000, channels=2, audio_rate=48000).TDecimate(mode=0, cycleR=1, cycle=5)
