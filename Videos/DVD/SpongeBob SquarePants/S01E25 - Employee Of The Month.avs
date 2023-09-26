@@ -18,8 +18,8 @@ S1 = BlankClip(V_E, width=640, height=480, fps=2997, fps_denominator=100, length
 S3 = BlankClip(V_E, width=640, height=480, fps=2997, fps_denominator=100, length=72, color=$000000, channels=2, audio_rate=48000).TDecimate(mode=0, cycleR=1, cycle=5)
 
 # This is what video & audio tracks will be  output to the .avs script reading program
-VA_Intro = AudioDub(V_Intro, A_Intro).Trim(27, 1326).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480)
-VA_E = AudioDub(V_E, A_E).Trim(26, 19847).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480)
-VA_Credits = AudioDub(V_Credits, A_Credits).Trim(4137, 5504).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480)
-VA_Corporate = AudioDub(V_Corporate, A_Corporate).Trim(11010, 11236).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480)
+VA_Intro = AudioDub(V_Intro, A_Intro).Trim(27, 1326).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480).AmplifydB(5.0)
+VA_E = AudioDub(V_E, A_E).Trim(26, 19847).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480).AmplifydB(5.0)
+VA_Credits = AudioDub(V_Credits, A_Credits).Trim(4137, 5504).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480).AmplifydB(5.0)
+VA_Corporate = AudioDub(V_Corporate, A_Corporate).Trim(11010, 11236).TFM(mode=0, PP=3).TDecimate(mode=0, cycleR=1, cycle=5).neo_vd(threshold=4, nsteps=4, percent=80).BicubicResize(640, 480).AmplifydB(5.0)
 AlignedSplice(VA_Intro, S1, VA_E, S1, VA_Credits, VA_Corporate, S3)
