@@ -10,7 +10,7 @@ pause
 
 New-Item -Path "The Simpsons Movie (Converted)" -ItemType Directory
 
-ffmpeg -i "The Simpsons Movie.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 16 "The Simpsons Movie.264"
+ffmpeg -i "The Simpsons Movie.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "The Simpsons Movie.264"
 ffmpeg -i "The Simpsons Movie.avs" -c:a aac -b:a 192k "The Simpsons Movie.aac"
 mp4box -add "The Simpsons Movie.264" -fps 23.976 -add "The Simpsons Movie.aac" -new "The Simpsons Movie.mp4"
 
