@@ -54,7 +54,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
 Rename-Item -Path "G4_t15.mkv" -NewName "S01E17 - Squeaky Boots.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 17 "./"
-Rename-Item -Path "H3_t17.mkv" -NewName "Credits_TMP.mkv"
+Rename-Item -Path "H3_t17.mkv" -NewName "Credits_TMP_1.mkv"
 
 
 Write-Host "Insert next disc (Season 1 - Disc 2), then press enter to proceed"
@@ -109,7 +109,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
 Rename-Item -Path "F4_t15.mkv" -NewName "S01E33 - The Paper.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 17 "./"
-Rename-Item -Path "G2_t17.mkv" -NewName "Credits_TMP.mkv"
+Rename-Item -Path "G2_t17.mkv" -NewName "Credits_TMP_2.mkv"
 
 Write-Host "Insert next disc (Season 1 - Disc 3), then press enter to proceed"
 pause
@@ -139,7 +139,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
 Rename-Item -Path "D4_t07.mkv" -NewName "S01E41 - Mermaid Man And Barnacle Boy II.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
-Rename-Item -Path "F6_t09.mkv" -NewName "Credits_TMP.mkv"
+Rename-Item -Path "F6_t09.mkv" -NewName "Credits_TMP_3.mkv"
 
 
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
@@ -286,6 +286,8 @@ Remove-Item "S01E17 - Squeaky Boots.264"
 Remove-Item "S01E17 - Squeaky Boots.aac"
 Remove-Item "S01E17 - Squeaky Boots.mkv.ffindex"
 
+Remove-Item "Credits_TMP_1.mkv.ffindex"
+
 # Season 1 - Disc 2
 
 ffmpeg -i "S01E18 - Nature Pants.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S01E18 - Nature Pants.264"
@@ -416,6 +418,8 @@ Remove-Item "S01E33 - The Paper.264"
 Remove-Item "S01E33 - The Paper.aac"
 Remove-Item "S01E33 - The Paper.mkv.ffindex"
 
+Remove-Item "Credits_TMP_2.mkv.ffindex"
+
 # Season 1 - Disc 3
 
 ffmpeg -i "S01E34 - Arrgh.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S01E34 - Arrgh.264"
@@ -481,6 +485,8 @@ Move-Item -Path "S01E41 - Mermaid Man And Barnacle Boy II.mp4" -Destination "Spo
 Remove-Item "S01E41 - Mermaid Man And Barnacle Boy II.264"
 Remove-Item "S01E41 - Mermaid Man And Barnacle Boy II.aac"
 Remove-Item "S01E41 - Mermaid Man And Barnacle Boy II.mkv.ffindex"
+
+Remove-Item "Credits_TMP_3.mkv.ffindex"
 
 
 pause
