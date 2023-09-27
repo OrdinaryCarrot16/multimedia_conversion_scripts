@@ -1,6 +1,9 @@
 New-Item -Path "MakeMKV/Coraline" -ItemType Directory
 cd "MakeMKV/Coraline"
 
+Write-Host "Insert disc (Coraline), then press enter to proceed"
+pause
+
 # Movie
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
 Rename-Item -Path "Coraline_t06.mkv" -NewName "Coraline.mkv"
