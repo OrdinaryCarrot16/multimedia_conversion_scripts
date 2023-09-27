@@ -1,4 +1,3 @@
-# May take about 5 minutes to index the files
 FFIndex("title_t06.mkv")
 V_M = FFVideoSource("The Simpsons Movie.mkv", track=0, fpsnum=24000, fpsden=1001)
 A_M = FFAudioSource("The Simpsons Movie.mkv", track=2)
