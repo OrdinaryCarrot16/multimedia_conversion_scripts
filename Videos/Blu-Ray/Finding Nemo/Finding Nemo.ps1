@@ -1,11 +1,11 @@
-<#
+
 New-Item -Path "MakeMKV/Finding Nemo" -ItemType Directory
 cd "MakeMKV/Finding Nemo"
 
 # Movie
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 20 "./"
 Rename-Item -Path "Finding Nemo_t20.mkv" -NewName "Finding Nemo.mkv"
-#>
+
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
 
