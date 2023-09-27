@@ -1,4 +1,4 @@
-FFIndex("title_t06.mkv")
+FFIndex("The Simpsons Movie.mkv")
 V_M = FFVideoSource("The Simpsons Movie.mkv", track=0, fpsnum=24000, fpsden=1001)
 A_M = FFAudioSource("The Simpsons Movie.mkv", track=2)
 S5 = BlankClip(V_M, length=120, color=$000000, channels=6, audio_rate=48000)
