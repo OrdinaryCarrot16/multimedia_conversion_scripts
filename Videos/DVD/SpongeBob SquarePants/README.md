@@ -1,26 +1,56 @@
-# Chart
+## Progress Chart
 
-Season 1:
-     - [X] Main
-     - [ ] Extras
+### Season 1:
 
-Season 2:
+   - [X] Ripped Episodes
+   - [ ] Ripped Extras
+   - [X] Re-Encoded
 
-Season 3:
+### Season 2:
 
-Season 4:
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
 
-Season 5:
+### Season 3:
 
-Season 6:
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
 
-Season 7:
+### Season 4:
 
-Season 8:
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
 
-Season 9:
+### Season 5:
 
-# Season 1
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
+
+### Season 6:
+
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
+
+### Season 7:
+
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
+
+### Season 8:
+
+   - [ ] Ripped Episodes
+   - [ ] Ripped Extras
+   - [ ] Re-Encoded
+
+## Media Verification 
+
+### Season 1
 
 Purchase Link: (https://www.amazon.com/SpongeBob-SquarePants-Complete-1st-Season/dp/B0000C2IQB)
 
