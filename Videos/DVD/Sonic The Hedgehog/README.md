@@ -3,13 +3,11 @@
 ### Season 1:
 
    - [X] Ripped Episodes
-   - [ ] Ripped Extras
    - [ ] Re-Encoded
 
 ### Season 2:
 
    - [X] Ripped Episodes
-   - [ ] Ripped Extras
    - [ ] Re-Encoded
 
 ## Media Verification 
