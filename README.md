@@ -12,6 +12,7 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
    - [FFMS2](https://github.com/FFMS/ffms2) (AviSynth+ Input Plugin)
    - [Neo Vague Denoiser](https://github.com/HomeOfAviSynthPlusEvolution/neo_Vague_Denoiser) (AviSynth+ Light Denoise Plugin)
    - [TIVTC](https://github.com/pinterf/TIVTC) (AviSynth+ De-Telecine Plugin)
+   - [ASharp](https://github.com/Asd-g/AviSynth-ASharp) (AviSynth+ Sharpen Plugin)
 
 
 ## Script Generator
