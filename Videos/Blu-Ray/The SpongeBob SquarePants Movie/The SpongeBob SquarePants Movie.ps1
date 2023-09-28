@@ -1,11 +1,10 @@
-<#
 New-Item -Path "MakeMKV/The SpongeBob SquarePants Movie" -ItemType Directory
 cd "MakeMKV/The SpongeBob SquarePants Movie"
 
 # Movie
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
 Rename-Item -Path "The SpongeBob SquarePants Movie_t04.mkv" -NewName "The SpongeBob SquarePants Movie.mkv"
-#>
+
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
 
