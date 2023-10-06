@@ -8,7 +8,7 @@
 
 ### Season 2:
 
-   - [ ] Ripped Episodes
+   - [X] Ripped Episodes
    - [ ] Ripped Extras
    - [ ] Re-Encoded
 
