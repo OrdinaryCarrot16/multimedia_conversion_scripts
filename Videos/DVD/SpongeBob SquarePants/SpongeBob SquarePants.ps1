@@ -144,7 +144,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
 Rename-Item -Path "F6_t09.mkv" -NewName "Credits_TMP_3.mkv"
 
 
-Write-Host "Insert disc (Season 2 - Disc 1), then press enter to proceed"
+Write-Host "Insert next disc (Season 2 - Disc 1), then press enter to proceed"
 pause
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
@@ -196,7 +196,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 16 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-G2_t16.mkv" -NewName "Credits_TMP_4.mkv"
 
 
-Write-Host "Insert disc (Season 2 - Disc 2), then press enter to proceed"
+Write-Host "Insert next disc (Season 2 - Disc 2), then press enter to proceed"
 pause
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
@@ -245,7 +245,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-F2_t15.mkv" -NewName "Credits_TMP_5.mkv"
 
 
-Write-Host "Insert disc (Season 2 - Disc 3), then press enter to proceed"
+Write-Host "Insert next disc (Season 2 - Disc 3), then press enter to proceed"
 pause
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
