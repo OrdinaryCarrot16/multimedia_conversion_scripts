@@ -1,6 +1,7 @@
 New-Item -Path "MakeMKV/SpongeBob SquarePants" -ItemType Directory
 cd "MakeMKV/SpongeBob SquarePants"
 
+
 Write-Host "Insert disc (Season 1 - Disc 1), then press enter to proceed"
 pause
 
@@ -111,6 +112,7 @@ Rename-Item -Path "F4_t15.mkv" -NewName "S01E33 - The Paper.mkv"
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 17 "./"
 Rename-Item -Path "G2_t17.mkv" -NewName "Credits_TMP_2.mkv"
 
+
 Write-Host "Insert next disc (Season 1 - Disc 3), then press enter to proceed"
 pause
 
@@ -141,21 +143,21 @@ Rename-Item -Path "D4_t07.mkv" -NewName "S01E41 - Mermaid Man And Barnacle Boy I
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
 Rename-Item -Path "F6_t09.mkv" -NewName "Credits_TMP_3.mkv"
 
+
 Write-Host "Insert disc (Season 2 - Disc 1), then press enter to proceed"
 pause
 
-# Thanks Nickelodeon for changing the release orders
-makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-E1_t03.mkv" -NewName "S02E01 - Something Smells.mkv"
-
-makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-B4_t04.mkv" -NewName "S02E02 - Bossy Boots.mkv"
-
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-B1_t01.mkv" -NewName "S02E03 - Your Shoes Un-Tied.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-B1_t01.mkv" -NewName "S02E01 - Your Shoes Un-Tied.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-B2_t02.mkv" -NewName "S02E04 - Squids Day Off.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-B2_t02.mkv" -NewName "S02E02 - Squids Day Off.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-E1_t03.mkv" -NewName "S02E03 - Something Smells.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-B4_t04.mkv" -NewName "S02E04 - Bossy Boots.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-F1_t05.mkv" -NewName "S02E05 - Big Pink Loser.mkv"
@@ -163,36 +165,95 @@ Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-F1_t0
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C1_t06.mkv" -NewName "S02E06 - Bubble Buddy.mkv"
 
-makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D5_t15.mkv" -NewName "S02E09 - Christmas Who.mkv"
-
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C2_t07.mkv" -NewName "S02E10 - Dying For Pie.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C2_t07.mkv" -NewName "S02E07 - Dying For Pie.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C3_t08.mkv" -NewName "S02E11 - Imitation Krabs.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C3_t08.mkv" -NewName "S02E08 - Imitation Krabs.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C4_t09.mkv" -NewName "S02E12 - Wormy.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C4_t09.mkv" -NewName "S02E09 - Wormy.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C5_t10.mkv" -NewName "S02E13 - Patty Hype.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-C5_t10.mkv" -NewName "S02E10 - Patty Hype.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D1_t11.mkv" -NewName "S02E16 - Grandmas Kisses.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D1_t11.mkv" -NewName "S02E11 - Grandmas Kisses.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D2_t12.mkv" -NewName "S02E17 - Squidville.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D2_t12.mkv" -NewName "S02E12 - Squidville.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-H3_t13.mkv" -NewName "S02E23 - Pre-Hibernation Week.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-H3_t13.mkv" -NewName "S02E13 - Pre-Hibernation Week.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 14 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D4_t14.mkv" -NewName "S02E24 - Life Of Crime.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D4_t14.mkv" -NewName "S02E14 - Life Of Crime.mkv"
 
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D5_t15.mkv" -NewName "S02E15 - Christmas Who.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 16 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-G2_t16.mkv" -NewName "Credits_TMP_4.mkv"
+
+
+Write-Host "Insert disc (Season 2 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-E1_t01.mkv" -NewName "S02E16 - Survival Of The Idiots.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-B2_t02.mkv" -NewName "S02E17 - Dumped.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-B3_t03.mkv" -NewName "S02E18 - No Free Rides.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-B4_t04.mkv" -NewName "S02E19 - Im Your Biggest Fanatic.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-B5_t05.mkv" -NewName "S02E20 - Mermaid Man And Barnacle Boy III.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-C1_t06.mkv" -NewName "S02E21 - Squirrel Jokes.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-C2_t07.mkv" -NewName "S02E22 - Pressure.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-C3_t08.mkv" -NewName "S02E23 - The Smoking Peanut.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-G2_t09.mkv" -NewName "S02E24 - Shanghaied.mkv"
+
+
+
+
+
+
+
+
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-D3_t13.mkv" -NewName "S02E25 - The Secret Box.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 14 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-D4_t14.mkv" -NewName "S02E26 - Band Geeks.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-D3_t13.mkv" -NewName "S02E25 - The Secret Box.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-D3_t13.mkv" -NewName "S02E25 - The Secret Box.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-D3_t13.mkv" -NewName "S02E25 - The Secret Box.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-D3_t13.mkv" -NewName "S02E25 - The Secret Box.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 2-F2_t15.mkv" -NewName "Credits_TMP_5.mkv"
 
 
 
