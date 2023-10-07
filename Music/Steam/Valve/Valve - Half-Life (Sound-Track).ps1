@@ -86,6 +86,6 @@ ffmpeg -i "26 Dark Piano Short.flac" -map_metadata -1 -map 0:0 -metadata artist=
 Move-Item -Path "026 - Dark Piano Short.ogg" -Destination "Valve/Half-Life (Sound-Track) (Converted)"
 
 ffmpeg -i "27 Sharp Fear Short.flac" -map_metadata -1 -map 0:0 -metadata artist="Valve" -metadata album_artist="Valve" -metadata album="Half-Life (Sound-Track)" -metadata date="1998-11-08" -metadata genre="Sound-Track" -metadata track="27/27" -metadata title="Sharp Fear Short" -af "volume=-3dB" -c:a libvorbis -q 6 -minrate 128k "027 - Sharp Fear Short.ogg"
-Move-Item -Path "27 - Sharp Fear Short.ogg" -Destination "Valve/Half-Life (Sound-Track) (Converted)"
+Move-Item -Path "027 - Sharp Fear Short.ogg" -Destination "Valve/Half-Life (Sound-Track) (Converted)"
 
 pause
