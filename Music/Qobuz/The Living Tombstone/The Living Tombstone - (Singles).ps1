@@ -1,9 +1,12 @@
 # https://www.qobuz.com/us-en/album/basics-in-behavior-the-living-tombstone/g3jmg74q299mb (Basics In Behavior)
 # https://www.qobuz.com/us-en/album/beep-beep-im-a-sheep-the-living-tombstone/qavze6j3s4kgb (Beep Beep I'm A Sheep)
 # https://www.qobuz.com/us-en/album/die-in-a-fire-the-living-tombstone/ua55o5zob7s5b (Die In A Fire)
+# https://www.qobuz.com/us-en/album/echo-the-living-tombstone/wiph5cfe6trla (Echo)
 # https://www.qobuz.com/us-en/album/its-been-so-long-the-living-tombstone/k0j0v3boxtsda (It's Been So Long)
 # https://www.qobuz.com/us-en/album/long-time-friends-the-living-tombstone/ec00w46z7loma (Long Time Friends (Spooky Mix))
 # https://www.qobuz.com/us-en/album/love-i-need-the-living-tombstone/s9i0tvkqmjhcc (Love I Need)
+# https://www.qobuz.com/us-en/album/my-ordinary-life-the-living-tombstone/wo842wt3fxjqa (My Ordinary Life)
+
 
 New-Item -Path "The Living Tombstone/(Singles) (Converted)" -ItemType Directory
 
@@ -26,6 +29,12 @@ New-Item -Path "The Living Tombstone/(Singles) (Converted)/Die In A Fire (Single
 Move-Item -Path "Die In A Fire.ogg" -Destination "The Living Tombstone/(Singles) (Converted)/Die In A Fire (Single)"
 Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/(Singles) (Converted)/Die In A Fire (Single)/cover.png"
 
+ffmpeg -y -i "echo-the-living-tombstone.jpg" -an -vf scale=1024:1024 -sws_flags bicubic "cover_TMP.png"
+ffmpeg -ss 00:00:00.200 -to 00:03:17.500 -i "01-01 Echo (feat. Crusher-P).flac" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone / Crusher-P" -metadata album_artist="The Living Tombstone" -metadata album="Echo (Single)" -metadata date="2017-05-31" -metadata genre="Electronic" -metadata title="Echo (Remix)" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "Echo (Remix).ogg"
+New-Item -Path "The Living Tombstone/(Singles) (Converted)/Echo (Single) (Remix)" -ItemType Directory
+Move-Item -Path "Echo (Remix).ogg" -Destination "The Living Tombstone/(Singles) (Converted)/Echo (Single) (Remix)"
+Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/(Singles) (Converted)/Echo (Single) (Remix)/cover.png"
+
 ffmpeg -y -i "its-been-so-long-the-living-tombstone.jpg" -an -vf scale=1024:1024 -sws_flags bicubic "cover_TMP.png"
 ffmpeg -ss 00:00:00.000 -to 00:02:52.000 -i "01-01 It's Been So Long.flac" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone" -metadata album="It's Been So Long (Single)" -metadata date="2014-12-04" -metadata genre="Electronic" -metadata title="It's Been So Long" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "It's Been So Long.ogg"
 New-Item -Path "The Living Tombstone/(Singles) (Converted)/It's Been So Long (Single)" -ItemType Directory
@@ -43,6 +52,12 @@ ffmpeg -ss 00:00:00.050 -to 00:03:12.000 -i "01-01 Love I Need.flac" -map_metada
 New-Item -Path "The Living Tombstone/(Singles) (Converted)/Love I Need (Single)" -ItemType Directory
 Move-Item -Path "Love I Need.ogg" -Destination "The Living Tombstone/(Singles) (Converted)/Love I Need (Single)"
 Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/(Singles) (Converted)/Love I Need (Single)/cover.png"
+
+ffmpeg -y -i "my-ordinary-life-the-living-tombstone.jpg" -an -vf scale=1024:1024 -sws_flags bicubic "cover_TMP.png"
+ffmpeg -ss 00:00:00.200 -to 00:03:49.000 -i "01-01 My Ordinary Life.flac" -map_metadata -1 -map 0:0 -metadata artist="The Living Tombstone" -metadata album_artist="The Living Tombstone" -metadata album="My Ordinary Life (Single)" -metadata date="2017-11-23" -metadata genre="Electronic" -metadata title="My Ordinary Life" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "My Ordinary Life.ogg"
+New-Item -Path "The Living Tombstone/(Singles) (Converted)/My Ordinary Life (Single)" -ItemType Directory
+Move-Item -Path "My Ordinary Life.ogg" -Destination "The Living Tombstone/(Singles) (Converted)/My Ordinary Life (Single)"
+Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/(Singles) (Converted)/My Ordinary Life (Single)/cover.png"
 
 
 pause
