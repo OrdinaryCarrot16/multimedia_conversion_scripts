@@ -5,6 +5,7 @@
    - [X] Ripped Episodes
    - [ ] Ripped Extras
    - [X] Re-Encoded
+   Note: Help Wanted (S01E01) is not included on this season DVD set, it was moved to Season 3 due to copyright difficulties.
 
 ### Season 2:
 
