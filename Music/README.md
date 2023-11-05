@@ -9,4 +9,5 @@ Music Download Site Priority:
      2. Qobuz
      3. Steam (mostly game sound-tracks)
      4. Amazon Music (no lossless downloads as far as I can see)
-     5. YouTube Rip (if no download avaliable)
+     5. (Other) (such as a direct download link)
+     6. YouTube Rip (if no download avaliable)
