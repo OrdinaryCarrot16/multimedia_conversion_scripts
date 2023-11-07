@@ -424,14 +424,6 @@ New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
 
 # Season 1 - Disc 1
 
-ffmpeg -i "S01E01 - Help Wanted.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S01E01 - Help Wanted.264"
-ffmpeg -i "S01E01 - Help Wanted.avs" -c:a aac -b:a 192k "S01E01 - Help Wanted.aac"
-mp4box -add "S01E01 - Help Wanted.264" -fps 23.976 -add "S01E01 - Help Wanted.aac" -new "S01E01 - Help Wanted.mp4"
-Move-Item -Path "S01E01 - Help Wanted.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E01 - Help Wanted.mp4"
-Remove-Item "S01E01 - Help Wanted.264"
-Remove-Item "S01E01 - Help Wanted.aac"
-Remove-Item "S01E01 - Help Wanted.mkv.ffindex"
-
 ffmpeg -i "S01E02 - Reef Blower.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S01E02 - Reef Blower.264"
 ffmpeg -i "S01E02 - Reef Blower.avs" -c:a aac -b:a 192k "S01E02 - Reef Blower.aac"
 mp4box -add "S01E02 - Reef Blower.264" -fps 23.976 -add "S01E02 - Reef Blower.aac" -new "S01E02 - Reef Blower.mp4"
@@ -1325,6 +1317,14 @@ Remove-Item "S03E30 - I Had An Accident.mkv.ffindex"
 
 
 # Season 3 - Disc 3
+
+ffmpeg -i "S01E01 - Help Wanted.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S01E01 - Help Wanted.264"
+ffmpeg -i "S01E01 - Help Wanted.avs" -c:a aac -b:a 192k "S01E01 - Help Wanted.aac"
+mp4box -add "S01E01 - Help Wanted.264" -fps 23.976 -add "S01E01 - Help Wanted.aac" -new "S01E01 - Help Wanted.mp4"
+Move-Item -Path "S01E01 - Help Wanted.mp4" -Destination "SpongeBob SquarePants (Converted)/S01E01 - Help Wanted.mp4"
+Remove-Item "S01E01 - Help Wanted.264"
+Remove-Item "S01E01 - Help Wanted.aac"
+Remove-Item "S01E01 - Help Wanted.mkv.ffindex"
 
 ffmpeg -i "S03E31 - Krabby Land.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S03E31 - Krabby Land.264"
 ffmpeg -i "S03E31 - Krabby Land.avs" -c:a aac -b:a 192k "S03E31 - Krabby Land.aac"
