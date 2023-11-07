@@ -281,9 +281,144 @@ Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 3-C4_t0
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 3-F3_t11.mkv" -NewName "Credits_TMP_6.mkv"
 
+Write-Host "Insert next disc (Season 3 - Disc 1), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "B1_t00.mkv" -NewName "S03E01 - The Algaes Always Greener.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "B2_t02.mkv" -NewName "S03E02 - SpongeGuard On Duty.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "B3_t04.mkv" -NewName "S03E03 - Club SpongeBob.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "I1_t06.mkv" -NewName "S03E04 - My Pretty Seahorse.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "C2_t08.mkv" -NewName "S03E05 - Just One Bite.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "C3_t10.mkv" -NewName "S03E06 - The Bully.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "D1_t12.mkv" -NewName "S03E07 - Nasty Patty.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 14 "./"
+Rename-Item -Path "D2_t14.mkv" -NewName "S03E08 - Idiot Box.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 16 "./"
+Rename-Item -Path "D3_t16.mkv" -NewName "S03E09 - Mermaid Man And Barnacle Boy IV.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 18 "./"
+Rename-Item -Path "E1_t18.mkv" -NewName "S03E10 - Doing Time.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 20 "./"
+Rename-Item -Path "E2_t20.mkv" -NewName "S03E11 - Snow-Ball Effect.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 22 "./"
+Rename-Item -Path "E3_t22.mkv" -NewName "S03E12 - One Krabs Trash.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 24 "./"
+Rename-Item -Path "F1_t24.mkv" -NewName "S03E13 - As Seen On TV.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 26 "./"
+Rename-Item -Path "F2_t26.mkv" -NewName "S03E14 - Can You Spare A Dime.mkv"
+
+# For some reason I don't see the 'No Weenies Allowed' episode in MakeMKV, so I have to take it from the 'Play All' cluster.
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 30 "./"
+Rename-Item -Path "A1_t30.mkv" -NewName "S03E15 - No Weenies Allowed.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 28 "./"
+Rename-Item -Path "G1_t28.mkv" -NewName "S03E16 - Squilliam Returns.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 32 "./"
+Rename-Item -Path "H3_t32.mkv" -NewName "Credits_TMP_7.mkv"
 
 Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
 pause
+
+
+Write-Host "Insert next disc (Season 3 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "B1_t00.mkv" -NewName "S03E17 - Krab Borg.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "B2_t02.mkv" -NewName "S03E18 - Rock-A-Bye Bivalve.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "B3_t04.mkv" -NewName "S03E19 - Wet Painters.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "H1_t06.mkv" -NewName "S03E20 - Krusty Krab Training Video.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "C2_t08.mkv" -NewName "S03E21 - SpongeBobs House Party.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "C3_t10.mkv" -NewName "S03E22 - Chocolate With Nuts.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "D1_t12.mkv" -NewName "S03E23 - Mermaid Man And Barnacle Boy V.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 14 "./"
+Rename-Item -Path "D2_t14.mkv" -NewName "S03E24 - New Student Starfish.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 16 "./"
+Rename-Item -Path "D3_t16.mkv" -NewName "S03E25 - Clams.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 18 "./"
+Rename-Item -Path "E1_t18.mkv" -NewName "S03E26 - Ugh.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 20 "./"
+Rename-Item -Path "E2_t20.mkv" -NewName "S03E27 - The Great Snail Race.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 22 "./"
+Rename-Item -Path "E3_t22.mkv" -NewName "S03E28 - Mid-Life Crustacean.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 24 "./"
+Rename-Item -Path "F1_t24.mkv" -NewName "S03E29 - Born Again Krabs.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 26 "./"
+Rename-Item -Path "F2_t26.mkv" -NewName "S03E30 - I Had An Accident.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 30 "./"
+Rename-Item -Path "G2_t30.mkv" -NewName "Credits_TMP_8.mkv"
+
+
+Write-Host "Insert next disc (Season 3 - Disc 3), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 16 "./"
+Rename-Item -Path "E1_t16.mkv" -NewName "S01E01 - Help Wanted.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "B1_t00.mkv" -NewName "S03E31 - Krabby Land.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "B2_t02.mkv" -NewName "S03E32 - The Camping Episode.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "B3_t04.mkv" -NewName "S03E33 - Missing Identity.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "C1_t06.mkv" -NewName "S03E34 - Planktons Army.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "C2_t08.mkv" -NewName "S03E35 - The Sponge Who Could Fly.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "C3_t10.mkv" -NewName "S03E36 - SpongeBob Meets The Strangler.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "D1_t12.mkv" -NewName "S03E37 - Pranks-A-Lot.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 18 "./"
+Rename-Item -Path "E3_t18.mkv" -NewName "Credits_TMP_9.mkv"
+
 
 New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
 
