@@ -419,6 +419,145 @@ Rename-Item -Path "D1_t12.mkv" -NewName "S03E37 - Pranks-A-Lot.mkv"
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 18 "./"
 Rename-Item -Path "E3_t18.mkv" -NewName "Credits_TMP_9.mkv"
 
+Write-Host "Insert next disc (Season 4 - Disc 1), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "C1_t00.mkv" -NewName "S04E01 - Fear Of A Krabby Patty.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C2_t01.mkv" -NewName "S04E02 - Shell Of A Man.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C3_t02.mkv" -NewName "S04E03 - The Lost Mattress.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "D1_t03.mkv" -NewName "S04E04 - Krabs VS Plankton.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "D2_t04.mkv" -NewName "S04E05 - Have You Seen This Snail.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "D3_t05.mkv" -NewName "S04E06 - Skill Crane.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "E1_t06.mkv" -NewName "S04E07 - Good Neighbors.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "E2_t07.mkv" -NewName "S04E08 - Selling Out.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "E3_t08.mkv" -NewName "S04E09 - Funny Pants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "F2_t11.mkv" -NewName "Credits_TMP_10.mkv"
+
+Write-Host "Insert next disc (Season 4 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "C1_t00.mkv" -NewName "S04E10 - Dunces And Dragons.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C2_t01.mkv" -NewName "S04E11 - Mermaid Man And Barnacle Boy VI - The Motion Picture.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C3_t02.mkv" -NewName "S04E12 - Enemy In Law.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "D1_t03.mkv" -NewName "S04E13 - Patrick SmartPants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "D2_t04.mkv" -NewName "S04E14 - SquidBob TentaclePants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "D3_t05.mkv" -NewName "S04E15 - Krusty Towers.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "E1_t06.mkv" -NewName "S04E16 - Ms. Puff Your Fired.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "E2_t07.mkv" -NewName "S04E17 - Ghost Host.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "E3_t08.mkv" -NewName "S04E18 - Wishing You Well.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "F3_t12.mkv" -NewName "Credits_TMP_11.mkv"
+
+
+Write-Host "Insert next disc (Season 4 - Disc 3), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "D1_t01.mkv" -NewName "S04E19 - Chimps Ahoy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "D2_t02.mkv" -NewName "S04E20 - Whale Of A Birthday.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "D3_t03.mkv" -NewName "S04E21 - Karate Island.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "D4_t04.mkv" -NewName "S04E22 - All That Glitters.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "E1_t05.mkv" -NewName "S04E23 - New Leaf.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "E2_t06.mkv" -NewName "S04E24 - Once Bitten.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "E3_t07.mkv" -NewName "S04E25 - Bummer Vacation.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "F1_t08.mkv" -NewName "S04E26 - Wig Struck.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "F2_t09.mkv" -NewName "S04E27 - Squid-Tastic Voyage.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "F3_t10.mkv" -NewName "S04E28 - Thats No Lady.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 18 "./"
+Rename-Item -Path "C6_t18.mkv" -NewName "Credits_TMP_12.mkv"
+
+Write-Host "Insert next disc (Season 4 - Disc 4), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "D1_t01.mkv" -NewName "S04E29 - Hocus Pocus.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "D2_t02.mkv" -NewName "S04E30 - The Thing.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "D3_t03.mkv" -NewName "S04E31 - Driven To Tears.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "D4_t04.mkv" -NewName "S04E32 - Rule Of Dumb.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "E1_t05.mkv" -NewName "S04E33 - Best Frenemies.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "E2_t06.mkv" -NewName "S04E34 - Born To Be Wild.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "E3_t07.mkv" -NewName "S04E35 - SquidWood.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "F1_t08.mkv" -NewName "S04E36 - The Pink Purloiner.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "F2_t09.mkv" -NewName "S04E37 - Best Day Ever.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "F3_t10.mkv" -NewName "S04E38 - The Gift Of Gum.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "C3_t13.mkv" -NewName "Credits_TMP_13.mkv"
+
 
 New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
 
