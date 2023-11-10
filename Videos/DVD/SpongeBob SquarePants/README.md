@@ -22,7 +22,7 @@
 
 ### Season 4:
 
-   - [ ] Ripped Episodes
+   - [X] Ripped Episodes
    - [ ] Ripped Extras
    - [ ] Re-Encoded
 
