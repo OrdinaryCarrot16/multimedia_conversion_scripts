@@ -14,6 +14,25 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
    - [TIVTC](https://github.com/pinterf/TIVTC) (AviSynth+ De-Telecine Plugin)
    - [ASharp](https://github.com/Asd-g/AviSynth-ASharp) (AviSynth+ Sharpen Plugin)
 
+## PATH
+
+For these scripts to work (at least in a more efficient manner), you will have to add some of the above dependencies to your 'PATH' (others do it automatically). Adding files to your path allows you to call them from the command-line without having to be in the folder the file is in.
+
+I would recommend doing this manually, as I may glitch something if I did it automatically. Here are the steps to do so (may add pictures later):
+
+1. Search for "Advanced System Settings"
+2. Click on "Environment Variables"
+3. In the top box, select "Path", then "Edit"
+4. Click on a blank box, then add the file locations (where the executable is located) for the following programs (one box for each file path):
+   
+   1. FFmpeg
+   2. MakeMKV
+
+6. Click "OK" when done
+7. Profit?
+
+Also here is a guide from HowToGeek if this was hard to follow: [Link](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)
+
 
 ## Script Generator
 
