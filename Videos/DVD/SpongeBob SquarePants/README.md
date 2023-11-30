@@ -33,7 +33,7 @@ But for the time being and the potential future, enjoy the scripts.
 
 ### Season 5:
 
-   - [ ] Ripped Episodes
+   - [X] Ripped Episodes
    - [ ] Ripped Extras
    - [ ] Re-Encoded
 
