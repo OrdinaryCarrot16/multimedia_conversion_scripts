@@ -630,9 +630,6 @@ Rename-Item -Path "D2_t08.mkv" -NewName "S05E19 - The Krusty Sponge.mkv"
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
 Rename-Item -Path "D3_t09.mkv" -NewName "S05E20 - Sing A Song Of Patrick.mkv"
 
-makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
-Rename-Item -Path "C1_t01.mkv" -NewName "S05E21 - Friend Or Foe.mkv"
-
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
 Rename-Item -Path "E2_t12.mkv" -NewName "Credits_TMP_15.mkv"
 
@@ -641,71 +638,71 @@ Write-Host "Insert next disc (Season 5 - Disc 3), then press enter to proceed"
 pause
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "C1_t00.mkv" -NewName "S05E22 - Atlantis SquarePantis.mkv"
+Rename-Item -Path "C1_t00.mkv" -NewName "S05E21 - Atlantis SquarePantis.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
-Rename-Item -Path "C2_t01.mkv" -NewName "S05E23 - Picture Day.mkv"
+Rename-Item -Path "C2_t01.mkv" -NewName "S05E22 - Picture Day.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
-Rename-Item -Path "C3_t02.mkv" -NewName "S05E24 - A Flea In Her Dome.mkv"
+Rename-Item -Path "C3_t02.mkv" -NewName "S05E23 - A Flea In Her Dome.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
-Rename-Item -Path "C4_t03.mkv" -NewName "S05E25 - Mermaid Man VS SpongeBob.mkv"
+Rename-Item -Path "C4_t03.mkv" -NewName "S05E24 - Mermaid Man VS SpongeBob.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
-Rename-Item -Path "D1_t04.mkv" -NewName "S05E26 - Le Big Switch.mkv"
+Rename-Item -Path "D1_t04.mkv" -NewName "S05E25 - Le Big Switch.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
-Rename-Item -Path "D2_t05.mkv" -NewName "S05E27 - The Donut Of Shame.mkv"
+Rename-Item -Path "D2_t05.mkv" -NewName "S05E26 - The Donut Of Shame.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
-Rename-Item -Path "D3_t06.mkv" -NewName "S05E28 - BlackJack.mkv"
+Rename-Item -Path "D3_t06.mkv" -NewName "S05E27 - BlackJack.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
-Rename-Item -Path "D4_t07.mkv" -NewName "S05E29 - Blackened Sponge.mkv"
+Rename-Item -Path "D4_t07.mkv" -NewName "S05E28 - Blackened Sponge.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
-Rename-Item -Path "F1_t08.mkv" -NewName "S05E30 - Pest Of The West.mkv"
+Rename-Item -Path "F1_t08.mkv" -NewName "S05E29 - Pest Of The West.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
-Rename-Item -Path "F2_t09.mkv" -NewName "S05E31 - The Krusty Plate.mkv"
+Rename-Item -Path "F2_t09.mkv" -NewName "S05E30 - The Krusty Plate.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
-Rename-Item -Path "F3_t10.mkv" -NewName "S05E32 - Pat No Pay.mkv"
+Rename-Item -Path "F3_t10.mkv" -NewName "S05E31 - Pat No Pay.mkv"
 
 
 Write-Host "Insert next disc (Season 5 - Disc 4), then press enter to proceed"
 pause
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
-Rename-Item -Path "C1_t00.mkv" -NewName "S05E33 - The Inmates Of Summer.mkv"
+Rename-Item -Path "C1_t00.mkv" -NewName "S05E32 - The Inmates Of Summer.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
-Rename-Item -Path "C2_t01.mkv" -NewName "S05E34 - To Save A Squirrel.mkv"
+Rename-Item -Path "C2_t01.mkv" -NewName "S05E33 - To Save A Squirrel.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
-Rename-Item -Path "C3_t02.mkv" -NewName "S05E35 - 20000 Patties Under The Sea.mkv"
+Rename-Item -Path "C3_t02.mkv" -NewName "S05E34 - 20000 Patties Under The Sea.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
-Rename-Item -Path "C4_t03.mkv" -NewName "S05E36 - The Battle Of Bikini Bottom.mkv"
+Rename-Item -Path "C4_t03.mkv" -NewName "S05E35 - The Battle Of Bikini Bottom.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
-Rename-Item -Path "D1_t04.mkv" -NewName "S05E37 - What Ever Happened To SpongeBob.mkv"
+Rename-Item -Path "D1_t04.mkv" -NewName "S05E36 - What Ever Happened To SpongeBob.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
-Rename-Item -Path "D2_t05.mkv" -NewName "S05E38 - Goo-Goo Gas.mkv"
+Rename-Item -Path "D2_t05.mkv" -NewName "S05E37 - Goo-Goo Gas.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
-Rename-Item -Path "D3_t06.mkv" -NewName "S05E39 - The Two Faces Of Squidward.mkv"
+Rename-Item -Path "D3_t06.mkv" -NewName "S05E38 - The Two Faces Of Squidward.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
-Rename-Item -Path "F1_t07.mkv" -NewName "S05E40 - SpongeHenge.mkv"
+Rename-Item -Path "F1_t07.mkv" -NewName "S05E39 - SpongeHenge.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
-Rename-Item -Path "F2_t08.mkv" -NewName "S05E41 - Banned In Bikini Bottom.mkv"
+Rename-Item -Path "F2_t08.mkv" -NewName "S05E40 - Banned In Bikini Bottom.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
-Rename-Item -Path "F3_t09.mkv" -NewName "S05E42 - Stanley S SquarePants.mkv"
+Rename-Item -Path "F3_t09.mkv" -NewName "S05E41 - Stanley S SquarePants.mkv"
 
 
 New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
