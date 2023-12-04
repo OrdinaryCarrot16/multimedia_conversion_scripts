@@ -35,7 +35,7 @@ But for the time being and the potential future, enjoy the scripts.
 
    - [X] Ripped Episodes
    - [ ] Ripped Extras
-   - [ ] Re-Encoded
+   - [X] Re-Encoded
 
 ### Season 6:
 
