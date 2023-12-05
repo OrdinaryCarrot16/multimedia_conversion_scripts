@@ -705,6 +705,177 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
 Rename-Item -Path "F3_t09.mkv" -NewName "S05E41 - Stanley S SquarePants.mkv"
 
 
+Write-Host "Insert next disc (Season 6 - Disc 1), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "C1_t00.mkv" -NewName "S06E01 - Spongicus.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C2_t01.mkv" -NewName "S06E02 - Suction Cup Symphony.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C3_t02.mkv" -NewName "S06E03 - House Fancy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "C4_t03.mkv" -NewName "S06E04 - Krabby Road.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "C5_t04.mkv" -NewName "S06E05 - Penny Foolish.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "D1_t05.mkv" -NewName "S06E06 - Nautical Novice.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "D2_t06.mkv" -NewName "S06E07 - Not Normal.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "D3_t07.mkv" -NewName "S06E08 - Gone.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "D4_t08.mkv" -NewName "S06E09 - SpongeBob SquarePants VS The Big One.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "D5_t09.mkv" -NewName "S06E10 - A Life In A Day.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "E1_t10.mkv" -NewName "S06E11 - Sun Bleached.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "E2_t11.mkv" -NewName "S06E12 - Giant Squidward.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "E3_t12.mkv" -NewName "S06E13 - No Nose Knows.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "E4_t13.mkv" -NewName "S06E14 - Patty Caper.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
+Rename-Item -Path "B3_t15.mkv" -NewName "Credits_TMP_16.mkv"
+
+
+Write-Host "Insert next disc (Season 6 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 00 "./"
+Rename-Item -Path "C1_t00.mkv" -NewName "S06E15 - Planktons Regular.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C2_t01.mkv" -NewName "S06E16 - To SquarePants Or Not To SquarePants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C3_t02.mkv" -NewName "S06E17 - Squids Visit.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "C4_t03.mkv" -NewName "S06E18 - The Splinter.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "C5_t04.mkv" -NewName "S06E19 - Slide Whistle Stooges.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "D1_t05.mkv" -NewName "S06E20 - Boating Buddies.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "D2_t06.mkv" -NewName "S06E21 - The Krabby Kronicle.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "D3_t07.mkv" -NewName "S06E22 - The Slumber Party.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "D4_t08.mkv" -NewName "S06E23 - Grooming Gary.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "D5_t09.mkv" -NewName "S06E24 - Truth Or Square.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "B4_t10.mkv" -NewName "Credits_TMP_17.mkv"
+
+
+Write-Host "Insert next disc (Season 6 - Disc 3), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "B1_t01.mkv" -NewName "S06E25 - Porous Pockets.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "B2_t02.mkv" -NewName "S06E26 - Choir Boys.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "B3_t03.mkv" -NewName "S06E27 - Krusty Krushers.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "B4_t04.mkv" -NewName "S06E28 - The Card.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "B5_t05.mkv" -NewName "S06E29 - Dear Vikings.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "B6_t06.mkv" -NewName "S06E30 - Ditching.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "C1_t07.mkv" -NewName "S06E31 - Pineapple Fever.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "C2_t08.mkv" -NewName "S06E32 - Chum Caverns.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "C3_t09.mkv" -NewName "S06E33 - Grand-Pappy The Pirate.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "C4_t10.mkv" -NewName "S06E34 - Cephalopod Lodge.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "C5_t11.mkv" -NewName "S06E35 - Shuffleboarding.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "C6_t12.mkv" -NewName "S06E36 - Professor Squidward.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "D3_t13.mkv" -NewName "Credits_TMP_18.mkv"
+
+
+Write-Host "Insert next disc (Season 6 - Disc 4), then press enter to proceed"
+pause
+
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "C1_t01.mkv" -NewName "S06E37 - Pets Or Pests.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "C2_t02.mkv" -NewName "S06E38 - Komputer Overload.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "C3_t03.mkv" -NewName "S06E39 - GulliblePants.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "C4_t04.mkv" -NewName "S06E40 - Over-Booked.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "C5_t05.mkv" -NewName "S06E41 - No Hat For Pat.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "C6_t06.mkv" -NewName "S06E42 - Toy Store Of Doom.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "D1_t07.mkv" -NewName "S06E43 - Clash Of Triton.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "D2_t08.mkv" -NewName "S06E44 - Sand Castles In The Sand.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "D3_t09.mkv" -NewName "S06E45 - Shell Shocked.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "D4_t10.mkv" -NewName "S06E46 - Chum Bucket Supreme.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "D5_t11.mkv" -NewName "S06E47 - Single Cell Anniversary.mkv"
+
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "B4_t12.mkv" -NewName "Credits_TMP_19.mkv"
+
+
 New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
 
 # Season 1 - Disc 1
