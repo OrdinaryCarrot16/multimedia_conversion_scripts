@@ -1,6 +1,9 @@
 New-Item -Path "MakeMKV/SpongeBob SquarePants" -ItemType Directory
 cd "MakeMKV/SpongeBob SquarePants"
 
+$rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the SpongeBob SquarePants series, 're-encode' (2) an existing rip (made using this script), or do 'both' (3) in one session"
+
+if ($rip_encode -eq "1") {
 
 Write-Host "Insert disc (Season 1 - Disc 1), then press enter to proceed"
 pause
@@ -873,8 +876,8 @@ Rename-Item -Path "D5_t11.mkv" -NewName "S06E47 - Single Cell Anniversary.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
 Rename-Item -Path "B4_t12.mkv" -NewName "Credits_TMP_19.mkv"
-
-
+}
+if ($rip_encode -eq "2") {
 New-Item -Path "SpongeBob SquarePants (Converted)" -ItemType Directory
 
 # Season 1 - Disc 1
@@ -2521,6 +2524,6 @@ Remove-Item "Credits_TMP_12.mkv.ffindex"
 Remove-Item "Credits_TMP_13.mkv.ffindex"
 Remove-Item "Credits_TMP_14.mkv.ffindex"
 Remove-Item "Credits_TMP_15.mkv.ffindex"
-
+}
 
 pause
