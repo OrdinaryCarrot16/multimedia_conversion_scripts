@@ -1,7 +1,7 @@
 New-Item -Path "MakeMKV/SpongeBob SquarePants" -ItemType Directory
 cd "MakeMKV/SpongeBob SquarePants"
 
-$rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the SpongeBob SquarePants series, 're-encode' (2) an existing rip (made using this script), or do 'both' (3) in one session"
+$rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the SpongeBob SquarePants series, or 're-encode' (2) an existing rip (made using this script)"
 
 if ($rip_encode -eq "1") {
 
