@@ -43,6 +43,8 @@ But for the time being and the potential future, enjoy the scripts.
    - [ ] Ripped Extras
    - [ ] Re-Encoded
 
+## Going on SpongeBob conversion hiatus after re-encoding Season 6
+
 ### Season 7:
 
    - [ ] Ripped Episodes
