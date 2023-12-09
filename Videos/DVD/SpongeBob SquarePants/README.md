@@ -66,3 +66,43 @@ Purchase Link: (https://www.amazon.com/SpongeBob-SquarePants-Complete-1st-Season
 Release Year (of this version, scripts may work on re-releases): 2003
 
 Region: 1 (USA)
+
+### Season 2
+
+Purchase Link: (https://www.amazon.com/SpongeBob-SquarePants-Complete-2nd-Season/dp/B0002JP58Q)
+
+Release Year (of this version, scripts may work on re-releases): 2012
+
+Region: 1 (USA)
+
+### Season 3
+
+Purchase Link: (https://www.amazon.com/SpongeBob-SquarePants-Complete-3rd-Season/dp/B000A6CLKQ)
+
+Release Year (of this version, scripts may work on re-releases): 2012
+
+Region: 1 (USA)
+
+### Season 4
+
+Purchase Link: (https://www.amazon.com/Spongebob-Squarepants-Complete-Fourth-Season/dp/B0090W3BOG)
+
+Release Year (of this version, scripts may work on re-releases): 2012
+
+Region: 1 (USA)
+
+### Season 5
+
+Purchase Link: (https://www.amazon.com/Spongebob-Squarepants-Complete-Fifth-Season/dp/B0090W3BNM)
+
+Release Year (of this version, scripts may work on re-releases): 2012
+
+Region: 1 (USA)
+
+### Season 6
+
+Purchase Link: (https://www.amazon.com/Spongebob-Squarepants-Complete-Sixth-Season/dp/B0090W3BPA)
+
+Release Year (of this version, scripts may work on re-releases): 2012
+
+Region: 1 (USA)
