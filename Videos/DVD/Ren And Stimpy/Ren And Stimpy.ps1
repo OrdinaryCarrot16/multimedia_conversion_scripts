@@ -22,7 +22,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
 Rename-Item -Path "D4_t04.mkv" -NewName "S01E08-E09 - Fire Dogs_The Littlest Giant.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
-Rename-Item -Path "D5_t05.mkv" -NewName "S01E10-E11 - Marooned_Untamed World.mkv"
+Rename-Item -Path "D5_t05.mkv" -NewName "S01E10-E11 - Marooned_Un-Tamed World.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
 Rename-Item -Path "D6_t06.mkv" -NewName "S01E12-E13 - Black Hole_Stimpys Invention.mkv"
