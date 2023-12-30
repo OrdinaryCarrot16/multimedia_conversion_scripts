@@ -1,3 +1,7 @@
+## Preparation
+
+For all the singles, you will have to individually rename each cover art image to exactly the same as the original song file name, for the time being. They would all overwrite each-other otherwise. (example: 'cover.jpg' > '(song filename).jpg'
+
 ## Progress Chart
 
 ### In Sound Mind:
