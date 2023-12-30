@@ -73,6 +73,6 @@ Here is a list of the various codecs/containers I will be using in this project,
 
 ## Cover-Art
 
-Cover-Art won't automatically apply to music in Kodi, due to me using PNG instead of JPG (it expects 'cover.jpg'). You could just do it manually for each album and single, but there is a better way I think. Go to 'Settings' (the cog wheel on default skin), then 'Media', change the settings type on the bottom left to 'Expert', then goto 'Music' on the sidebar, and change 'Artwork Level' to 'Custom'. 
+Cover-Art won't automatically apply to music in Kodi by default, due to me using PNG instead of JPG (it expects 'cover.jpg'). You could just do it manually for each album and single, but there is a better way I think. Go to 'Settings' (the cog wheel on default skin), then 'Media', change the settings type on the bottom left to 'Expert', then goto 'Music' on the sidebar, and change 'Artwork Level' to 'Custom'. 
 
 Now you should see 'Thumbnail Image Files', press on that, then press 'Add', and type 'cover.png' (without the quotations)... then press 'OK'. You should be good to go now.
