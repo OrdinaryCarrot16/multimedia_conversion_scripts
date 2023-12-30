@@ -4,7 +4,7 @@
 New-Item -Path "The Living Tombstone/zero_one (Converted)" -ItemType Directory
 
 
-ffmpeg -i "zero-one-the-living-tombstone.jpg" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
+ffmpeg -i "cover.jpg" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
 Move-Item -Path "cover_TMP.png" -Destination "The Living Tombstone/zero_one (Converted)/cover.png"
 
 
