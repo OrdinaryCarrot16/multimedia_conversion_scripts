@@ -6,7 +6,7 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
 
 - [PowerShell](https://github.com/PowerShell/PowerShell) (for generating & running the scripts)
 - [FFmpeg](https://ffmpeg.org/) (for pretty much all encoding/decoding tasks)
-- [GPAC/MP4Box](https://github.com/gpac/gpac)
+- [GPAC/MP4Box](https://github.com/gpac/gpac) (for MP4 muxing)
 - [MakeMKV](https://makemkv.com/) (for DVD/Blu-Ray conversion) (**W.I.P.**)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (for YouTube conversion)
 - [AviSynth+](https://avs-plus.net/) (for scripted video editing)
