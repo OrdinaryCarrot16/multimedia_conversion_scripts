@@ -193,7 +193,7 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 14 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D4_t14.mkv" -NewName "S02E14 - Life Of Crime.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 15 "./"
-Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D5_t15.mkv" -NewName "S02E30 - Graveyard Shift.mkv"
+Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-D5_t15.mkv" -NewName "S02E15 - Christmas Who.mkv"
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 16 "./"
 Rename-Item -Path "SpongeBob SquarePants - Complete Second Season - Disc 1-G2_t16.mkv" -NewName "Credits_TMP_4.mkv"
