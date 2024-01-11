@@ -6,8 +6,9 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
 
 - [PowerShell](https://github.com/PowerShell/PowerShell) (for generating & running the scripts)
 - [FFmpeg](https://ffmpeg.org/) (for pretty much all encoding/decoding tasks)
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (for YouTube conversion)
+- [GPAC/MP4Box](https://github.com/gpac/gpac)
 - [MakeMKV](https://makemkv.com/) (for DVD/Blu-Ray conversion) (**W.I.P.**)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) (for YouTube conversion)
 - [AviSynth+](https://avs-plus.net/) (for scripted video editing)
    - [FFMS2](https://github.com/FFMS/ffms2) (AviSynth+ Input Plugin)
    - [Neo Vague Denoiser](https://github.com/HomeOfAviSynthPlusEvolution/neo_Vague_Denoiser) (AviSynth+ Light Denoise Plugin)
@@ -27,6 +28,7 @@ I would recommend doing this manually, as I may glitch something if I did it aut
    
    1. FFmpeg
    2. MakeMKV
+   3. GPAC/MP4Box
 
 6. Click "OK" when done
 7. Profit?
