@@ -1,11 +1,11 @@
 ## DVD Ripping Priority
 
-###### Movies (mostly movies that aren't obtainable on Blu-Ray)
+###### Movies
 
-     1. Napoleon Dynamite
-     2. Charlotte's Web (1973)
-     3. Garfield Gets Real
-     4. Super Mario Bros.
+     1. Wreck-It Ralph
+     2. The Croods
+     3. The Simpsons Movie
+     4. 
      5. 
 
      6. 
@@ -15,16 +15,16 @@
      10. 
      
 
-###### Series
+###### Series (mostly mini-series)
 
-     1. Adventure Time
-     2. Regular Show
-     3. Pokemon
-     4. Sonic The Hedgehog (SATAM)
-     5. The Office
+     1. Adventure Time: Distant Lands
+     2. 
+     3. 
+     4. 
+     5. 
      
-     6. King Of The Hill
-     7. Doctor Who
-     8. The Legend Of Zelda
+     6. 
+     7. 
+     8. 
      9. 
      10. 
