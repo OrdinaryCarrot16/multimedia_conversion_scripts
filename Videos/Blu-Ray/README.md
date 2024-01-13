@@ -1,4 +1,4 @@
-## DVD Ripping Priority
+## Blu-Ray Ripping Priority
 
 ###### Movies
 
