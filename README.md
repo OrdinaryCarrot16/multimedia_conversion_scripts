@@ -14,6 +14,7 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
    - [Neo Vague Denoiser](https://github.com/HomeOfAviSynthPlusEvolution/neo_Vague_Denoiser) (AviSynth+ Light Denoise Plugin)
    - [TIVTC](https://github.com/pinterf/TIVTC) (AviSynth+ De-Telecine Plugin)
    - [ASharp](https://github.com/Asd-g/AviSynth-ASharp) (AviSynth+ Sharpen Plugin)
+   - [Waveform](https://forum.doom9.org/showthread.php?t=182866) (AviSynth+ Waveform Visualizer Plugin) (NOT REQUIRED FOR USING SCRIPTS, ONLY FOR DEVELOPMENT)
 
 ## PATH
 
