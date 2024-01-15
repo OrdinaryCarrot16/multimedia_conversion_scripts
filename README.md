@@ -2,6 +2,8 @@
 A collection of generated + tweaked powershell/batch scripts that will automatically encode music, videos, and other types of media, using the amazing FFmpeg (and co. when needed).
 
 
+
+
 ## Dependencies
 
 - [PowerShell](https://github.com/PowerShell/PowerShell) (for generating & running the scripts)
@@ -15,6 +17,10 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
    - [TIVTC](https://github.com/pinterf/TIVTC) (AviSynth+ De-Telecine Plugin)
    - [ASharp](https://github.com/Asd-g/AviSynth-ASharp) (AviSynth+ Sharpen Plugin)
    - [Waveform](https://forum.doom9.org/showthread.php?t=182866) (AviSynth+ Waveform Visualizer Plugin) (**NOT REQUIRED FOR USING SCRIPTS, ONLY FOR DEVELOPMENT**)
+ 
+## Other Tools I Used
+
+- [AVSPMod](https://github.com/gispos/AvsPmod) (Used for creation of pretty much all '.avs' scripts. Very useful program!)
 
 ## PATH
 
