@@ -14,9 +14,9 @@
 
 ### Season 3:
 
-   - [ ] Ripped Episodes
+   - [x] Ripped Episodes
    - [ ] Ripped Extras
-   - [ ] Re-Encoded
+   - [x] Re-Encoded
    
 ### Season 4:
 
