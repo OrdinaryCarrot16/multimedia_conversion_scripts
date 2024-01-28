@@ -178,7 +178,90 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
 Rename-Item -Path "ADVENTURE TIME SEASON 2 DISC 2-J5_t08.mkv" -NewName "S02E26 - Mortal Recoil.mkv"
 
 
+Write-Host "Insert next disc (Season 3 - Disc 1), then press enter to proceed"
+pause
 
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-C1_t01.mkv" -NewName "S03E01 - Conquest Of Cuteness.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-G4_t02.mkv" -NewName "S03E02 - Morituri Te Salutamus.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-H5_t03.mkv" -NewName "S03E03 - Memory Of A Memory.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-I5_t04.mkv" -NewName "S03E04 - Hitman.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-J5_t05.mkv" -NewName "S03E05 - Too Young.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-D2_t06.mkv" -NewName "S03E06 - The Monster.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-K5_t07.mkv" -NewName "S03E07 - Still.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-L5_t08.mkv" -NewName "S03E08 - Wizard Battle.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-M5_t09.mkv" -NewName "S03E09 - Fionna And Cake.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-E2_t10.mkv" -NewName "S03E10 - What Was Missing.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-N5_t11.mkv" -NewName "S03E11 - Apple Thief.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-O5_t12.mkv" -NewName "S03E12 - The Creeps.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 1-P5_t13.mkv" -NewName "S03E13 - From Bad To Worse.mkv"
+
+
+Write-Host "Insert next disc (Season 3 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-C1_t01.mkv" -NewName "S03E14 - Beautopia.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-F4_t02.mkv" -NewName "S03E15 - No One Can Hear You.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-G5_t03.mkv" -NewName "S03E16 - Jake VS Me-Mow.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-H5_t04.mkv" -NewName "S03E17 - Thank You.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-I5_t05.mkv" -NewName "S03E18 - The New Frontier.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-D2_t06.mkv" -NewName "S03E19 - Holly Jolly Secrets (Part 1).mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-J5_t07.mkv" -NewName "S03E20 - Holly Jolly Secrets (Part 2).mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-K5_t08.mkv" -NewName "S03E21 - Marcelines Closet.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-L5_t09.mkv" -NewName "S03E22 - Paper Pete.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-E2_t10.mkv" -NewName "S03E23 - Another Way.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-M5_t11.mkv" -NewName "S03E24 - Ghost Princess.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-N5_t12.mkv" -NewName "S03E25 - Dads Dungeon.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-O5_t13.mkv" -NewName "S03E26 - Incendium.mkv"
 }
 if ($rip_encode -eq "2") {
 New-Item -Path "Adventure Time (Converted)" -ItemType Directory
