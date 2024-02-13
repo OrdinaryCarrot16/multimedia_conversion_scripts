@@ -262,6 +262,93 @@ Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-N5_t12.mkv" -NewName "S03E25 -
 
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
 Rename-Item -Path "ADVENTURE TIME SEASON 3 DISC 2-O5_t13.mkv" -NewName "S03E26 - Incendium.mkv"
+
+Write-Host "Insert next disc (Season 4 - Disc 1), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-C1_t01.mkv" -NewName "S04E01 - Hot To The Touch.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-G4_t02.mkv" -NewName "S04E02 - Five Short Graybles.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-H5_t03.mkv" -NewName "S04E03 - Web Weirdos.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-I5_t04.mkv" -NewName "S04E04 - Dream Of Love.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-J5_t05.mkv" -NewName "S04E05 - Return To The Night-O-Sphere.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-D2_t06.mkv" -NewName "S04E06 - Daddys Little Monster.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-K5_t07.mkv" -NewName "S04E07 - In Your Footsteps.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-L5_t08.mkv" -NewName "S04E08 - Hug Wolf.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-M5_t09.mkv" -NewName "S04E09 - Princess Monster Wife.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-E2_t10.mkv" -NewName "S04E10 - Goliad.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-N5_t11.mkv" -NewName "S04E11 - Beyond This Earthly Realm.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-O5_t12.mkv" -NewName "S04E12 - Gotcha.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 1-P5_t13.mkv" -NewName "S04E13 - Princess Cookie.mkv"
+
+
+Write-Host "Insert next disc (Season 4 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-C1_t01.mkv" -NewName "S04E14 - Card Wars.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-F4_t02.mkv" -NewName "S04E15 - Sons Of Mars.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-G5_t03.mkv" -NewName "S04E16 - Burning Low.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-H5_t04.mkv" -NewName "S04E17 - BMO Noire.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-I5_t05.mkv" -NewName "S04E18 - King Worm.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-D2_t06.mkv" -NewName "S04E19 - Lady And Peebles.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-J5_t07.mkv" -NewName "S04E20 - You Made Me.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-K5_t08.mkv" -NewName "S04E21 - Who Would Win.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-L5_t09.mkv" -NewName "S04E22 - Ignition Point.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-E2_t10.mkv" -NewName "S04E23 - The Hard Easy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-M5_t11.mkv" -NewName "S04E24 - Reign Of Gunters.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-N5_t12.mkv" -NewName "S04E25 - I Remember You.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-O5_t13.mkv" -NewName "S04E26 - The Lich.mkv"
+
+
 }
 if ($rip_encode -eq "2") {
 New-Item -Path "Adventure Time (Converted)" -ItemType Directory
@@ -904,7 +991,215 @@ Remove-Item "S03E26 - Incendium.mkv.ffindex"
 
 # Season 4 - Disc 1
 
+ffmpeg -i "S04E01 - Hot To The Touch.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E01 - Hot To The Touch.264"
+ffmpeg -i "S04E01 - Hot To The Touch.avs" -c:a aac -b:a 192k "S04E01 - Hot To The Touch.aac"
+mp4box -add "S04E01 - Hot To The Touch.264" -fps 23.976 -add "S04E01 - Hot To The Touch.aac" -new "S04E01 - Hot To The Touch.mp4"
+Move-Item -Path "S04E01 - Hot To The Touch.mp4" -Destination "Adventure Time (Converted)/S04E01 - Hot To The Touch.mp4"
+Remove-Item "S04E01 - Hot To The Touch.264"
+Remove-Item "S04E01 - Hot To The Touch.aac"
+Remove-Item "S04E01 - Hot To The Touch.mkv.ffindex"
+
+ffmpeg -i "S04E02 - Five Short Graybles.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E02 - Five Short Graybles.264"
+ffmpeg -i "S04E02 - Five Short Graybles.avs" -c:a aac -b:a 192k "S04E02 - Five Short Graybles.aac"
+mp4box -add "S04E02 - Five Short Graybles.264" -fps 23.976 -add "S04E02 - Five Short Graybles.aac" -new "S04E02 - Five Short Graybles.mp4"
+Move-Item -Path "S04E02 - Five Short Graybles.mp4" -Destination "Adventure Time (Converted)/S04E02 - Five Short Graybles.mp4"
+Remove-Item "S04E02 - Five Short Graybles.264"
+Remove-Item "S04E02 - Five Short Graybles.aac"
+Remove-Item "S04E02 - Five Short Graybles.mkv.ffindex"
+
+ffmpeg -i "S04E03 - Web Weirdos.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E03 - Web Weirdos.264"
+ffmpeg -i "S04E03 - Web Weirdos.avs" -c:a aac -b:a 192k "S04E03 - Web Weirdos.aac"
+mp4box -add "S04E03 - Web Weirdos.264" -fps 23.976 -add "S04E03 - Web Weirdos.aac" -new "S04E03 - Web Weirdos.mp4"
+Move-Item -Path "S04E03 - Web Weirdos.mp4" -Destination "Adventure Time (Converted)/S04E03 - Web Weirdos.mp4"
+Remove-Item "S04E03 - Web Weirdos.264"
+Remove-Item "S04E03 - Web Weirdos.aac"
+Remove-Item "S04E03 - Web Weirdos.mkv.ffindex"
+
+ffmpeg -i "S04E04 - Dream Of Love.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E04 - Dream Of Love.264"
+ffmpeg -i "S04E04 - Dream Of Love.avs" -c:a aac -b:a 192k "S04E04 - Dream Of Love.aac"
+mp4box -add "S04E04 - Dream Of Love.264" -fps 23.976 -add "S04E04 - Dream Of Love.aac" -new "S04E04 - Dream Of Love.mp4"
+Move-Item -Path "S04E04 - Dream Of Love.mp4" -Destination "Adventure Time (Converted)/S04E04 - Dream Of Love.mp4"
+Remove-Item "S04E04 - Dream Of Love.264"
+Remove-Item "S04E04 - Dream Of Love.aac"
+Remove-Item "S04E04 - Dream Of Love.mkv.ffindex"
+
+ffmpeg -i "S04E05 - Return To The Night-O-Sphere.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E05 - Return To The Night-O-Sphere.264"
+ffmpeg -i "S04E05 - Return To The Night-O-Sphere.avs" -c:a aac -b:a 192k "S04E05 - Return To The Night-O-Sphere.aac"
+mp4box -add "S04E05 - Return To The Night-O-Sphere.264" -fps 23.976 -add "S04E05 - Return To The Night-O-Sphere.aac" -new "S04E05 - Return To The Night-O-Sphere.mp4"
+Move-Item -Path "S04E05 - Return To The Night-O-Sphere.mp4" -Destination "Adventure Time (Converted)/S04E05 - Return To The Night-O-Sphere.mp4"
+Remove-Item "S04E05 - Return To The Night-O-Sphere.264"
+Remove-Item "S04E05 - Return To The Night-O-Sphere.aac"
+Remove-Item "S04E05 - Return To The Night-O-Sphere.mkv.ffindex"
+
+ffmpeg -i "S04E06 - Daddys Little Monster.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E06 - Daddys Little Monster.264"
+ffmpeg -i "S04E06 - Daddys Little Monster.avs" -c:a aac -b:a 192k "S04E06 - Daddys Little Monster.aac"
+mp4box -add "S04E06 - Daddys Little Monster.264" -fps 23.976 -add "S04E06 - Daddys Little Monster.aac" -new "S04E06 - Daddys Little Monster.mp4"
+Move-Item -Path "S04E06 - Daddys Little Monster.mp4" -Destination "Adventure Time (Converted)/S04E06 - Daddys Little Monster.mp4"
+Remove-Item "S04E06 - Daddys Little Monster.264"
+Remove-Item "S04E06 - Daddys Little Monster.aac"
+Remove-Item "S04E06 - Daddys Little Monster.mkv.ffindex"
+
+ffmpeg -i "S04E07 - In Your Footsteps.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E07 - In Your Footsteps.264"
+ffmpeg -i "S04E07 - In Your Footsteps.avs" -c:a aac -b:a 192k "S04E07 - In Your Footsteps.aac"
+mp4box -add "S04E07 - In Your Footsteps.264" -fps 23.976 -add "S04E07 - In Your Footsteps.aac" -new "S04E07 - In Your Footsteps.mp4"
+Move-Item -Path "S04E07 - In Your Footsteps.mp4" -Destination "Adventure Time (Converted)/S04E07 - In Your Footsteps.mp4"
+Remove-Item "S04E07 - In Your Footsteps.264"
+Remove-Item "S04E07 - In Your Footsteps.aac"
+Remove-Item "S04E07 - In Your Footsteps.mkv.ffindex"
+
+ffmpeg -i "S04E08 - Hug Wolf.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E08 - Hug Wolf.264"
+ffmpeg -i "S04E08 - Hug Wolf.avs" -c:a aac -b:a 192k "S04E08 - Hug Wolf.aac"
+mp4box -add "S04E08 - Hug Wolf.264" -fps 23.976 -add "S04E08 - Hug Wolf.aac" -new "S04E08 - Hug Wolf.mp4"
+Move-Item -Path "S04E08 - Hug Wolf.mp4" -Destination "Adventure Time (Converted)/S04E08 - Hug Wolf.mp4"
+Remove-Item "S04E08 - Hug Wolf.264"
+Remove-Item "S04E08 - Hug Wolf.aac"
+Remove-Item "S04E08 - Hug Wolf.mkv.ffindex"
+
+ffmpeg -i "S04E09 - Princess Monster Wife.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E09 - Princess Monster Wife.264"
+ffmpeg -i "S04E09 - Princess Monster Wife.avs" -c:a aac -b:a 192k "S04E09 - Princess Monster Wife.aac"
+mp4box -add "S04E09 - Princess Monster Wife.264" -fps 23.976 -add "S04E09 - Princess Monster Wife.aac" -new "S04E09 - Princess Monster Wife.mp4"
+Move-Item -Path "S04E09 - Princess Monster Wife.mp4" -Destination "Adventure Time (Converted)/S04E09 - Princess Monster Wife.mp4"
+Remove-Item "S04E09 - Princess Monster Wife.264"
+Remove-Item "S04E09 - Princess Monster Wife.aac"
+Remove-Item "S04E09 - Princess Monster Wife.mkv.ffindex"
+
+ffmpeg -i "S04E10 - Goliad.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E10 - Goliad.264"
+ffmpeg -i "S04E10 - Goliad.avs" -c:a aac -b:a 192k "S04E10 - Goliad.aac"
+mp4box -add "S04E10 - Goliad.264" -fps 23.976 -add "S04E10 - Goliad.aac" -new "S04E10 - Goliad.mp4"
+Move-Item -Path "S04E10 - Goliad.mp4" -Destination "Adventure Time (Converted)/S04E10 - Goliad.mp4"
+Remove-Item "S04E10 - Goliad.264"
+Remove-Item "S04E10 - Goliad.aac"
+Remove-Item "S04E10 - Goliad.mkv.ffindex"
+
+ffmpeg -i "S04E11 - Beyond This Earthly Realm.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E11 - Beyond This Earthly Realm.264"
+ffmpeg -i "S04E11 - Beyond This Earthly Realm.avs" -c:a aac -b:a 192k "S04E11 - Beyond This Earthly Realm.aac"
+mp4box -add "S04E11 - Beyond This Earthly Realm.264" -fps 23.976 -add "S04E11 - Beyond This Earthly Realm.aac" -new "S04E11 - Beyond This Earthly Realm.mp4"
+Move-Item -Path "S04E11 - Beyond This Earthly Realm.mp4" -Destination "Adventure Time (Converted)/S04E11 - Beyond This Earthly Realm.mp4"
+Remove-Item "S04E11 - Beyond This Earthly Realm.264"
+Remove-Item "S04E11 - Beyond This Earthly Realm.aac"
+Remove-Item "S04E11 - Beyond This Earthly Realm.mkv.ffindex"
+
+ffmpeg -i "S04E12 - Gotcha.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E12 - Gotcha.264"
+ffmpeg -i "S04E12 - Gotcha.avs" -c:a aac -b:a 192k "S04E12 - Gotcha.aac"
+mp4box -add "S04E12 - Gotcha.264" -fps 23.976 -add "S04E12 - Gotcha.aac" -new "S04E12 - Gotcha.mp4"
+Move-Item -Path "S04E12 - Gotcha.mp4" -Destination "Adventure Time (Converted)/S04E12 - Gotcha.mp4"
+Remove-Item "S04E12 - Gotcha.264"
+Remove-Item "S04E12 - Gotcha.aac"
+Remove-Item "S04E12 - Gotcha.mkv.ffindex"
+
+ffmpeg -i "S04E13 - Princess Cookie.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E13 - Princess Cookie.264"
+ffmpeg -i "S04E13 - Princess Cookie.avs" -c:a aac -b:a 192k "S04E13 - Princess Cookie.aac"
+mp4box -add "S04E13 - Princess Cookie.264" -fps 23.976 -add "S04E13 - Princess Cookie.aac" -new "S04E13 - Princess Cookie.mp4"
+Move-Item -Path "S04E13 - Princess Cookie.mp4" -Destination "Adventure Time (Converted)/S04E13 - Princess Cookie.mp4"
+Remove-Item "S04E13 - Princess Cookie.264"
+Remove-Item "S04E13 - Princess Cookie.aac"
+Remove-Item "S04E13 - Princess Cookie.mkv.ffindex"
+
 # Season 4 - Disc 2
+
+ffmpeg -i "S04E14 - Card Wars.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E14 - Card Wars.264"
+ffmpeg -i "S04E14 - Card Wars.avs" -c:a aac -b:a 192k "S04E14 - Card Wars.aac"
+mp4box -add "S04E14 - Card Wars.264" -fps 23.976 -add "S04E14 - Card Wars.aac" -new "S04E14 - Card Wars.mp4"
+Move-Item -Path "S04E14 - Card Wars.mp4" -Destination "Adventure Time (Converted)/S04E14 - Card Wars.mp4"
+Remove-Item "S04E14 - Card Wars.264"
+Remove-Item "S04E14 - Card Wars.aac"
+Remove-Item "S04E14 - Card Wars.mkv.ffindex"
+
+ffmpeg -i "S04E15 - Sons Of Mars.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E15 - Sons Of Mars.264"
+ffmpeg -i "S04E15 - Sons Of Mars.avs" -c:a aac -b:a 192k "S04E15 - Sons Of Mars.aac"
+mp4box -add "S04E15 - Sons Of Mars.264" -fps 23.976 -add "S04E15 - Sons Of Mars.aac" -new "S04E15 - Sons Of Mars.mp4"
+Move-Item -Path "S04E15 - Sons Of Mars.mp4" -Destination "Adventure Time (Converted)/S04E15 - Sons Of Mars.mp4"
+Remove-Item "S04E15 - Sons Of Mars.264"
+Remove-Item "S04E15 - Sons Of Mars.aac"
+Remove-Item "S04E15 - Sons Of Mars.mkv.ffindex"
+
+ffmpeg -i "S04E16 - Burning Low.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E16 - Burning Low.264"
+ffmpeg -i "S04E16 - Burning Low.avs" -c:a aac -b:a 192k "S04E16 - Burning Low.aac"
+mp4box -add "S04E16 - Burning Low.264" -fps 23.976 -add "S04E16 - Burning Low.aac" -new "S04E16 - Burning Low.mp4"
+Move-Item -Path "S04E16 - Burning Low.mp4" -Destination "Adventure Time (Converted)/S04E16 - Burning Low.mp4"
+Remove-Item "S04E16 - Burning Low.264"
+Remove-Item "S04E16 - Burning Low.aac"
+Remove-Item "S04E16 - Burning Low.mkv.ffindex"
+
+ffmpeg -i "S04E17 - BMO Noire.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E17 - BMO Noire.264"
+ffmpeg -i "S04E17 - BMO Noire.avs" -c:a aac -b:a 192k "S04E17 - BMO Noire.aac"
+mp4box -add "S04E17 - BMO Noire.264" -fps 23.976 -add "S04E17 - BMO Noire.aac" -new "S04E17 - BMO Noire.mp4"
+Move-Item -Path "S04E17 - BMO Noire.mp4" -Destination "Adventure Time (Converted)/S04E17 - BMO Noire.mp4"
+Remove-Item "S04E17 - BMO Noire.264"
+Remove-Item "S04E17 - BMO Noire.aac"
+Remove-Item "S04E17 - BMO Noire.mkv.ffindex"
+
+ffmpeg -i "S04E18 - King Worm.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E18 - King Worm.264"
+ffmpeg -i "S04E18 - King Worm.avs" -c:a aac -b:a 192k "S04E18 - King Worm.aac"
+mp4box -add "S04E18 - King Worm.264" -fps 23.976 -add "S04E18 - King Worm.aac" -new "S04E18 - King Worm.mp4"
+Move-Item -Path "S04E18 - King Worm.mp4" -Destination "Adventure Time (Converted)/S04E18 - King Worm.mp4"
+Remove-Item "S04E18 - King Worm.264"
+Remove-Item "S04E18 - King Worm.aac"
+Remove-Item "S04E18 - King Worm.mkv.ffindex"
+
+ffmpeg -i "S04E19 - Lady And Peebles.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E19 - Lady And Peebles.264"
+ffmpeg -i "S04E19 - Lady And Peebles.avs" -c:a aac -b:a 192k "S04E19 - Lady And Peebles.aac"
+mp4box -add "S04E19 - Lady And Peebles.264" -fps 23.976 -add "S04E19 - Lady And Peebles.aac" -new "S04E19 - Lady And Peebles.mp4"
+Move-Item -Path "S04E19 - Lady And Peebles.mp4" -Destination "Adventure Time (Converted)/S04E19 - Lady And Peebles.mp4"
+Remove-Item "S04E19 - Lady And Peebles.264"
+Remove-Item "S04E19 - Lady And Peebles.aac"
+Remove-Item "S04E19 - Lady And Peebles.mkv.ffindex"
+
+ffmpeg -i "S04E20 - You Made Me.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E20 - You Made Me.264"
+ffmpeg -i "S04E20 - You Made Me.avs" -c:a aac -b:a 192k "S04E20 - You Made Me.aac"
+mp4box -add "S04E20 - You Made Me.264" -fps 23.976 -add "S04E20 - You Made Me.aac" -new "S04E20 - You Made Me.mp4"
+Move-Item -Path "S04E20 - You Made Me.mp4" -Destination "Adventure Time (Converted)/S04E20 - You Made Me.mp4"
+Remove-Item "S04E20 - You Made Me.264"
+Remove-Item "S04E20 - You Made Me.aac"
+Remove-Item "S04E20 - You Made Me.mkv.ffindex"
+
+ffmpeg -i "S04E21 - Who Would Win.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E21 - Who Would Win.264"
+ffmpeg -i "S04E21 - Who Would Win.avs" -c:a aac -b:a 192k "S04E21 - Who Would Win.aac"
+mp4box -add "S04E21 - Who Would Win.264" -fps 23.976 -add "S04E21 - Who Would Win.aac" -new "S04E21 - Who Would Win.mp4"
+Move-Item -Path "S04E21 - Who Would Win.mp4" -Destination "Adventure Time (Converted)/S04E21 - Who Would Win.mp4"
+Remove-Item "S04E21 - Who Would Win.264"
+Remove-Item "S04E21 - Who Would Win.aac"
+Remove-Item "S04E21 - Who Would Win.mkv.ffindex"
+
+ffmpeg -i "S04E22 - Ignition Point.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E22 - Ignition Point.264"
+ffmpeg -i "S04E22 - Ignition Point.avs" -c:a aac -b:a 192k "S04E22 - Ignition Point.aac"
+mp4box -add "S04E22 - Ignition Point.264" -fps 23.976 -add "S04E22 - Ignition Point.aac" -new "S04E22 - Ignition Point.mp4"
+Move-Item -Path "S04E22 - Ignition Point.mp4" -Destination "Adventure Time (Converted)/S04E22 - Ignition Point.mp4"
+Remove-Item "S04E22 - Ignition Point.264"
+Remove-Item "S04E22 - Ignition Point.aac"
+Remove-Item "S04E22 - Ignition Point.mkv.ffindex"
+
+ffmpeg -i "S04E23 - The Hard Easy.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E23 - The Hard Easy.264"
+ffmpeg -i "S04E23 - The Hard Easy.avs" -c:a aac -b:a 192k "S04E23 - The Hard Easy.aac"
+mp4box -add "S04E23 - The Hard Easy.264" -fps 23.976 -add "S04E23 - The Hard Easy.aac" -new "S04E23 - The Hard Easy.mp4"
+Move-Item -Path "S04E23 - The Hard Easy.mp4" -Destination "Adventure Time (Converted)/S04E23 - The Hard Easy.mp4"
+Remove-Item "S04E23 - The Hard Easy.264"
+Remove-Item "S04E23 - The Hard Easy.aac"
+Remove-Item "S04E23 - The Hard Easy.mkv.ffindex"
+
+ffmpeg -i "S04E24 - Reign Of Gunters.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E24 - Reign Of Gunters.264"
+ffmpeg -i "S04E24 - Reign Of Gunters.avs" -c:a aac -b:a 192k "S04E24 - Reign Of Gunters.aac"
+mp4box -add "S04E24 - Reign Of Gunters.264" -fps 23.976 -add "S04E24 - Reign Of Gunters.aac" -new "S04E24 - Reign Of Gunters.mp4"
+Move-Item -Path "S04E24 - Reign Of Gunters.mp4" -Destination "Adventure Time (Converted)/S04E24 - Reign Of Gunters.mp4"
+Remove-Item "S04E24 - Reign Of Gunters.264"
+Remove-Item "S04E24 - Reign Of Gunters.aac"
+Remove-Item "S04E24 - Reign Of Gunters.mkv.ffindex"
+
+ffmpeg -i "S04E25 - I Remember You.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E25 - I Remember You.264"
+ffmpeg -i "S04E25 - I Remember You.avs" -c:a aac -b:a 192k "S04E25 - I Remember You.aac"
+mp4box -add "S04E25 - I Remember You.264" -fps 23.976 -add "S04E25 - I Remember You.aac" -new "S04E25 - I Remember You.mp4"
+Move-Item -Path "S04E25 - I Remember You.mp4" -Destination "Adventure Time (Converted)/S04E25 - I Remember You.mp4"
+Remove-Item "S04E25 - I Remember You.264"
+Remove-Item "S04E25 - I Remember You.aac"
+Remove-Item "S04E25 - I Remember You.mkv.ffindex"
+
+ffmpeg -i "S04E26 - The Lich.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "S04E26 - The Lich.264"
+ffmpeg -i "S04E26 - The Lich.avs" -c:a aac -b:a 192k "S04E26 - The Lich.aac"
+mp4box -add "S04E26 - The Lich.264" -fps 23.976 -add "S04E26 - The Lich.aac" -new "S04E26 - The Lich.mp4"
+Move-Item -Path "S04E26 - The Lich.mp4" -Destination "Adventure Time (Converted)/S04E26 - The Lich.mp4"
+Remove-Item "S04E26 - The Lich.264"
+Remove-Item "S04E26 - The Lich.aac"
+Remove-Item "S04E26 - The Lich.mkv.ffindex"
 
 # Season 5 - Disc 1
 
