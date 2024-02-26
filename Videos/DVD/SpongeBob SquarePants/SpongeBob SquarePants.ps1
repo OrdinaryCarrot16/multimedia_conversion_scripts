@@ -833,7 +833,7 @@ Rename-Item -Path "C5_t11.mkv" -NewName "S06E35 - Shuffleboarding.mkv"
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
 Rename-Item -Path "C6_t12.mkv" -NewName "S06E36 - Professor Squidward.mkv"
 
-makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
 Rename-Item -Path "D3_t13.mkv" -NewName "Credits_TMP_18.mkv"
 
 
