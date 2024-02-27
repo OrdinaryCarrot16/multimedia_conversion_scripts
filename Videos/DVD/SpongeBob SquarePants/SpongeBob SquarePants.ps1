@@ -2896,6 +2896,9 @@ Remove-Item "Credits_TMP_12.mkv"
 Remove-Item "Credits_TMP_13.mkv"
 Remove-Item "Credits_TMP_14.mkv"
 Remove-Item "Credits_TMP_15.mkv"
+Remove-Item "Credits_TMP_16.mkv"
+Remove-Item "Credits_TMP_17.mkv"
+Remove-Item "Credits_TMP_18.mkv"
 
 Remove-Item "Credits_TMP_1.mkv.ffindex"
 Remove-Item "Credits_TMP_2.mkv.ffindex"
@@ -2912,6 +2915,9 @@ Remove-Item "Credits_TMP_12.mkv.ffindex"
 Remove-Item "Credits_TMP_13.mkv.ffindex"
 Remove-Item "Credits_TMP_14.mkv.ffindex"
 Remove-Item "Credits_TMP_15.mkv.ffindex"
+Remove-Item "Credits_TMP_16.mkv.ffindex"
+Remove-Item "Credits_TMP_17.mkv.ffindex"
+Remove-Item "Credits_TMP_18.mkv.ffindex"
 
 }
 
