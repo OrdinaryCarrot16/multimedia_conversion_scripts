@@ -349,6 +349,178 @@ makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
 Rename-Item -Path "ADVENTURE TIME SEASON 4 DISC 2-O5_t13.mkv" -NewName "S04E26 - The Lich.mkv"
 
 
+Write-Host "Insert next disc (Season 5 - Disc 1), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-C1_t01.mkv" -NewName "S05E01 - Finn The Human.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-C2_t02.mkv" -NewName "S05E02 - Jake The Dog.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-C3_t03.mkv" -NewName "S05E03 - Five More Short Graybles.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-C4_t04.mkv" -NewName "S05E04 - Up A Tree.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-D1_t05.mkv" -NewName "S05E05 - All The Little People.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-D2_t06.mkv" -NewName "S05E06 - Jake The Dad.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-D3_t07.mkv" -NewName "S05E07 - Davey.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-D4_t08.mkv" -NewName "S05E08 - Mystery Dungeon.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-E1_t09.mkv" -NewName "S05E09 - All Your Fault.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-E2_t10.mkv" -NewName "S05E10 - Little Dude.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-E3_t11.mkv" -NewName "S05E11 - Bad Little Boy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-E4_t12.mkv" -NewName "S05E12 - Vault Of Bones.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 1-F1_t13.mkv" -NewName "S05E13 - The Great Bird Man.mkv"
+
+
+Write-Host "Insert next disc (Season 5 - Disc 2), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-C1_t01.mkv" -NewName "S05E14 - Simon And Marcy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-C2_t02.mkv" -NewName "S05E15 - A Glitch Is A Glitch.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-C3_t03.mkv" -NewName "S05E16 - Puhoy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-C4_t04.mkv" -NewName "S05E17 - BMO Lost.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-D1_t05.mkv" -NewName "S05E18 - Princess Potluck.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-D2_t06.mkv" -NewName "S05E19 - James Baxter The Horse.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-D3_t07.mkv" -NewName "S05E20 - Shh.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-D4_t08.mkv" -NewName "S05E21 - The Suitor.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-E1_t09.mkv" -NewName "S05E22 - The Partys Over Isla De Senorita.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-E2_t10.mkv" -NewName "S05E23 - One Last Job.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-E3_t11.mkv" -NewName "S05E24 - Another Five More Short Graybles.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-E4_t12.mkv" -NewName "S05E25 - Candy Streets.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 2-F1_t13.mkv" -NewName "S05E26 - Wizards Only Fools.mkv"
+
+
+Write-Host "Insert next disc (Season 5 - Disc 3), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-C1_t01.mkv" -NewName "S05E27 - Jake Suit.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-C2_t02.mkv" -NewName "S05E28 - Be More.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-C3_t03.mkv" -NewName "S05E29 - Sky Witch.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-C4_t04.mkv" -NewName "S05E30 - Frost And Fire.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-D1_t05.mkv" -NewName "S05E31 - Too Old.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-D2_t06.mkv" -NewName "S05E32 - Earth And Water.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-D3_t07.mkv" -NewName "S05E33 - Time Sandwich.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-D4_t08.mkv" -NewName "S05E34 - The Vault.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-E1_t09.mkv" -NewName "S05E35 - Love Games.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-E2_t10.mkv" -NewName "S05E36 - Dungeon Train.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-E3_t11.mkv" -NewName "S05E37 - Box Prince.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-E4_t12.mkv" -NewName "S05E38 - Red Starved.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 3-F1_t13.mkv" -NewName "S05E39 - We Fixed A Truck.mkv"
+
+
+Write-Host "Insert next disc (Season 5 - Disc 4), then press enter to proceed"
+pause
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 01 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-C1_t01.mkv" -NewName "S05E40 - Play Date.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-C2_t02.mkv" -NewName "S05E41 - The Pit.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 03 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-C3_t03.mkv" -NewName "S05E42 - James.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 04 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-C4_t04.mkv" -NewName "S05E43 - Root Beer Guy.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 05 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-D1_t05.mkv" -NewName "S05E44 - Apple Wedding.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-D2_t06.mkv" -NewName "S05E45 - Blade Of Grass.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 07 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-D3_t07.mkv" -NewName "S05E46 - Rattleballs.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 08 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-D4_t08.mkv" -NewName "S05E47 - The Red Throne.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 09 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-E1_t09.mkv" -NewName "S05E48 - Betty.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 10 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-E2_t10.mkv" -NewName "S05E49 - Bad Timing.mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 11 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-E3_t11.mkv" -NewName "S05E50 - Lemonhope (Part 1).mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 12 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-E4_t12.mkv" -NewName "S05E51 - Lemonhope (Part 2).mkv"
+
+makemkvcon64 --minlength=5 --progress=-same mkv disc:0 13 "./"
+Rename-Item -Path "ADVENTURE TIME SEASON 5 DISC 4-F1_t13.mkv" -NewName "S05E52 - Billys Bucket List.mkv"
+
+
 }
 if ($rip_encode -eq "2") {
 New-Item -Path "Adventure Time (Converted)" -ItemType Directory
