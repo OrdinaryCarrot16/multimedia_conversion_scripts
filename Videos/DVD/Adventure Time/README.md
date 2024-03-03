@@ -20,13 +20,13 @@
    
 ### Season 4:
 
-   - [ ] Ripped Episodes
+   - [x] Ripped Episodes
    - [ ] Ripped Extras
-   - [ ] Re-Encoded
+   - [x] Re-Encoded
    
 ### Season 5:
 
-   - [ ] Ripped Episodes
+   - [x] Ripped Episodes
    - [ ] Ripped Extras
    - [ ] Re-Encoded
    
