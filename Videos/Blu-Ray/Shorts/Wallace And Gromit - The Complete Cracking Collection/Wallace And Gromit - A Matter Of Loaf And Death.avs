@@ -12,4 +12,4 @@ S5 = BlankClip(V_S, width=1280, height=720, fps=24000, fps_denominator=1001, len
 VA_S_P1 = AudioDub(V_S, A_S).Trim(24, 11228).neo_vd(threshold=4, nsteps=6, percent=80).Crop(60, 0, -60, 0).BicubicResize(1280, 720).AmplifydB(3.0)
 VA_S_P2 = AudioDub(V_S, A_S).Trim(11228, 19282).neo_vd(threshold=4, nsteps=6, percent=80).Crop(60, 0, -60, 0).BicubicResize(1280, 720).AmplifydB(3.0)
 VA_S_P3 = AudioDub(V_S, A_S).Trim(19290, 43524).neo_vd(threshold=4, nsteps=6, percent=80).Crop(60, 0, -60, 0).BicubicResize(1280, 720).AmplifydB(3.0)
-AlignedSplice(VA_S_P1, S1, VA_S_P2, S1, S5)
+AlignedSplice(VA_S_P1, S1, VA_S_P2, S1, VA_S_P3, S5)
