@@ -28,7 +28,7 @@
 
    - [x] Ripped Episodes
    - [ ] Ripped Extras
-   - [ ] Re-Encoded
+   - [X] Re-Encoded
    
 ### Season 6:
 
