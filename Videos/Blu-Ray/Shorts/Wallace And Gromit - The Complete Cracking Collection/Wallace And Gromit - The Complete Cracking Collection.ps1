@@ -5,6 +5,9 @@ $rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the Wallace And Gromi
 
 if ($rip_encode -eq "1") {
 
+Write-Host "Insert disc, then press enter to proceed"
+pause
+
 # Shorts
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 02 "./"
 Rename-Item -Path "Wallace and Gromit- The Complete Cracking Collection_t02.mkv" -NewName "Wallace And Gromit - A Grand Day Out.mkv"
