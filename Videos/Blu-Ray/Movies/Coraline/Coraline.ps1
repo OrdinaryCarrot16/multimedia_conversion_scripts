@@ -5,7 +5,7 @@ $rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the Coraline movie, o
 
 if ($rip_encode -eq "1") {
 
-Write-Host "Insert disc (Coraline), then press enter to proceed"
+Write-Host "Insert disc, then press enter to proceed"
 pause
 
 # Movie
