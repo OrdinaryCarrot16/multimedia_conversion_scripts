@@ -1,15 +1,19 @@
 New-Item -Path "MakeMKV/Coraline" -ItemType Directory
 cd "MakeMKV/Coraline"
 
+$rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the Coraline movie, or 're-encode' (2) an existing rip (made using this script)"
+
+if ($rip_encode -eq "1") {
+
 Write-Host "Insert disc (Coraline), then press enter to proceed"
 pause
 
 # Movie
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 06 "./"
 Rename-Item -Path "Coraline_t06.mkv" -NewName "Coraline.mkv"
+}
 
-Write-Host "Push enter to proceed to transcoding, or close app to keep original files"
-pause
+if ($rip_encode -eq "2") {
 
 New-Item -Path "Coraline (Converted)" -ItemType Directory
 
@@ -21,5 +25,6 @@ Move-Item -Path "Coraline.mp4" -Destination "Coraline (Converted)/Coraline.mp4"
 Remove-Item "Coraline.264"
 Remove-Item "Coraline.aac"
 Remove-Item "Coraline.mkv.ffindex"
+}
 
 pause
