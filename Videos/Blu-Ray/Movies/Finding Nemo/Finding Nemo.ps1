@@ -5,6 +5,10 @@ cd "MakeMKV/Finding Nemo"
 $rip_encode=Read-Host -Prompt "Would you like to 'rip' (1) the Finding Nemo movie, or 're-encode' (2) an existing rip (made using this script)"
 
 if ($rip_encode -eq "1") {
+
+Write-Host "Insert disc, then press enter to proceed"
+pause
+
 # Movie
 makemkvcon64 --minlength=5 --progress=-same mkv disc:0 20 "./"
 Rename-Item -Path "Finding Nemo_t20.mkv" -NewName "Finding Nemo.mkv"
